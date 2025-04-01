@@ -1,0 +1,48 @@
+.text-content {
+  display: flex;
+  position: relative;
+  gap: 20px;
+  flex-direction: column;
+  width: 100%;
+  z-index: 1;
+}
+
+.title {
+  display: block;
+  text-transform: uppercase;
+
+  &.title--h1 {
+    font-size: myclamp(20px, 56px, 1440px, 1440px);
+    line-height: 1.07;
+  }
+
+  &.title--h2 {
+    font-size: myclamp(20px, 60px, 1440px, 1440px);
+    line-height: 1;
+  }
+
+  &.title--h3 {
+    font-size: myclamp(20px, 50px, 1440px, 1440px);
+    line-height: 1;
+  }
+
+  &.title--h4 {
+    font-size: myclamp(20px, 40px, 1440px, 1440px);
+    line-height: 1;
+  }
+
+  &.title--h5 {
+    font-size: myclamp(20px, 30px, 1440px, 1440px);
+    line-height: 1;
+  }
+  &.title--h6 {
+    font-size: myclamp(14px, 20px, 1440px, 1440px);
+    line-height: 1;
+  }
+}
+
+.subtitle {
+  display: block;
+  font-size: myclamp(14px, 16px, 1920px, 3860px);
+  line-height: 1.4;
+}

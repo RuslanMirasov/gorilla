@@ -1,0 +1,27 @@
+:root {
+  --regular: 'dinpro-regular', sans-serif;
+  --medium: 'dinpro-medium', sans-serif;
+  --bold: 'cocogoose-compressed-regular', sans-serif;
+  --bg: #172d1d;
+  --color: #ffffff;
+  --white: #ffffff;
+
+  // Inputs
+  --input-font-family: 'dinpro-regular', sans-serif;
+  --input-font-size: 14px;
+  --input-background: #ffffff;
+  --input-border: #000000;
+  --input-color: #000000;
+  --input-placeholder-color: #000000;
+  --invalid: red;
+}
+
+@import 'mixins';
+@import 'fonts';
+@import 'reset';
+@import 'main';
+@import 'header';
+@import 'buttons';
+@import 'typography';
+@import 'forms';
+@import 'popup';

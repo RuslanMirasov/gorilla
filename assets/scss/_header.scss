@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 20;
+}
+
+.logo {
+  display: block;
+}
