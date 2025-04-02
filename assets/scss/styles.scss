@@ -5,6 +5,9 @@
   --bg: #172d1d;
   --color: #ffffff;
   --white: #ffffff;
+  --black: #000000;
+  --violet: #5c427f;
+  --lime: #cfda46;
 
   // Inputs
   --input-font-family: 'dinpro-regular', sans-serif;
@@ -18,10 +21,13 @@
 
 @import 'mixins';
 @import 'fonts';
+@import 'animations';
+@import 'preloader';
 @import 'reset';
 @import 'main';
 @import 'header';
 @import 'buttons';
 @import 'typography';
 @import 'forms';
+@import 'footer';
 @import 'popup';

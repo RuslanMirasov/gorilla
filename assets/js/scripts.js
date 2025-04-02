@@ -1,51 +1,32 @@
-import { initPopups, PopupManager } from './popup-manager.js';
+import { initPopups, Popup } from './popup-manager.js';
 import { initConnect, initSprites } from './connect.js';
 
-export const subscribe = async (data, btn) => {
-  if (!data || !btn) return;
-  const { email } = data;
+const initApp = () => {
+  const refs = {
+    body: document.querySelector('body'),
+    preloader: document.querySelector('[data-preloader]'),
+    popupOpenElements: document.querySelectorAll('[data-popup-open]'),
+  };
 
-  try {
-    btn.classList.add('loading');
-    const response = await fetch('https://arenda.yandex.ru/external-forms/arendophobia/', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ email }),
-    });
+  const hidePreloader = () => {
+    refs.body.classList.add('ready');
+    setTimeout(() => {
+      refs.preloader.classList.add('hidden');
+    }, 200);
+  };
 
-    if (!response.ok) {
-      throw new Error(`Ошибка: ${response.status}`);
-    }
+  refs.popupOpenElements.forEach(btn =>
+    btn.addEventListener('click', e => {
+      e.preventDefault();
+      Popup.open(e.currentTarget.dataset.popupOpen);
+    })
+  );
 
-    PopupManager.open('ok');
-  } catch (error) {
-    console.log('Ошибка при отправке формы подписки: ', error);
-    PopupManager.open('error');
-  } finally {
-    btn.classList.remove('loading');
-  }
+  hidePreloader();
 };
 
-document.addEventListener('click', e => {
-  const trigger = e.target.closest('[data-popup-open]');
-  if (trigger) {
-    e.preventDefault();
-    const popupId = trigger.getAttribute('data-popup-open');
-    if (popupId) PopupManager.open(popupId);
-    return;
-  }
-
-  const closer = e.target.closest('[data-popup-close]');
-  if (closer) {
-    e.preventDefault();
-    PopupManager.close();
-  }
-});
-
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+  await initConnect().then(() => initApp());
   initSprites('./assets/img/svg/sprite.svg');
-  initPopups('./components/popups.html', ['subscribe']);
-  initConnect();
+  initPopups('./components/popups.html', ['ok']);
 });

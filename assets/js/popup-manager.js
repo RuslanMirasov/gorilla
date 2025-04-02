@@ -1,4 +1,4 @@
-export const PopupManager = {
+export const Popup = {
   cache: new Map(),
   url: '',
   htmlRaw: '',
@@ -145,6 +145,9 @@ export const PopupManager = {
         if (e.target === this._backdrop) {
           this.close();
         }
+        if (e.target.classList.contains('popup-close')) {
+          this.close();
+        }
       });
 
       document.addEventListener('keydown', e => {
@@ -188,5 +191,5 @@ export const PopupManager = {
 };
 
 export const initPopups = async (url, arr) => {
-  await PopupManager.init(url, arr);
+  await Popup.init(url, arr);
 };

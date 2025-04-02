@@ -1,0 +1,50 @@
+// animation: rotate 0.5s linear infinite;
+// animation: moveUpDown 0.5s linear infinite;
+// animation: moveLeftRight 0.5s linear infinite;
+// animation: rotateLeftRight 0.5s linear infinite;
+
+/* Вращение по кругу */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Движение вверх-вниз */
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Движение влево-вправо */
+@keyframes moveLeftRight {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+}
+
+/* Вращение влево-вправо на 45° */
+@keyframes rotateLeftRight {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(45deg);
+  }
+  75% {
+    transform: rotate(-45deg);
+  }
+}
