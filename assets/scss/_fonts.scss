@@ -13,8 +13,15 @@
 }
 
 @font-face {
-  font-family: 'cocogoose-compressed-regular';
-  src: url('../fonts/cocogoose-compressed-regular.woff2') format('woff2'), url('../fonts/cocogoose-compressed-regular.woff') format('woff');
+  font-family: 'cocogoose-compressed-bold';
+  src: url('../fonts/cocogoose-compressed-bold.woff2') format('woff2'), url('../fonts/cocogoose-compressed-bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'cocogoose-compressed-semibold';
+  src: url('../fonts/cocogoose-compressed-semibold.woff2') format('woff2'), url('../fonts/cocogoose-compressed-semibold.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }

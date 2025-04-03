@@ -12,10 +12,55 @@
   </head>
   <body class="body night">
     <!--PRELOADER-->
-    <connect src="./components/preloader.html"></connect>
+    <div class="preloader" data-preloader>
+      <span>
+        <img src="./assets/img/svg/logo.svg" alt="" />
+      </span>
+    </div>
 
     <!--HEADER-->
-    <connect src="./components/header.html"></connect>
+    <header class="header" data-fixed>
+      <div class="header__content">
+        <svg class="icon header-bg" width="1398" height="74"><use href="#header-bg" /></svg>
+        <button class="burger">
+          <svg class="icon" width="44" height="40"><use href="#burger" /></svg>
+          <span>Меню бургер</span>
+        </button>
+
+        <a href="./" class="logo" aria-label="Логотип Gorilla">
+          <img src="./assets/img/svg/logo.svg" alt="" width="80" height="66" loading="eager" />
+        </a>
+
+        <nav class="navigation">
+          <ul class="menu">
+            <li><a href="#about" data-scrollto class="menu__link">Призы</a></li>
+            <li><a href="#about" data-scrollto class="menu__link">Продукция</a></li>
+            <li><a href="#about" data-scrollto class="menu__link">Победители</a></li>
+            <li><a href="#about" data-scrollto class="menu__link">Где купить</a></li>
+            <li><a href="#about" data-scrollto class="menu__link">FAQ</a></li>
+            <li><a href="#about" data-scrollto class="menu__link">Правила акции</a></li>
+            <li>
+              <button class="button button--green" data-popup-open="login">
+                <svg class="icon" width="78" height="32"><use href="#login-bg" /></svg>
+                <span>Войти</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-buttons">
+          <button class="button button--lime" data-popup-open="register">
+            <svg class="icon" width="78" height="32"><use href="#register-bg" /></svg>
+            <span>Зарегистрировать чек</span>
+          </button>
+
+          <button class="button button--green" data-popup-open="login">
+            <svg class="icon" width="78" height="32"><use href="#login-bg" /></svg>
+            <span>Войти</span>
+          </button>
+        </div>
+      </div>
+    </header>
 
     <div class="background">
       <img src="./assets/img/svg/background.svg" alt="" data-fixed />
@@ -31,63 +76,39 @@
             прокачано toxi$ <br />
             с qr-кодом
           </h1>
-          <hr style="display: block; margin: 50px 0px" />
+          <br />
+          <br />
+          <br />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam expedita optio, odit eius in laboriosam vero. Eius, quidem?<br />
-            Necessitatibus nulla officiis corporis, possimus voluptates quaerat inventore. Illum quibusdam officiis tempore. Lorem ipsum dolor sit<br />
-            amet consectetur adipisicing elit. Aliquam expedita optio, odit eius in laboriosam vero. Eius, quidem? Necessitatibus nulla officiis<br />
-            corporis, possimus voluptates quaerat inventore. Illum quibusdam officiis tempore. Lorem ipsum dolor sit amet consectetur adipisicing<br />
-            elit. Aliquam expedita optio, odit eius in laboriosam vero. Eius, quidem? Necessitatibus nulla officiis corporis, possimus voluptates<br />
-            quaerat inventore. Illum quibusdam officiis tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam expedita optio,
-            odit<br />
-            eius in laboriosam vero. Eius, quidem? Necessitatibus nulla officiis corporis, possimus voluptates quaerat inventore. Illum quibusdam
-            officiis tempore.
-          </p>
-          <hr style="display: block; margin: 50px 0px" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam expedita optio, odit eius in laboriosam vero. Eius, quidem?<br />
-            Necessitatibus nulla officiis corporis, possimus voluptates quaerat inventore. Illum quibusdam officiis tempore. Lorem ipsum dolor sit<br />
-            amet consectetur adipisicing elit. Aliquam expedita optio, odit eius in laboriosam vero. Eius, quidem? Necessitatibus nulla officiis<br />
-            corporis, possimus voluptates quaerat inventore. Illum quibusdam officiis tempore. Lorem ipsum dolor sit amet consectetur adipisicing<br />
-            elit. Aliquam expedita optio, odit eius in laboriosam vero. Eius, quidem? Necessitatibus nulla officiis corporis, possimus voluptates<br />
-            quaerat inventore. Illum quibusdam officiis tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam expedita optio,
-            odit<br />
-            eius in laboriosam vero. Eius, quidem? Necessitatibus nulla officiis corporis, possimus voluptates quaerat inventore. Illum quibusdam
-            officiis tempore.
-          </p>
-          <hr style="display: block; margin: 50px 0px" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam expedita optio, odit eius in laboriosam vero. Eius, quidem?<br />
-            Necessitatibus nulla officiis corporis, possimus voluptates quaerat inventore. Illum quibusdam officiis tempore. Lorem ipsum dolor sit<br />
-            amet consectetur adipisicing elit. Aliquam expedita optio, odit eius in laboriosam vero. Eius, quidem? Necessitatibus nulla officiis<br />
-            corporis, possimus voluptates quaerat inventore. Illum quibusdam officiis tempore. Lorem ipsum dolor sit amet consectetur adipisicing<br />
-            elit. Aliquam expedita optio, odit eius in laboriosam vero. Eius, quidem? Necessitatibus nulla officiis corporis, possimus voluptates<br />
-            quaerat inventore. Illum quibusdam officiis tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam expedita optio,
-            odit<br />
-            eius in laboriosam vero. Eius, quidem? Necessitatibus nulla officiis corporis, possimus voluptates quaerat inventore. Illum quibusdam
-            officiis tempore.
-          </p>
-          <hr style="display: block; margin: 50px 0px" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam expedita optio, odit eius in laboriosam vero. Eius, quidem?<br />
-            Necessitatibus nulla officiis corporis, possimus voluptates quaerat inventore. Illum quibusdam officiis tempore. Lorem ipsum dolor sit<br />
-            amet consectetur adipisicing elit. Aliquam expedita optio, odit eius in laboriosam vero. Eius, quidem? Necessitatibus nulla officiis<br />
-            corporis, possimus voluptates quaerat inventore. Illum quibusdam officiis tempore. Lorem ipsum dolor sit amet consectetur adipisicing<br />
-            elit. Aliquam expedita optio, odit eius in laboriosam vero. Eius, quidem? Necessitatibus nulla officiis corporis, possimus voluptates<br />
-            quaerat inventore. Illum quibusdam officiis tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam expedita optio,
-            odit<br />
-            eius in laboriosam vero. Eius, quidem? Necessitatibus nulla officiis corporis, possimus voluptates quaerat inventore. Illum quibusdam
-            officiis tempore.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, dolorum hic minima ipsa vero amet aut necessitatibus quasi doloribus
+            perferendis facere delectus laudantium eos quod nisi consectetur officiis aliquid fugiat. Placeat porro odio doloremque voluptatum est
+            inventore vel quam provident magni eos non ad, facilis nemo. Sit distinctio est, dolores voluptatibus, alias exercitationem placeat
+            veritatis numquam cumque velit beatae! Tenetur. Non explicabo eos velit accusamus officia dicta ea sed deserunt ut fugiat, error unde
+            harum. Suscipit eum voluptates nostrum voluptatem illum, aperiam dolorem, eligendi mollitia debitis impedit corporis nam exercitationem!
+            Voluptates facilis nesciunt deserunt modi quisquam odio totam rem rerum molestias quasi voluptatibus, praesentium, voluptatum accusantium!
+            Nihil adipisci vero magni cumque quas, perspiciatis accusamus hic aliquam delectus, possimus distinctio blanditiis? Possimus quibusdam
+            repudiandae rem, alias natus illum quidem dolorum omnis error, necessitatibus eius veniam laudantium cumque expedita sunt qui amet odit
+            voluptatum tempora at sed officiis placeat voluptates excepturi! Delectus? Deserunt esse dolorum odit alias ut, in ratione similique
+            quaerat culpa repudiandae non, ducimus delectus consectetur quas, modi itaque natus facere possimus id ex ab qui. Atque architecto
+            nesciunt amet. Expedita tempore eum dolorem illum dolor cumque iste eveniet, vitae voluptate atque quis ducimus culpa sit facere soluta
+            blanditiis rerum corporis aperiam quas quibusdam. Animi corrupti eius cupiditate veritatis impedit! Iste fugiat amet aliquam veritatis
+            aliquid quasi repudiandae temporibus, aperiam tempora consequuntur distinctio iusto facilis molestiae exercitationem! Ad, necessitatibus
+            fugiat? Incidunt non cumque nesciunt earum quisquam optio tempora ducimus doloremque! Sint aperiam fuga obcaecati illum esse provident
+            numquam totam velit aliquam aliquid quaerat quisquam necessitatibus consequuntur laudantium, nobis, hic natus neque eveniet eos deleniti
+            ullam quibusdam ipsam delectus? Ea, dolores? Odio dolores perspiciatis at repellat ullam nemo ex soluta neque, harum ipsam ipsum eveniet
+            vel tempora consequuntur molestias iste, natus atque. Quas delectus dignissimos non? Iusto pariatur laboriosam dicta adipisci.
           </p>
         </div>
       </section>
     </main>
 
     <!--FOOTER-->
-    <connect src="./components/footer.html"></connect>
+    <footer class="footer">
+      <div class="footer__container">FOOTER</div>
+    </footer>
 
     <!--POPUP-->
-    <div class="backdrop" data-backdrop data-bound>
+    <div class="backdrop" data-backdrop>
       <div class="popup" data-popup></div>
     </div>
 

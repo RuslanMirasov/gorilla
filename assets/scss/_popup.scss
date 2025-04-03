@@ -1,3 +1,5 @@
+$popup_transition: 0.4s;
+
 body.locked {
   overflow-x: hidden;
   overflow-y: hidden;
@@ -13,24 +15,24 @@ body.locked {
   height: 100%;
   z-index: 1000;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   padding: 50px 20px;
-  transition: 0.4s;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity $popup_transition ease 0s, visibility $popup_transition ease 0s;
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-  background-color: rgba(0, 0, 0, 0.5);
   &.active {
+    visibility: visible;
     opacity: 1;
     pointer-events: all;
-    visibility: visible;
   }
 }
 
 .popup {
   position: relative;
-  transition: 0.4s;
+  transition: $popup_transition;
   transform: translate(0px, 20px);
   opacity: 0;
   max-width: 100%;
@@ -82,30 +84,6 @@ body.locked {
   }
 }
 
-.popup-slide {
-  display: flex;
-  position: relative;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-between;
-
-  width: 100%;
-  transition: background-color 0.6s;
-}
-
-#subscribe {
-  width: myclamp(20px, 1380px, 1920px, 3860px);
-  padding: myclamp(20px, 60px, 1920px, 3860px);
-  border-radius: myclamp(30px, 45px, 1920px, 3860px);
-  background-color: var(--bg-form);
-  color: var(--viola);
-  @media (max-width: 1023px) {
-    width: 100%;
-    max-width: 450px;
-    padding: 50px 20px 20px 20px;
-  }
-}
-
 #ok,
 #error {
   display: flex;
@@ -124,24 +102,11 @@ body.locked {
 }
 
 .popup-title {
-  font-size: myclamp(32px, 52px, 1920px, 3860px);
-  line-height: 1.1;
+  font-size: 50px;
+  line-height: 1;
 }
 
 .popup-subtitle {
-  font-size: myclamp(14px, 22px, 1920px, 3860px);
+  font-size: 20px;
   line-height: 1.4;
-}
-
-#error {
-  .popup-title,
-  .popup-subtitle {
-    color: var(--invalid);
-  }
-  .popup-close {
-    &:before,
-    &:after {
-      background: var(--invalid);
-    }
-  }
 }

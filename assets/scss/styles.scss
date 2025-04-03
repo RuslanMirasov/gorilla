@@ -1,13 +1,18 @@
 :root {
   --regular: 'dinpro-regular', sans-serif;
   --medium: 'dinpro-medium', sans-serif;
-  --bold: 'cocogoose-compressed-regular', sans-serif;
+  --semibold: 'cocogoose-compressed-semibold', sans-serif;
+  --bold: 'cocogoose-compressed-bold', sans-serif;
   --bg: #172d1d;
   --color: #ffffff;
   --white: #ffffff;
   --black: #000000;
   --violet: #5c427f;
   --lime: #cfda46;
+  --pink: #eb5dbf;
+  --green: #114841;
+  --green-light: #007567;
+  --green-dark: #172d1d;
 
   // Inputs
   --input-font-family: 'dinpro-regular', sans-serif;
@@ -31,3 +36,4 @@
 @import 'forms';
 @import 'footer';
 @import 'popup';
+@import 'section__hero';

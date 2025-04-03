@@ -1,32 +1,30 @@
-import { initPopups, Popup } from './popup-manager.js';
+import { Popup } from './popup-manager.js';
 import { initConnect, initSprites } from './connect.js';
 
-const initApp = () => {
-  const refs = {
-    body: document.querySelector('body'),
-    preloader: document.querySelector('[data-preloader]'),
-    popupOpenElements: document.querySelectorAll('[data-popup-open]'),
+const initNavigationMenu = () => {
+  const burger = document.querySelector('.burger');
+  const menu = document.querySelector('.navigation ');
+
+  const toggleMenu = () => {
+    burger.classList.toggle('open');
+    menu.classList.toggle('open');
   };
 
-  const hidePreloader = () => {
-    refs.body.classList.add('ready');
-    setTimeout(() => {
-      refs.preloader.classList.add('hidden');
-    }, 200);
-  };
-
-  refs.popupOpenElements.forEach(btn =>
-    btn.addEventListener('click', e => {
-      e.preventDefault();
-      Popup.open(e.currentTarget.dataset.popupOpen);
-    })
-  );
-
-  hidePreloader();
+  burger.addEventListener('click', toggleMenu);
 };
 
-document.addEventListener('DOMContentLoaded', async () => {
-  await initConnect().then(() => initApp());
+const hidePreloader = () => {
+  const preloader = document.querySelector('[data-preloader]');
+  if (!preloader) return;
+
+  setTimeout(() => {
+    preloader.classList.add('hidden');
+  }, 200);
+};
+
+initConnect().then(() => {
   initSprites('./assets/img/svg/sprite.svg');
-  initPopups('./components/popups.html', ['ok']);
+  Popup.init('./components/popups.html');
+  hidePreloader();
+  initNavigationMenu();
 });

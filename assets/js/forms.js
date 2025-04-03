@@ -110,14 +110,6 @@ const removeErrorHTML = input => {
   if (error) error.style.height = '0px';
 };
 
-// const handleSubmit = async form => {
-//   if (!validateForm(form)) return;
-//   const data = Object.fromEntries(new FormData(form).entries());
-//   const submitButton = form.querySelector('[data-submit]') || null;
-//   await subscribe(data, submitButton);
-//   form.reset();
-// };
-
 const onRequiredInputFocus = e => {
   const input = e.target;
   const error = input.closest('label').querySelector('.inputError');
@@ -132,14 +124,6 @@ const onRequiredInputFocus = e => {
     }, 300);
   }
 };
-
-// document.addEventListener('submit', e => {
-//   const form = e.target.closest('form');
-//   if (!form) return;
-
-//   e.preventDefault();
-//   handleSubmit(form);
-// });
 
 document.addEventListener('focusin', e => {
   if (e.target.matches('[required]')) {
