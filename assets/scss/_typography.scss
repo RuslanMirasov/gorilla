@@ -12,31 +12,77 @@
   text-transform: uppercase;
 
   &.title--h1 {
-    font-size: myclamp(30px, 56px, 1440px, 1440px);
+    font-size: myclamp(30px, 56px, 1366px, 1366px);
     line-height: 1.07;
+    text-align: left;
   }
 
   &.title--h2 {
-    font-size: myclamp(20px, 60px, 1440px, 1440px);
-    line-height: 1;
+    display: inline-flex;
+    position: relative;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    font-size: myclamp(48px, 74px, 1440px, 1440px);
+    padding: 10px 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 1.1;
+    background: url('../img/svg/title-bg.svg') no-repeat center center;
+    background-size: 100% 100%;
+    z-index: 0;
+    &.invers {
+      background: url('../img/svg/title-bg-invers.svg') no-repeat center center;
+    }
+    // &:before {
+    //   content: '';
+    //   display: block;
+    //   position: absolute;
+    //   background: var(--violet);
+    //   transform: skewX(-10deg) rotate(-1.4deg);
+    //   clip-path: polygon(0 0, calc(100% - 40px) 0, 100% 100%, 0% 100%);
+    //   width: 100%;
+    //   height: 100%;
+    //   left: 10px;
+    //   z-index: -1;
+    // }
+    @media (max-width: 767px) {
+      padding: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+      // &:before {
+      //   transform: skewX(-6deg) rotate(-3deg);
+      //   -webkit-clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 100%, 0% 100%);
+      //   clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 100%, 0% 100%);
+      //   left: 5px;
+      // }
+    }
+    @media (max-width: 374px) {
+      font-size: myclamp(40px, 74px, 1440px, 1440px);
+    }
   }
 
   &.title--h3 {
-    font-size: myclamp(20px, 50px, 1440px, 1440px);
+    font-size: myclamp(48px, 64px, 1440px, 1440px);
     line-height: 1;
   }
 
   &.title--h4 {
-    font-size: myclamp(20px, 40px, 1440px, 1440px);
-    line-height: 1;
+    font-size: myclamp(18px, 32px, 1440px, 1440px);
+    line-height: 1.2;
+    @media (max-width: 767px) {
+      font-size: 24px;
+    }
   }
 
   &.title--h5 {
-    font-size: myclamp(20px, 30px, 1440px, 1440px);
+    font-size: myclamp(18px, 30px, 1440px, 1440px);
     line-height: 1;
   }
   &.title--h6 {
-    font-size: myclamp(14px, 20px, 1440px, 1440px);
+    font-size: myclamp(18px, 24px, 1440px, 1440px);
     line-height: 1;
   }
 }

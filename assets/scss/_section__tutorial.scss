@@ -1,0 +1,123 @@
+.section--tutorial {
+  padding: 100px 0px 130px 0px;
+  z-index: 2;
+  margin-top: -100px;
+  .button {
+    margin-top: 20px;
+  }
+  @media (max-width: 767px) {
+    padding: 200px 0px 150px;
+    z-index: 2;
+    margin-top: -180px;
+  }
+}
+
+.tutorial {
+  display: flex;
+  position: relative;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 20px;
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    max-width: 500px;
+    width: calc((100% - 40px) / 3);
+    .button.big {
+      margin-top: 20px;
+      padding: 20px 10px;
+      width: 100%;
+      max-width: 360px;
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+    p {
+      position: relative;
+      font-size: myclamp(16px, 18px, 1440px, 1440px);
+      span,
+      a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap: 8px;
+      }
+      span {
+        padding: 2px 6px 0px 6px;
+        transform: rotate(-2deg);
+        background: var(--lime);
+        color: var(--green);
+        font-family: var(--bold);
+        text-transform: uppercase;
+        position: absolute;
+        left: 40%;
+        bottom: 85%;
+      }
+      a {
+        background: var(--violet);
+        color: var(--lime);
+        padding: 2px 8px;
+        margin-left: 4px;
+      }
+    }
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      &.pun {
+        width: 42px;
+        height: 15px;
+        bottom: 20%;
+      }
+    }
+  }
+  &.tutorial--col2 {
+    li {
+      width: calc((100% - 20px) / 2);
+      @media (max-width: 767px) {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 0px 20px;
+      }
+      .tutorial__image {
+        min-height: 380px;
+      }
+    }
+  }
+}
+
+.tutorial__image {
+  display: flex;
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  .blik {
+    width: 40%;
+    height: 45%;
+    top: 0px;
+    transform: translate(30%, 0%);
+  }
+  .showUp {
+    animation: showHide 3s linear infinite 0s;
+  }
+  .moveUp {
+    animation: moveUpDown 3s linear infinite 0s;
+  }
+  &:before {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: 80%;
+  }
+}

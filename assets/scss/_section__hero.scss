@@ -1,3 +1,183 @@
 .section--hero {
-  padding-top: 200px;
+  position: relative;
+  padding-top: myclamp(80px, 158px, 1440px, 1440px);
+  height: 800px;
+  @media (max-width: 767px) {
+    overflow: hidden;
+  }
+  .title,
+  strong,
+  b {
+    position: relative;
+    z-index: 2;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .title--h1 {
+      width: 50%;
+      @media (max-width: 1023px) {
+        width: 100%;
+      }
+      span {
+        display: inline-flex;
+        justify-content: flex-end;
+        position: relative;
+        padding-left: myclamp(5px, 14px, 1440px, 1440px);
+        line-height: 1;
+        z-index: 0;
+        &:before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: myclamp(-5px, -15px, 1440px, 1440px);
+          left: 0px;
+          bottom: myclamp(-2px, -5px, 1440px, 1440px);
+          width: calc(100% + myclamp(15px, 20px, 1440px, 1440px));
+          background: var(--black);
+          clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 100%, 0% 100%);
+          z-index: -1;
+        }
+        &.pink {
+          &:before {
+            width: calc(100% + myclamp(20px, 30px, 1440px, 1440px));
+            clip-path: polygon(0 0, 100% 0, calc(100% - 20px) 100%, 0% 100%);
+          }
+        }
+      }
+      &.title--prize {
+        text-align: right;
+        margin-top: 20px;
+        @media (max-width: 1023px) {
+          padding-left: calc(100% - myclamp(220px, 300px, 1024px, 1024px));
+          margin-top: -26px;
+          br {
+            display: none;
+          }
+        }
+      }
+    }
+    .title--h5 {
+      position: relative;
+      display: inline-flex;
+      width: auto;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      padding: 58px 36px 36px 46px;
+      @media (max-width: 1023px) {
+        padding: 30px 26px 24px 30px;
+        position: absolute;
+        bottom: 140px;
+        right: 10px;
+      }
+      margin-top: -50px;
+      margin-left: auto;
+      svg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        right: 0px;
+        z-index: 0;
+      }
+      span {
+        position: relative;
+        z-index: 1;
+      }
+    }
+  }
+}
+
+.hero-image {
+  display: flex;
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  margin-left: myclamp(-190px, -400px, 1440px, 1440px);
+  width: 800px; //450 800
+  @media (max-width: 1439px) {
+    margin-left: myclamp(-190px, -450px, 1440px, 1440px);
+  }
+  @media (max-width: 1279px) {
+    width: 700px;
+    margin-left: myclamp(-190px, -500px, 1440px, 1440px);
+  }
+  @media (max-width: 1023px) {
+    width: 600px;
+    left: 0%;
+    margin-left: 0px;
+  }
+  @media (max-width: 767px) {
+    width: myclamp(450px, 800px, 1440px, 1440px);
+    left: 50%;
+    transform: translate(-50%, 0%);
+    bottom: 0px;
+  }
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  z-index: 0;
+  img {
+    position: absolute;
+    &.hero-image__arm,
+    &.hero-image__arm_shadow {
+      transform-origin: center center;
+      animation: rotateLeftRight 2.8s linear infinite;
+    }
+    &.hero-image__lightning1 {
+      animation: diagonalBounce 2s ease-in-out infinite;
+    }
+    &.hero-image__lightning2 {
+      animation: diagonalBounce2 2s ease-in-out infinite;
+    }
+    &.hero-image__lightning3 {
+      animation: diagonalBounce3 2s ease-in-out infinite;
+    }
+    &.hero-image__lightning4 {
+      animation: diagonalBounce4 2s ease-in-out infinite;
+    }
+    &.hero-image__blik {
+      width: 40%;
+      top: 10%;
+      animation: blick 2.8s linear infinite;
+    }
+  }
+  &:before {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: 105%;
+  }
+}
+
+.scroll-down {
+  display: block;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  margin-left: -24px;
+  top: 85vh;
+  transition: color 0.3s;
+  color: var(--violet);
+  animation: scrollDown 1.5s linear infinite;
+  &:hover {
+    color: var(--pink);
+  }
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+  @media (max-width: 767px) {
+    top: 660px;
+  }
+  @media (min-height: 668px) {
+    top: auto;
+    bottom: 10vh;
+  }
 }

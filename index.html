@@ -21,7 +21,7 @@
     <!--HEADER-->
     <header class="header" data-fixed>
       <div class="header__content">
-        <svg class="icon header-bg" width="1398" height="74"><use href="#header-bg" /></svg>
+        <svg class="icon header-bg" width="1401" height="60"><use href="#header-bg" /></svg>
         <button class="burger">
           <svg class="icon" width="44" height="40"><use href="#burger" /></svg>
           <span>Меню бургер</span>
@@ -39,6 +39,12 @@
             <li><a href="#about" data-scrollto class="menu__link">Где купить</a></li>
             <li><a href="#about" data-scrollto class="menu__link">FAQ</a></li>
             <li><a href="#about" data-scrollto class="menu__link">Правила акции</a></li>
+            <li>
+              <a href="#about" class="button button--pink" data-scrollto>
+                <svg class="icon" width="100" height="35"><use href="#chance-bg" /></svg>
+                <span>шансы <i>x</i>3</span>
+              </a>
+            </li>
             <li>
               <button class="button button--green" data-popup-open="login">
                 <svg class="icon" width="78" height="32"><use href="#login-bg" /></svg>
@@ -62,49 +68,346 @@
       </div>
     </header>
 
-    <div class="background">
-      <img src="./assets/img/svg/background.svg" alt="" data-fixed />
+    <div class="background" data-background>
+      <img src="./assets/img/svg/background.svg" alt="" data-fixed loading="lazy" />
     </div>
 
     <main class="main">
+      <!--SECTION HERO-->
       <section class="section section--hero">
         <div class="container">
           <h1 class="title title--h1">
-            покупай <br />
-            промо-банку <br />
-            gorilla green boost <br />
-            прокачано toxi$ <br />
-            с qr-кодом
+            <span>покупай</span> <br />
+            <span>промо-банку</span> <br />
+            <span class="lime">gorilla green boost</span> <br />
+            <span class="pink">прокачано toxi$</span> <br />
+            <span>с qr-кодом</span>
           </h1>
-          <br />
-          <br />
-          <br />
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, dolorum hic minima ipsa vero amet aut necessitatibus quasi doloribus
-            perferendis facere delectus laudantium eos quod nisi consectetur officiis aliquid fugiat. Placeat porro odio doloremque voluptatum est
-            inventore vel quam provident magni eos non ad, facilis nemo. Sit distinctio est, dolores voluptatibus, alias exercitationem placeat
-            veritatis numquam cumque velit beatae! Tenetur. Non explicabo eos velit accusamus officia dicta ea sed deserunt ut fugiat, error unde
-            harum. Suscipit eum voluptates nostrum voluptatem illum, aperiam dolorem, eligendi mollitia debitis impedit corporis nam exercitationem!
-            Voluptates facilis nesciunt deserunt modi quisquam odio totam rem rerum molestias quasi voluptatibus, praesentium, voluptatum accusantium!
-            Nihil adipisci vero magni cumque quas, perspiciatis accusamus hic aliquam delectus, possimus distinctio blanditiis? Possimus quibusdam
-            repudiandae rem, alias natus illum quidem dolorum omnis error, necessitatibus eius veniam laudantium cumque expedita sunt qui amet odit
-            voluptatum tempora at sed officiis placeat voluptates excepturi! Delectus? Deserunt esse dolorum odit alias ut, in ratione similique
-            quaerat culpa repudiandae non, ducimus delectus consectetur quas, modi itaque natus facere possimus id ex ab qui. Atque architecto
-            nesciunt amet. Expedita tempore eum dolorem illum dolor cumque iste eveniet, vitae voluptate atque quis ducimus culpa sit facere soluta
-            blanditiis rerum corporis aperiam quas quibusdam. Animi corrupti eius cupiditate veritatis impedit! Iste fugiat amet aliquam veritatis
-            aliquid quasi repudiandae temporibus, aperiam tempora consequuntur distinctio iusto facilis molestiae exercitationem! Ad, necessitatibus
-            fugiat? Incidunt non cumque nesciunt earum quisquam optio tempora ducimus doloremque! Sint aperiam fuga obcaecati illum esse provident
-            numquam totam velit aliquam aliquid quaerat quisquam necessitatibus consequuntur laudantium, nobis, hic natus neque eveniet eos deleniti
-            ullam quibusdam ipsam delectus? Ea, dolores? Odio dolores perspiciatis at repellat ullam nemo ex soluta neque, harum ipsam ipsum eveniet
-            vel tempora consequuntur molestias iste, natus atque. Quas delectus dignissimos non? Iusto pariatur laboriosam dicta adipisci.
-          </p>
+          <strong class="title title--h1 title--prize">
+            выиграй миллион <br />
+            рублей, <b class="lime">участие</b> <br />
+            <b class="lime">в клипе TOXI$</b>
+          </strong>
+          <strong class="title title--h5">
+            <svg class="icon" width="297" height="204"><use href="#hero-info-sprite" /></svg>
+            <span class="violet">
+              И множество <br />
+              Крутых призов <br />
+              От Gorilla energy
+            </span>
+          </strong>
+          <div class="hero-image">
+            <img src="./assets/img/hero/lightning1.svg" class="hero-image__lightning1" alt="" loading="lazy" />
+            <img src="./assets/img/hero/lightning2.svg" class="hero-image__lightning2" alt="" loading="lazy" />
+            <img src="./assets/img/hero/lightning3.svg" class="hero-image__lightning3" alt="" loading="lazy" />
+            <img src="./assets/img/hero/lightning4.svg" class="hero-image__lightning4" alt="" loading="lazy" />
+            <img src="./assets/img/hero/arm_shadow.svg" class="hero-image__arm_shadow" alt="" loading="lazy" />
+            <img src="./assets/img/hero/body.webp" class="hero-image__body" alt="" />
+            <img src="./assets/img/hero/arm.webp" class="hero-image__arm" alt="" loading="lazy" />
+            <img src="./assets/img/hero/animation.webp" class="hero-image__blik" alt="" loading="lazy" />
+          </div>
+          <button class="scroll-down">
+            <svg class="icon" width="48" height="48"><use href="#arrow-down" /></svg>
+          </button>
+        </div>
+      </section>
+
+      <!--SECTION REGISTER CHECK-->
+      <section class="section section--tutorial green-gradient">
+        <div class="container">
+          <ul class="tutorial">
+            <li>
+              <div class="tutorial__image">
+                <img src="./assets/img/tutorial/1.webp" alt="" class="moveUp" loading="lazy" />
+                <img src="./assets/img/tutorial/animation.webp" alt="" class="blik" loading="lazy" />
+              </div>
+              <h2 class="title title--h4">КУПИ лимитированную банку <br />Gorilla Green Boost</h2>
+              <p>
+                <span>Прокачано Toxi$</span>
+                в магазинах сети Пятёрочка
+              </p>
+            </li>
+            <li>
+              <div class="tutorial__image tutorial__image--2">
+                <img src="./assets/img/tutorial/2_shadow.webp" alt="" class="showUp" loading="lazy" />
+                <img src="./assets/img/tutorial/2.webp" alt="" class="moveUp" loading="lazy" />
+              </div>
+              <h2 class="title title--h4">ЗАРЕГИСТРИРУЙ ЧЕК</h2>
+              <p>
+                на сайте или в
+                <a href="#" target="_blank">
+                  <svg width="15" height="12"><use href="#telegram" /></svg>
+                  чат-боте
+                </a>
+              </p>
+              <button class="button button--lime big" data-popup-open="login">
+                <svg class="icon" width="353" height="77"><use href="#button-bg" /></svg>
+                <span>Зарегистрировать чек</span>
+              </button>
+            </li>
+            <li>
+              <div class="tutorial__image tutorial__image--3">
+                <img src="./assets/img/tutorial/3.webp" alt="" class="moveUp" loading="lazy" />
+              </div>
+              <h2 class="title title--h4">УЧАСТВУЙ</h2>
+              <p>в розыгрыше крутых призов</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--SECTION ACTIVATION-->
+      <section class="section section--activation">
+        <h2 class="title title--h2">Дополнительные активации</h2>
+        <div class="green-gradient">
+          <div class="container">
+            <ul class="tutorial tutorial--col2">
+              <li>
+                <div class="tutorial__image">
+                  <img src="./assets/img/tutorial/map.webp" alt="" loading="lazy" />
+                  <img src="./assets/img/tutorial/pin.webp" alt="" class="moveUp" loading="lazy" />
+                  <img src="./assets/img/tutorial/pun.webp" alt="" class="pun scaleUp" loading="lazy" />
+                </div>
+                <h2 class="title title--h4"><span class="lime">НАЙДИ</span> БОНУСНУЮ <br />ЛОКАЦИЮ</h2>
+                <p>
+                  получи х3 от количества <br />
+                  банок в чеке
+                </p>
+              </li>
+              <li>
+                <div class="tutorial__image tutorial__image--2">
+                  <div class="info">
+                    <i>i</i>
+                    <svg width="38" height="14"><use href="#info" /></svg>
+                    <p>
+                      Перейдя по QR, который высвечивается <br />
+                      на экране после завершения <br />
+                      исполнения композиции, участник <br />
+                      может посмотреть/сохранить свою <br />
+                      версию композиции и попытаться <br />
+                      повысить свои шансы в три раза
+                    </p>
+                  </div>
+                  <img src="./assets/img/tutorial/4.webp" alt="" loading="lazy" />
+                </div>
+                <h2 class="title title--h4"><span class="lime">Покупай</span> Промо-банку <br />Gorilla Green Boost Прокачано Toxi$</h2>
+                <p>
+                  Залетай в караоке-будки от Gorilla, <br />
+                  записывай видео под любимый трек <br />
+                  и борись за миллион рублей
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!--SECTION MILLION-->
+      <section class="section section--million">
+        <h2 class="title title--h2">Выиграй</h2>
+        <div class="million">
+          <div class="container">
+            <h3 class="title title--h4">СПЕЦИАЛЬНЫЙ ПРИЗ</h3>
+            <img src="./assets/img/million.webp" alt="" />
+            <h3 class="title title--h3 lime">рублей</h3>
+          </div>
+        </div>
+      </section>
+
+      <!--SECTION TABLE-->
+      <section class="section section--table">
+        <h2 class="title title--h2 invers">Победители</h2>
+        <div class="table-wrapper">
+          <div class="table-body">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Дата</th>
+                  <th>Имя</th>
+                  <th>Email</th>
+                  <th>Приз</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>дд.мм.гггг</td>
+                  <td>Пантелеймон</td>
+                  <td>panteley@gmail.com</td>
+                  <td>Apple iPhone 16 PRO MAX</td>
+                </tr>
+                <tr>
+                  <td>дд.мм.гггг</td>
+                  <td>Пантелеймон</td>
+                  <td>panteley@gmail.com</td>
+                  <td>Apple iPhone 16 PRO MAX</td>
+                </tr>
+                <tr>
+                  <td>дд.мм.гггг</td>
+                  <td>Пантелеймон</td>
+                  <td>panteley@gmail.com</td>
+                  <td>Apple iPhone 16 PRO MAX</td>
+                </tr>
+                <tr>
+                  <td>дд.мм.гггг</td>
+                  <td>Пантелеймон</td>
+                  <td>panteley@gmail.com</td>
+                  <td>Apple iPhone 16 PRO MAX</td>
+                </tr>
+                <tr>
+                  <td>дд.мм.гггг</td>
+                  <td>Пантелеймон</td>
+                  <td>panteley@gmail.com</td>
+                  <td>Apple iPhone 16 PRO MAX</td>
+                </tr>
+                <tr>
+                  <td>дд.мм.гггг</td>
+                  <td>Пантелеймон</td>
+                  <td>panteley@gmail.com</td>
+                  <td>Apple iPhone 16 PRO MAX</td>
+                </tr>
+                <tr>
+                  <td>дд.мм.гггг</td>
+                  <td>Пантелеймон</td>
+                  <td>panteley@gmail.com</td>
+                  <td>Apple iPhone 16 PRO MAX</td>
+                </tr>
+                <tr>
+                  <td>дд.мм.гггг</td>
+                  <td>Пантелеймон</td>
+                  <td>panteley@gmail.com</td>
+                  <td>Apple iPhone 16 PRO MAX</td>
+                </tr>
+                <tr>
+                  <td>дд.мм.гггг</td>
+                  <td>Пантелеймон</td>
+                  <td>panteley@gmail.com</td>
+                  <td>Apple iPhone 16 PRO MAX</td>
+                </tr>
+                <tr>
+                  <td>дд.мм.гггг</td>
+                  <td>Пантелеймон</td>
+                  <td>panteley@gmail.com</td>
+                  <td>Apple iPhone 16 PRO MAX</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!--SECTION BUY-->
+      <section class="section section--buy">
+        <h2 class="title title--h2 invers">Где купить?</h2>
+        <div class="buy">
+          <svg width="238" height="238"><use href="#peterka" /></svg>
+          <p>В МАГАЗИНАХ СЕТИ <br /><b class="lime">ПЯТЁРОЧКА</b> КРОМЕ ДОСТАВКИ</p>
+        </div>
+      </section>
+
+      <!--SECTION FAQ-->
+      <section class="section section--faq">
+        <h2 class="title title--h2 invers">Часто задаваемые вопросы</h2>
+        <div class="container">
+          <div class="questions" data-questions>
+            <div class="accordeon">
+              <div class="accordeon__question" data-js="accordeon-head">
+                <p>Как принять участие в акции?</p>
+                <button class="accordeon-button" data-js="accordeon-button">
+                  <svg width="40" height="40"><use href="#accordeon-btn" /></svg>
+                </button>
+              </div>
+              <div class="accordeon__answer">
+                <p>
+                  Участниками акции могут являться дееспособные лица, достигшие возраста 18 лет, граждане российской федерации, проживающие на
+                  территории рф. Участниками акции не могут быть сотрудники и представители организатора, аффилированные с организатором лица, члены
+                  их семей, а также работники других юридических лиц, причастных к организации и проведению акции, и члены их семей
+                </p>
+              </div>
+            </div>
+            <div class="accordeon">
+              <div class="accordeon__question" data-js="accordeon-head">
+                <p>Кто может принять участие в акции?</p>
+                <button class="accordeon-button" data-js="accordeon-button">
+                  <svg width="40" height="40"><use href="#accordeon-btn" /></svg>
+                </button>
+              </div>
+              <div class="accordeon__answer">
+                <p>
+                  Участниками акции могут являться дееспособные лица, достигшие возраста 18 лет, граждане российской федерации, проживающие на
+                  территории рф. Участниками акции не могут быть сотрудники и представители организатора, аффилированные с организатором лица, члены
+                  их семей, а также работники других юридических лиц, причастных к организации и проведению акции, и члены их семей
+                </p>
+              </div>
+            </div>
+            <div class="accordeon">
+              <div class="accordeon__question" data-js="accordeon-head">
+                <p>Сроки проведения акции</p>
+                <button class="accordeon-button" data-js="accordeon-button">
+                  <svg width="40" height="40"><use href="#accordeon-btn" /></svg>
+                </button>
+              </div>
+              <div class="accordeon__answer">
+                <p>
+                  Участниками акции могут являться дееспособные лица, достигшие возраста 18 лет, граждане российской федерации, проживающие на
+                  территории рф. Участниками акции не могут быть сотрудники и представители организатора, аффилированные с организатором лица, члены
+                  их семей, а также работники других юридических лиц, причастных к организации и проведению акции, и члены их семей
+                </p>
+              </div>
+            </div>
+            <div class="accordeon">
+              <div class="accordeon__question" data-js="accordeon-head">
+                <p>Где проводится акция?</p>
+                <button class="accordeon-button" data-js="accordeon-button">
+                  <svg width="40" height="40"><use href="#accordeon-btn" /></svg>
+                </button>
+              </div>
+              <div class="accordeon__answer">
+                <p>Описание...</p>
+              </div>
+            </div>
+            <div class="accordeon">
+              <div class="accordeon__question" data-js="accordeon-head">
+                <p>Какая продукция участвует в акции?</p>
+                <button class="accordeon-button" data-js="accordeon-button">
+                  <svg width="40" height="40"><use href="#accordeon-btn" /></svg>
+                </button>
+              </div>
+              <div class="accordeon__answer">
+                <p>Описание...</p>
+              </div>
+            </div>
+            <div class="accordeon">
+              <div class="accordeon__question" data-js="accordeon-head">
+                <p>Сохранять ли чеки?</p>
+                <button class="accordeon-button" data-js="accordeon-button">
+                  <svg width="40" height="40"><use href="#accordeon-btn" /></svg>
+                </button>
+              </div>
+              <div class="accordeon__answer">
+                <p>Описание...</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
     <!--FOOTER-->
+    <div class="footer-sprite">
+      <svg class="icon footer-sprite--desctop" width="1440" height="85"><use href="#footer-sprite" /></svg>
+      <svg class="icon footer-sprite--mobil" width="1440" height="85"><use href="#footer-sprite-mobil" /></svg>
+    </div>
+
     <footer class="footer">
-      <div class="footer__container">FOOTER</div>
+      <div class="container">
+        <h2 class="title title--h6">Copyright &copy; 2025 Gorilla Energy</h2>
+        <ul class="footer__menu">
+          <li><a href="" data-scrollto>Правила</a></li>
+          <li><a href="" target="_blank">Политика конфиденциальности</a></li>
+          <li><a href="" data-scrollto>FAQ</a></li>
+          <li><a href="" data-popup-open="callback">Обратная связь</a></li>
+        </ul>
+      </div>
     </footer>
 
     <!--POPUP-->

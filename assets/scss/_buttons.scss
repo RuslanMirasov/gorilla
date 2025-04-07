@@ -8,16 +8,26 @@
   line-height: 1;
   color: inherit;
   font-family: var(--semibold);
-  padding: 4px 14px;
+  padding: 8px 14px;
   z-index: 1;
   transition: color 0.3s;
   span {
     position: relative;
     display: block;
     z-index: 2;
+    letter-spacing: 0.2px;
     color: var(--white);
     text-transform: uppercase;
     transition: color 0.3s;
+    i {
+      font-size: 10px;
+      position: relative;
+      bottom: 8px;
+      @media (max-width: 1239px) {
+        font-size: 16px;
+        bottom: 11px;
+      }
+    }
   }
   svg {
     position: absolute;
@@ -30,7 +40,21 @@
   &.button--green {
     color: var(--green-light);
     &:hover {
-      color: var(--green);
+      color: var(--lime);
+      span {
+        color: var(--green);
+      }
+    }
+  }
+
+  &.button--pink {
+    padding: 8px 12px;
+    color: var(--pink);
+    &:hover {
+      color: var(--lime);
+      span {
+        color: var(--green);
+      }
     }
   }
 
@@ -41,6 +65,21 @@
     }
     &:hover {
       color: var(--pink);
+      span {
+        color: var(--white);
+      }
+    }
+    &.big {
+      font-family: var(--light);
+      padding: 20px 42px;
+      font-size: myclamp(24px, 32px, 1440px, 1440px);
+      flex-shrink: 0;
+      width: auto;
+    }
+    &.submit {
+      width: 100%;
+      padding: 20px;
+      font-size: myclamp(28px, 32px, 1440px, 1440px);
     }
   }
 }

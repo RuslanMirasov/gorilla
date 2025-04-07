@@ -3,6 +3,7 @@
   --medium: 'dinpro-medium', sans-serif;
   --semibold: 'cocogoose-compressed-semibold', sans-serif;
   --bold: 'cocogoose-compressed-bold', sans-serif;
+  --light: 'cocogoose-compressed-light', sans-serif;
   --bg: #172d1d;
   --color: #ffffff;
   --white: #ffffff;
@@ -37,3 +38,9 @@
 @import 'footer';
 @import 'popup';
 @import 'section__hero';
+@import 'section__tutorial';
+@import 'section__activation';
+@import 'section__million';
+@import 'section__table';
+@import 'section__buy';
+@import 'section__faq';

@@ -2,14 +2,20 @@
   display: block;
   position: relative;
   z-index: 1;
+  min-height: 100vh;
 }
 
 .container {
   display: block;
   width: 100%;
-  max-width: 1380px;
+  max-width: 1440px;
   padding: 0px 30px;
   margin: 0 auto;
+}
+
+.section {
+  position: relative;
+  text-align: center;
 }
 
 @media (max-width: 1199px) {

@@ -1,0 +1,46 @@
+.section--buy {
+  padding-top: myclamp(50px, 100px, 1440px, 1440px);
+  padding-bottom: myclamp(0px, 60px, 1440px, 1440px);
+}
+
+.buy {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: myclamp(14px, 50px, 1440px, 1440px);
+  width: 100%;
+  max-width: myclamp(330px, 850px, 1440px, 1440px);
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: left;
+  position: relative;
+  transform: translate(25px, 0px);
+  background: url('../img/svg/buy-bg.svg') no-repeat center center;
+  background-position: 50px center;
+  padding-right: 20px;
+  @media (max-width: 767px) {
+    margin-top: 30px;
+    padding-top: 20px;
+    transform: translate(0px, 0px);
+  }
+  svg {
+    width: myclamp(124px, 238px, 1440px, 1440px);
+    height: myclamp(124px, 238px, 1440px, 1440px);
+    position: relative;
+    flex-shrink: 0;
+    @media (max-width: 767px) {
+      left: -0px;
+    }
+  }
+  p {
+    font-size: myclamp(24px, 48px, 1440px, 1440px);
+    font-family: var(--light);
+    text-transform: uppercase;
+    line-height: 1.2;
+    @media (max-width: 767px) {
+      position: relative;
+      top: -5px;
+      left: 0px;
+    }
+  }
+}

@@ -3,6 +3,26 @@
 // animation: moveLeftRight 0.5s linear infinite;
 // animation: rotateLeftRight 0.5s linear infinite;
 
+@keyframes scaleUp {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes showHide {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
+
 /* Вращение по кругу */
 @keyframes rotate {
   0% {
@@ -39,12 +59,167 @@
 @keyframes rotateLeftRight {
   0%,
   100% {
-    transform: rotate(0deg);
+    transform: rotate(0deg) translate(0%, 0%);
   }
+  50% {
+    transform: rotate(6.5deg) translate(0%, 0%);
+  }
+}
+
+/* Блик на банке */
+@keyframes blick {
+  0%,
+  100% {
+    transform: rotate(-18deg) translate(-18%, -50%);
+  }
+  50% {
+    transform: rotate(-15deg) translate(-18%, 100%);
+  }
+}
+
+//Scroll Down
+@keyframes scrollDown {
+  0%,
+  100% {
+    transform: translateY(0) scaleX(0.8);
+  }
+  50% {
+    transform: translateY(-10px) scaleX(1);
+  }
+}
+
+@keyframes diagonalBounce {
+  0% {
+    transform: translate(-1%, -1%);
+    animation-timing-function: cubic-bezier(1, -0.25, 0.6, 1.93);
+  }
+
   25% {
-    transform: rotate(45deg);
+    transform: translate(1%, 1%);
+    animation-timing-function: ease-in-out;
   }
+
+  50% {
+    transform: translate(1%, 1%);
+    animation-timing-function: cubic-bezier(1, -0.25, 0.6, 1.93);
+  }
+
   75% {
-    transform: rotate(-45deg);
+    transform: translate(-1%, -1%);
+    animation-timing-function: ease-in-out;
+  }
+
+  100% {
+    transform: translate(-1%, -1%);
+    animation-timing-function: cubic-bezier(1, -0.25, 0.6, 1.93);
+  }
+}
+
+@keyframes diagonalBounce2 {
+  0% {
+    transform: translate(0%, 0%);
+    animation-timing-function: cubic-bezier(1, -0.25, 0.6, 1.93);
+  }
+
+  25% {
+    transform: translate(3%, -1%);
+    animation-timing-function: ease-in-out;
+  }
+
+  50% {
+    transform: translate(3%, -1%);
+    animation-timing-function: cubic-bezier(1, -0.25, 0.6, 1.93);
+  }
+
+  75% {
+    transform: translate(0%, 0%);
+    animation-timing-function: ease-in-out;
+  }
+
+  100% {
+    transform: translate(0%, 0%);
+    animation-timing-function: cubic-bezier(1, -0.25, 0.6, 1.93);
+  }
+}
+
+@keyframes diagonalBounce3 {
+  0% {
+    transform: translate(0%, 0%);
+    animation-timing-function: cubic-bezier(1, -0.25, 0.6, 1.93);
+  }
+
+  25% {
+    transform: translate(-3%, 1%);
+    animation-timing-function: ease-in-out;
+  }
+
+  50% {
+    transform: translate(-3%, 1%);
+    animation-timing-function: cubic-bezier(1, -0.25, 0.6, 1.93);
+  }
+
+  75% {
+    transform: translate(0%, 0%);
+    animation-timing-function: ease-in-out;
+  }
+
+  100% {
+    transform: translate(0%, 0%);
+    animation-timing-function: cubic-bezier(1, -0.25, 0.6, 1.93);
+  }
+}
+
+@keyframes diagonalBounce4 {
+  0% {
+    transform: translate(0%, 0%);
+    animation-timing-function: cubic-bezier(1, -0.25, 0.6, 1.93);
+  }
+
+  25% {
+    transform: translate(3%, -1%);
+    animation-timing-function: ease-in-out;
+  }
+
+  50% {
+    transform: translate(3%, -1%);
+    animation-timing-function: cubic-bezier(1, -0.25, 0.6, 1.93);
+  }
+
+  75% {
+    transform: translate(0%, 0%);
+    animation-timing-function: ease-in-out;
+  }
+
+  100% {
+    transform: translate(0%, 0%);
+    animation-timing-function: cubic-bezier(1, -0.25, 0.6, 1.93);
+  }
+}
+
+@keyframes spring-bounce {
+  0%,
+  20% {
+    transform: scale(1);
+  }
+
+  70% {
+    transform: scale(0.9);
+    animation-timing-function: cubic-bezier(0.5, 0, 0.2, 1.4); /* медленное сжатие */
+  }
+
+  80% {
+    transform: scale(1.05); /* выстрел назад */
+  }
+
+  85% {
+    transform: scale(0.99); /* первый отскок */
+  }
+
+  93% {
+    transform: scale(1.02); /* второй отскок */
+  }
+
+  100% {
+    transform: scale(1); /* стабилизация */
   }
 }

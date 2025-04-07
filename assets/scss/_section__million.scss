@@ -1,0 +1,18 @@
+.million {
+  display: block;
+  text-align: center;
+  background: url('../img/svg/million-bg.svg') no-repeat center center;
+  background-size: 100% 100%;
+  padding: 80px 0px 60px 0px;
+  img {
+    position: relative;
+    max-width: myclamp(320px, 800px, 1440px, 1440px);
+    margin: 26px auto;
+    animation: spring-bounce 2s ease-out infinite;
+  }
+
+  @media (max-width: 767px) {
+    padding: 60px 0px 40px 0px;
+    background: url('../img/svg/million-bg-mobil.svg') no-repeat center center;
+  }
+}
