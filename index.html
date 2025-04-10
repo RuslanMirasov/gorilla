@@ -214,11 +214,138 @@
         </div>
       </section>
 
+      <!--SECTIONS PRIZES-->
+      <section class="section section--prizes violet-gradient">
+        <div class="container">
+          <article class="prize prize--main">
+            <div class="prize__description">
+              <h3 class="title title--h4">ГЛАВНЫЙ ПРИЗ</h3>
+              <span>от 20 банок</span>
+            </div>
+            <div class="prize__image">
+              <img src="./assets/img/prizes/1.webp" alt="" class="main-prize-image" />
+            </div>
+            <h2 class="title title--h3 lime">СЪЁМКИ В НОВОМ<br />КЛИПЕ TOXI$</h2>
+          </article>
+
+          <article class="prize prize--main">
+            <div class="prize__description">
+              <h3 class="title title--h4">ЕЖЕМЕСЯЧНЫЕ ПРИЗЫ</h3>
+              <span>от 10 банок</span>
+            </div>
+            <div class="prize__image">
+              <img src="./assets/img/prizes/2.webp" alt="" class="shoes" />
+              <img src="./assets/img/prizes/2a.webp" alt="" class="shoes" />
+            </div>
+            <h2 class="title title--h3 lime">КАСТОМНЫЕ<br />КРОССОВКИ</h2>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--prizes">
+        <div class="container">
+          <article class="prize prize--col-2">
+            <div class="prize__description">
+              <h3 class="title title--h4">ПРОМЕЖУТОЧНЫЕ ПРИЗЫ</h3>
+              <span>от 15 банок</span>
+            </div>
+            <div class="prize__sub">
+              <div class="prize__image mini">
+                <img src="./assets/img/prizes/shadow.webp" alt="" />
+                <img src="./assets/img/prizes/3.webp" alt="" />
+              </div>
+              <h2 class="title title--h6 lime">СМАРТФОН iPHONE 16 PRO MAX <br />256 GB</h2>
+            </div>
+            <div class="prize__sub">
+              <div class="prize__image mini">
+                <img src="./assets/img/prizes/shadow.webp" alt="" />
+                <img src="./assets/img/prizes/4.webp" alt="" />
+              </div>
+              <h2 class="title title--h6 lime">КОНСОЛЬ PLAYSTATION 5</h2>
+            </div>
+          </article>
+          <article class="prize prize--col-2">
+            <div class="prize__description">
+              <h3 class="title title--h4">ЕЖЕНЕДЕЛЬНЫЕ ПРИЗЫ</h3>
+              <span>от 3 банок</span>
+            </div>
+            <div class="prize__sub">
+              <div class="prize__image mini">
+                <img src="./assets/img/prizes/shadow.webp" alt="" />
+                <img src="./assets/img/prizes/5.webp" alt="" />
+              </div>
+              <h2 class="title title--h6 lime">БИЛЕТ НА КОНЦЕРТ TOXI$</h2>
+            </div>
+            <div class="prize__sub">
+              <div class="prize__image mini">
+                <img src="./assets/img/prizes/shadow.webp" alt="" />
+                <img src="./assets/img/prizes/6.webp" alt="" />
+              </div>
+              <h2 class="title title--h6 lime">БРЕНДИРОВАННАЯ ТОЛСТОВКА</h2>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--prizes violet-gradient">
+        <div class="container">
+          <article class="prize">
+            <div class="prize__description">
+              <h3 class="title title--h4">ЕЖЕДНЕВНЫЙ ПРИЗ</h3>
+              <span>от 1 банки</span>
+            </div>
+            <div class="prize__sub">
+              <div class="prize__image">
+                <img src="./assets/img/prizes/7.webp" alt="" />
+              </div>
+              <h2 class="title title--h3 lime">ПОДАРОЧНЫЙ <br />СЕРТИФИКАТ <br />ПЯТёРОЧКА</h2>
+            </div>
+            <div class="prize__sub">
+              <div class="prize__image">
+                <img src="./assets/img/prizes/8.webp" alt="" />
+                <img src="./assets/img/prizes/stars.webp" alt="" />
+              </div>
+              <h2 class="title title--h3 lime">ПОДПИСКА <br />TELEGRAM PREMIUM <br />(1 год)</h2>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <!--SECTION TABLE-->
       <section class="section section--table">
         <h2 class="title title--h2 invers">Победители</h2>
         <div class="table-wrapper">
           <div class="table-body">
+            <!--FORMS-->
+            <div class="table-body__forms">
+              <!--search-->
+              <form action="#" method="GET" class="form form--search" novalidate onsubmit="alert(this.search.value)">
+                <label class="label">
+                  <input type="search" name="search" class="input" placeholder="Поиск по email" required />
+                  <button type="submit" class="input-icon">
+                    <svg width="17" height="16"><use href="#search" /></svg>
+                  </button>
+                </label>
+              </form>
+
+              <!--filters-->
+              <form action="#" class="form form--filter">
+                <label class="label">
+                  <select name="date" class="input" onchange="alert(this.value)">
+                    <option value="" disabled selected hidden>Выберите дату</option>
+                    <option value="01.06.2025 - 30.06.2025">01.06.2025 - 30.06.2025</option>
+                    <option value="02.06.2025 - 31.06.2025">02.06.2025 - 31.06.2025</option>
+                    <option value="03.06.2025 - 01.07.2025">03.06.2025 - 01.07.2025</option>
+                    <option value="04.06.2025 - 02.07.2025">04.06.2025 - 02.07.2025</option>
+                  </select>
+                  <span class="input-icon">
+                    <svg width="14" height="7"><use href="#select-arrow" /></svg>
+                  </span>
+                </label>
+              </form>
+            </div>
+
+            <!--WINNERS TABLE-->
             <table class="table">
               <thead>
                 <tr>
@@ -230,67 +357,85 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>дд.мм.гггг</td>
+                  <td>09.12.2025</td>
                   <td>Пантелеймон</td>
                   <td>panteley@gmail.com</td>
                   <td>Apple iPhone 16 PRO MAX</td>
                 </tr>
                 <tr>
-                  <td>дд.мм.гггг</td>
-                  <td>Пантелеймон</td>
-                  <td>panteley@gmail.com</td>
+                  <td>09.12.2025</td>
+                  <td>Руслан</td>
+                  <td>mirasovdev@gmail.com</td>
+                  <td>Подарочный сертификат «Пятёрочка»</td>
+                </tr>
+                <tr>
+                  <td>09.12.2025</td>
+                  <td>Сергей</td>
+                  <td>sergey-moskva11@gmail.com</td>
+                  <td>Подписка Telegram Premium</td>
+                </tr>
+                <tr>
+                  <td>09.12.2025</td>
+                  <td>Алексей</td>
+                  <td>alex@gmail.com</td>
+                  <td>Билеты на концерт Toxi$</td>
+                </tr>
+                <tr>
+                  <td>09.12.2025</td>
+                  <td>Светлана</td>
+                  <td>svetlana@gmail.com</td>
+                  <td>Кастомные кроссовки</td>
+                </tr>
+                <tr>
+                  <td>09.12.2025</td>
+                  <td>Юлия</td>
+                  <td>yulia-dolgopolova@gmail.com</td>
+                  <td>PlayStation 5</td>
+                </tr>
+                <tr>
+                  <td>09.12.2025</td>
+                  <td>Кристина</td>
+                  <td>agilera@gmail.com</td>
+                  <td>Съёмки в новом клипе Toxi$</td>
+                </tr>
+                <tr>
+                  <td>09.12.2025</td>
+                  <td>Инакентий</td>
+                  <td>smaktunovskiy@gmail.com</td>
                   <td>Apple iPhone 16 PRO MAX</td>
                 </tr>
                 <tr>
-                  <td>дд.мм.гггг</td>
-                  <td>Пантелеймон</td>
-                  <td>panteley@gmail.com</td>
-                  <td>Apple iPhone 16 PRO MAX</td>
+                  <td>09.12.2025</td>
+                  <td>Валерий</td>
+                  <td>kipelov-music1999@gmail.com</td>
+                  <td>Мерч</td>
                 </tr>
                 <tr>
-                  <td>дд.мм.гггг</td>
+                  <td>09.12.2025</td>
                   <td>Пантелеймон</td>
                   <td>panteley@gmail.com</td>
-                  <td>Apple iPhone 16 PRO MAX</td>
-                </tr>
-                <tr>
-                  <td>дд.мм.гггг</td>
-                  <td>Пантелеймон</td>
-                  <td>panteley@gmail.com</td>
-                  <td>Apple iPhone 16 PRO MAX</td>
-                </tr>
-                <tr>
-                  <td>дд.мм.гггг</td>
-                  <td>Пантелеймон</td>
-                  <td>panteley@gmail.com</td>
-                  <td>Apple iPhone 16 PRO MAX</td>
-                </tr>
-                <tr>
-                  <td>дд.мм.гггг</td>
-                  <td>Пантелеймон</td>
-                  <td>panteley@gmail.com</td>
-                  <td>Apple iPhone 16 PRO MAX</td>
-                </tr>
-                <tr>
-                  <td>дд.мм.гггг</td>
-                  <td>Пантелеймон</td>
-                  <td>panteley@gmail.com</td>
-                  <td>Apple iPhone 16 PRO MAX</td>
-                </tr>
-                <tr>
-                  <td>дд.мм.гггг</td>
-                  <td>Пантелеймон</td>
-                  <td>panteley@gmail.com</td>
-                  <td>Apple iPhone 16 PRO MAX</td>
-                </tr>
-                <tr>
-                  <td>дд.мм.гггг</td>
-                  <td>Пантелеймон</td>
-                  <td>panteley@gmail.com</td>
-                  <td>Apple iPhone 16 PRO MAX</td>
+                  <td>Мерч</td>
                 </tr>
               </tbody>
             </table>
+
+            <!--PAGINATION-->
+            <ul class="pagination">
+              <li>
+                <a href="#" class="pagination-btn left" aria-label="left pagination">
+                  <svg width="9" height="16"><use href="#arr-left"></use></svg>
+                </a>
+              </li>
+              <li><a href="#" class="pagination-btn active">1</a></li>
+              <li><a href="#" class="pagination-btn">2</a></li>
+              <li><a href="#" class="pagination-btn">3</a></li>
+              <li><a href="#" class="pagination-btn">4</a></li>
+              <li>
+                <a href="#" class="pagination-btn right" aria-label="right pagination">
+                  <svg width="9" height="16"><use href="#arr-right"></use></svg>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </section>

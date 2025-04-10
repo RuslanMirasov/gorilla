@@ -1,0 +1,154 @@
+.section--prizes {
+  padding: 50px 0px 100px 0px;
+  overflow: hidden;
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+}
+
+.prize {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: center;
+  text-align: center;
+  .title,
+  .prize__description {
+    z-index: 2;
+    width: 100%;
+  }
+
+  .title.title--h4 {
+    font-size: 32px;
+  }
+
+  &.prize--col-2,
+  &.prize--main {
+    width: 50%;
+  }
+}
+
+.prize__description {
+  display: block;
+  width: 100%;
+  span {
+    display: inline-block;
+    position: relative;
+    padding: 4px 6px 2px 6px;
+    margin-top: 6px;
+    transform: rotate(-2deg);
+    line-height: 1;
+    font-family: var(--bold);
+    text-transform: uppercase;
+    background: var(--pink);
+  }
+}
+
+.prize__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  z-index: 1;
+  position: relative;
+  width: 330px;
+  height: 330px;
+  &.mini {
+    width: 290px;
+    height: 290px;
+  }
+  img {
+    position: absolute;
+    width: auto;
+    height: 100%;
+    max-width: 430px;
+
+    &.main-prize-image {
+      width: 100%;
+      height: auto;
+      top: 10px;
+    }
+
+    &.shoes {
+      &:first-child {
+        animation: rotateRightLeft 2.5s linear infinite;
+      }
+      &:last-child {
+        top: 10px;
+        animation: rotateLeftRight 2.5s linear infinite;
+      }
+    }
+  }
+}
+
+.prize__sub {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+@media (max-width: 1279px) {
+  .prize {
+    &.prize--col-2 {
+      width: 100%;
+      &:last-child {
+        margin-top: 80px;
+      }
+    }
+  }
+
+  .prize__image {
+    width: 290px;
+    height: 290px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section--prizes {
+    padding: 50px 0px 50px 0px;
+  }
+
+  .prize {
+    &.prize--main {
+      width: 100%;
+      &:last-child {
+        margin-top: 70px;
+        .prize__image {
+          width: 100%;
+          max-width: 340px;
+          height: 230px;
+          position: relative;
+          top: -20px;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+    &.prize--col-2 {
+      &:last-child {
+        margin-top: 80px;
+      }
+    }
+  }
+
+  .prize__sub {
+    width: 100%;
+    .title.title--h3 {
+      font-size: 18px;
+      br {
+        display: none;
+      }
+    }
+  }
+}

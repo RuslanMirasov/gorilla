@@ -36,28 +36,10 @@
     &.invers {
       background: url('../img/svg/title-bg-invers.svg') no-repeat center center;
     }
-    // &:before {
-    //   content: '';
-    //   display: block;
-    //   position: absolute;
-    //   background: var(--violet);
-    //   transform: skewX(-10deg) rotate(-1.4deg);
-    //   clip-path: polygon(0 0, calc(100% - 40px) 0, 100% 100%, 0% 100%);
-    //   width: 100%;
-    //   height: 100%;
-    //   left: 10px;
-    //   z-index: -1;
-    // }
     @media (max-width: 767px) {
       padding: 10px;
       margin-left: 10px;
       margin-right: 10px;
-      // &:before {
-      //   transform: skewX(-6deg) rotate(-3deg);
-      //   -webkit-clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 100%, 0% 100%);
-      //   clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 100%, 0% 100%);
-      //   left: 5px;
-      // }
     }
     @media (max-width: 374px) {
       font-size: myclamp(40px, 74px, 1440px, 1440px);

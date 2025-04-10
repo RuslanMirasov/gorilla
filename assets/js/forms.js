@@ -50,10 +50,13 @@ const validateInput = input => {
   }
 
   const validation = validationRegEx.find(v => v.type === type);
-  const regex = new RegExp(validation.regex);
 
-  if (!regex.test(value.trim())) {
-    return validationError(validation.error);
+  if (validation) {
+    const regex = new RegExp(validation.regex);
+
+    if (!regex.test(value.trim())) {
+      return validationError(validation.error);
+    }
   }
 
   removeErrorHTML(input);
@@ -129,10 +132,19 @@ document.addEventListener('focusin', e => {
   if (e.target.matches('[required]')) {
     onRequiredInputFocus(e);
   }
+
+  if (e.target.nodeName === 'SELECT') {
+    e.target.classList.add('open');
+  }
 });
 
 document.addEventListener('change', e => {
   if (e.target.matches('[required]')) {
     validateInput(e.target);
+  }
+
+  if (e.target.nodeName === 'SELECT') {
+    e.target.classList.remove('open');
+    e.target.blur();
   }
 });

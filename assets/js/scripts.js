@@ -30,7 +30,7 @@ function updateOpacity() {
   const maxDistance = middleOfPage;
 
   const normalized = distance / maxDistance;
-  const opacity = 0.3 + 1 * normalized;
+  const opacity = 0.1 + 1 * normalized;
 
   backgroundEl.style.opacity = opacity.toFixed(2);
 }
@@ -49,6 +49,7 @@ initConnect().then(() => {
   Popup.init('./components/popups.html');
   hidePreloader();
   initNavigationMenu();
+  updateOpacity();
   window.addEventListener('scroll', throttle(updateOpacity, 50));
   faqEl.addEventListener('click', accordeonToggle);
 });
