@@ -78,8 +78,9 @@
     }
     &.submit {
       width: 100%;
+      min-height: 60px;
       padding: 20px;
-      font-size: myclamp(28px, 32px, 1440px, 1440px);
+      font-size: 18px;
     }
   }
 }

@@ -319,7 +319,7 @@
             <!--FORMS-->
             <div class="table-body__forms">
               <!--search-->
-              <form action="#" method="GET" class="form form--search" novalidate onsubmit="alert(this.search.value)">
+              <form action="#" method="GET" class="form" novalidate onsubmit="alert(this.search.value)">
                 <label class="label">
                   <input type="search" name="search" class="input" placeholder="Поиск по email" required />
                   <button type="submit" class="input-icon">
@@ -329,9 +329,9 @@
               </form>
 
               <!--filters-->
-              <form action="#" class="form form--filter">
+              <form action="#" class="form">
                 <label class="label">
-                  <select name="date" class="input" onchange="alert(this.value)">
+                  <select name="date" class="input">
                     <option value="" disabled selected hidden>Выберите дату</option>
                     <option value="01.06.2025 - 30.06.2025">01.06.2025 - 30.06.2025</option>
                     <option value="02.06.2025 - 31.06.2025">02.06.2025 - 31.06.2025</option>
@@ -532,6 +532,38 @@
                 <p>Описание...</p>
               </div>
             </div>
+          </div>
+
+          <div class="callback">
+            <h3 class="title title--h4">Обратная связь</h3>
+            <p class="subtitle">Остались вопросы?<br />Вы можете задать вопрос,<br />на который не нашли ответ на сайте</p>
+            <form action="#" novalidate class="form form--callback">
+              <label class="label">
+                <input type="text" name="name" class="input" placeholder="Имя" />
+              </label>
+              <label class="label">
+                <input type="email" name="email" class="input" placeholder="Email" />
+              </label>
+              <label class="label">
+                <select name="theme" class="input">
+                  <option value="" disabled selected hidden>Выберите тему</option>
+                  <option value="Тема 1">Тема 1</option>
+                  <option value="Тема 2">Тема 2</option>
+                  <option value="Тема 3">Тема 3</option>
+                  <option value="Тема 4">Тема 4</option>
+                </select>
+                <span class="input-icon">
+                  <svg width="14" height="7"><use href="#select-arrow" /></svg>
+                </span>
+              </label>
+              <label class="label">
+                <textarea name="message" class="textarea" placeholder="Текст сообщения"></textarea>
+              </label>
+              <button type="submit" class="button button--lime submit">
+                <svg class="icon" width="353" height="77"><use href="#button-bg"></use></svg>
+                <span>Отправить</span>
+              </button>
+            </form>
           </div>
         </div>
       </section>
