@@ -1,9 +1,34 @@
 .million {
   display: block;
+  position: relative;
+  overflow: hidden;
   text-align: center;
-  background: url('../img/svg/million-bg.svg') no-repeat center center;
   background-size: 100% 100%;
   padding: 80px 0px 60px 0px;
+
+  // &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    width: myclamp(1200px, 1690px, 1440px, 1440px);
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    top: 0px;
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  &:after {
+    background: url('../img/svg/million-bg.svg') no-repeat left top;
+    background-size: contain;
+  }
+  // &:before {
+  //   backdrop-filter: blur(10px);
+  //   mask: url('../img/svg/million-mask.svg') no-repeat left top;
+  //   mask-size: contain;
+  // }
+
   img {
     position: relative;
     max-width: myclamp(320px, 800px, 1440px, 1440px);
@@ -13,6 +38,5 @@
 
   @media (max-width: 767px) {
     padding: 60px 0px 40px 0px;
-    background: url('../img/svg/million-bg-mobil.svg') no-repeat center center;
   }
 }

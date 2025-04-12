@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="Gorilla" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.min.css" />
+    <title>Gorilla</title>
+  </head>
+  <body class="body night">
+    <!--PRELOADER-->
+    <div class="preloader" data-preloader>
+      <span>
+        <img src="./assets/img/svg/logo.svg" alt="" />
+      </span>
+    </div>
+
+    <!--HEADER-->
+    <header class="header" data-fixed>
+      <div class="header__background"></div>
+      <div class="header__content">
+        <button class="burger">
+          <svg class="icon" width="44" height="40"><use href="#burger" /></svg>
+          <span>Меню бургер</span>
+        </button>
+
+        <a href="./" class="logo" aria-label="Логотип Gorilla">
+          <img src="./assets/img/svg/logo.svg" alt="" width="80" height="66" loading="eager" />
+        </a>
+
+        <nav class="navigation">
+          <ul class="menu">
+            <li><a href="#about" data-scrollto class="menu__link">Призы</a></li>
+            <li><a href="#about" data-scrollto class="menu__link">Продукция</a></li>
+            <li><a href="#about" data-scrollto class="menu__link">Победители</a></li>
+            <li><a href="#about" data-scrollto class="menu__link">Где купить</a></li>
+            <li><a href="#about" data-scrollto class="menu__link">FAQ</a></li>
+            <li><a href="#about" data-scrollto class="menu__link">Правила акции</a></li>
+            <li>
+              <a href="#about" class="button button--pink" data-scrollto>
+                <svg class="icon" width="100" height="35"><use href="#chance-bg" /></svg>
+                <span>шансы <i>x</i>3</span>
+              </a>
+            </li>
+            <li>
+              <button class="button button--green" data-popup-open="login">
+                <svg class="icon" width="78" height="32"><use href="#login-bg" /></svg>
+                <span>Войти</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-buttons">
+          <button class="button button--lime" data-popup-open="register">
+            <svg class="icon" width="78" height="32"><use href="#register-bg" /></svg>
+            <span>Зарегистрировать чек</span>
+          </button>
+
+          <a href="./lk.html" class="button button--green">
+            <svg class="icon" width="78" height="32"><use href="#login-bg" /></svg>
+            <span>Профиль</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="background" data-background>
+      <img src="./assets/img/svg/background.svg" alt="" data-fixed loading="lazy" />
+    </div>
+
+    <main class="main">
+      <!--SECTION PROFILE-->
+      <section class="section section--profile">
+        <h1 class="title title--h2">Личный кабинет</h1>
+        <div class="green-gradient">
+          <div class="container">
+            <div class="user-info">
+              <h2 class="title title--h1 lime">Пантелеймон Константинопольский</h2>
+              <p>
+                <span>Email: <a href="mailto:konstan111@gorilla.ru">konstan111@gorilla.ru</a></span>
+                <span>Телефон: <a href="tel:+79265555555">+79265555555</a></span>
+              </p>
+              <a href="../" class="logout">Выйти</a>
+            </div>
+            <div class="user-motivation">
+              <h3 class="title violet">ЗАРЯЖАЙ АККАУНТ!</h3>
+              <ul>
+                <li>
+                  <span>Покупка в секретной <br />локации умножает <br />все шансы на х3</span>
+                  <svg width="84" height="84"><use href="#peterka" /></svg>
+                </li>
+                <li>
+                  <svg width="133" height="90"><use href="#friend" /></svg>
+                  <span>Пригласи друга <br />и снова умножай <br />все шансы на х3</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer">
+      <div class="container">
+        <h2 class="title title--h6">Copyright &copy; 2025 Gorilla Energy</h2>
+        <ul class="footer__menu">
+          <li><a href="" data-scrollto>Правила</a></li>
+          <li><a href="" target="_blank">Политика конфиденциальности</a></li>
+          <li><a href="" data-scrollto>FAQ</a></li>
+          <li><a href="" data-popup-open="callback">Обратная связь</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <!--POPUP-->
+    <div class="backdrop" data-backdrop>
+      <div class="popup" data-popup></div>
+    </div>
+
+    <script src="./assets/js/forms.js" type="module"></script>
+    <script src="./assets/js/scripts.js" type="module"></script>
+  </body>
+</html>

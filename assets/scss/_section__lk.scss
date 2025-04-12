@@ -1,0 +1,164 @@
+.section--profile {
+  padding-top: 100px;
+  overflow: hidden;
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 180px 20px;
+    gap: 30px;
+    margin-top: -100px;
+  }
+}
+
+.user-info {
+  display: flex;
+  width: 100%;
+  max-width: 520px;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 auto;
+  gap: 24px;
+  text-align: left;
+  p {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    font-family: var(--medium);
+    font-size: 24px;
+    line-height: 1;
+    span {
+      display: block;
+      width: 100%;
+      a {
+        color: var(--pink);
+      }
+    }
+  }
+  .logout {
+    display: inline-block;
+    width: auto;
+    font-size: 18px;
+    color: var(--green);
+    border-bottom: 1px solid var(--green);
+    transition: 0.3s;
+    &:hover {
+      color: var(--pink);
+      border-bottom: 1px solid var(--pink);
+    }
+  }
+}
+
+.user-motivation {
+  background: url('../img/svg/motivation-bg.svg') no-repeat center center;
+  background-size: contain;
+  color: var(--green);
+  padding: 50px 68px 0px 50px;
+  .title {
+    font-size: 40px;
+  }
+  ul {
+    display: flex;
+    gap: 50px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    background: url('../img/svg/lightning.svg') no-repeat center bottom;
+    background-size: 105px 200px;
+    li {
+      svg {
+        flex-shrink: 0;
+      }
+      span {
+        display: block;
+        text-align: left;
+        font-family: var(--medium);
+        font-size: 24px;
+        line-height: 1.1;
+        padding-bottom: 12px;
+      }
+      &:last-child {
+        span {
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1279px) {
+  .user-info {
+    max-width: 42%;
+  }
+  .user-motivation {
+    ul {
+      background-size: 84px 170px;
+      li {
+        span {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .section--profile {
+    .container {
+      max-width: 768px;
+    }
+  }
+
+  .user-info {
+    max-width: 100%;
+  }
+
+  .user-motivation {
+    margin: auto;
+  }
+}
+
+@media (max-width: 599px) {
+  .section--profile {
+    .container {
+      padding: 130px 12px 50px 12px;
+      margin-top: -80px;
+    }
+  }
+
+  .user-motivation {
+    min-width: calc(100% + 24px);
+    position: relative;
+    left: -12px;
+    padding: 60px 12px 30px 12px;
+    background: url('../img/svg/motivation-bg-mobil.svg') no-repeat center center;
+    background-size: contain;
+    ul {
+      gap: 0px;
+      justify-content: space-between;
+      margin-top: 12px;
+      margin-bottom: 20px;
+      background: url('../img/svg/lightning.svg') no-repeat 45% bottom;
+      background-size: 105px 200px;
+
+      li {
+        span {
+          font-size: 18px;
+        }
+        &:first-child {
+          svg {
+            display: block;
+            margin-left: 30px;
+          }
+        }
+        &:last-child {
+          margin-top: 64px;
+          svg {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}

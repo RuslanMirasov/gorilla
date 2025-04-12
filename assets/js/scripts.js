@@ -23,14 +23,22 @@ function updateOpacity() {
   const windowHeight = window.innerHeight;
   const docHeight = document.documentElement.scrollHeight;
 
-  const scrollMiddle = scrollY + windowHeight / 2;
-  const middleOfPage = docHeight / 2;
+  const fadeOutStart = windowHeight;
+  const fadeOutEnd = fadeOutStart + windowHeight;
+  const fadeInStart = docHeight - windowHeight * 3;
+  const fadeInEnd = docHeight - windowHeight;
 
-  const distance = Math.abs(scrollMiddle - middleOfPage);
-  const maxDistance = middleOfPage;
+  let opacity = 0.3;
 
-  const normalized = distance / maxDistance;
-  const opacity = 0.1 + 1 * normalized;
+  if (scrollY < fadeOutStart || scrollY >= fadeInEnd) {
+    opacity = 1;
+  } else if (scrollY < fadeOutEnd) {
+    const progress = (scrollY - fadeOutStart) / windowHeight;
+    opacity = 1 - progress * 0.9;
+  } else if (scrollY >= fadeInStart && scrollY < fadeInEnd) {
+    const progress = (scrollY - fadeInStart) / (windowHeight * 2);
+    opacity = 0.1 + progress * 0.9;
+  }
 
   backgroundEl.style.opacity = opacity.toFixed(2);
 }
@@ -51,5 +59,5 @@ initConnect().then(() => {
   initNavigationMenu();
   updateOpacity();
   window.addEventListener('scroll', throttle(updateOpacity, 50));
-  faqEl.addEventListener('click', accordeonToggle);
+  faqEl && faqEl.addEventListener('click', accordeonToggle);
 });
