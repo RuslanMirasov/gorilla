@@ -33,12 +33,12 @@
 
         <nav class="navigation">
           <ul class="menu">
-            <li><a href="#about" data-scrollto class="menu__link">Призы</a></li>
-            <li><a href="#about" data-scrollto class="menu__link">Продукция</a></li>
-            <li><a href="#about" data-scrollto class="menu__link">Победители</a></li>
-            <li><a href="#about" data-scrollto class="menu__link">Где купить</a></li>
-            <li><a href="#about" data-scrollto class="menu__link">FAQ</a></li>
-            <li><a href="#about" data-scrollto class="menu__link">Правила акции</a></li>
+            <li><a href="#prizes" data-scrollto class="menu__link">Призы</a></li>
+            <li><a href="./" class="menu__link">Продукция</a></li>
+            <li><a href="#winners" data-scrollto class="menu__link">Победители</a></li>
+            <li><a href="#buy" data-scrollto class="menu__link">Где купить</a></li>
+            <li><a href="#faq" data-scrollto class="menu__link">FAQ</a></li>
+            <li><a href="./" class="menu__link">Правила акции</a></li>
             <li>
               <a href="#about" class="button button--pink" data-scrollto>
                 <svg class="icon" width="100" height="35"><use href="#chance-bg" /></svg>
@@ -55,7 +55,7 @@
         </nav>
 
         <div class="header-buttons">
-          <button class="button button--lime" data-popup-open="register">
+          <button class="button button--lime" data-popup-open="register-check">
             <svg class="icon" width="78" height="32"><use href="#register-bg" /></svg>
             <span>Зарегистрировать чек</span>
           </button>
@@ -102,6 +102,212 @@
           </div>
         </div>
       </section>
+
+      <div class="winn-chanses">
+        <span>Мои шансы <br />на победу</span>
+        <strong class="lime">365</strong>
+        <a href="">как это работает</a>
+      </div>
+
+      <section class="lk-tables">
+        <div class="lk-tables__item">
+          <h2 class="title title--h2 invers">Мои чеки</h2>
+
+          <div class="table-background table-background--lime">
+            <!-- <h3 class="title title--h4 violet">Ты ещё не загружал чеки</h3> -->
+            <table class="table table--cheks">
+              <thead>
+                <tr>
+                  <th>Чек</th>
+                  <th>Дата</th>
+                  <th>Статус</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>125 1234 123456</td>
+                  <td>дд.мм.гггг</td>
+                  <td>На модерации</td>
+                </tr>
+                <tr>
+                  <td>125 1234 123456</td>
+                  <td>дд.мм.гггг</td>
+                  <td>Ожидает</td>
+                </tr>
+                <tr>
+                  <td>125 1234 123456</td>
+                  <td>дд.мм.гггг</td>
+                  <td>Принят</td>
+                </tr>
+                <tr>
+                  <td>125 1234 123456</td>
+                  <td>дд.мм.гггг</td>
+                  <td>Принят</td>
+                </tr>
+                <tr>
+                  <td>125 1234 123456</td>
+                  <td>дд.мм.гггг</td>
+                  <td>Принят</td>
+                </tr>
+                <tr>
+                  <td>125 1234 123456</td>
+                  <td>дд.мм.гггг</td>
+                  <td>Принят</td>
+                </tr>
+                <tr>
+                  <td>125 1234 123456</td>
+                  <td>дд.мм.гггг</td>
+                  <td>Принят</td>
+                </tr>
+                <tr>
+                  <td>125 1234 123456</td>
+                  <td>дд.мм.гггг</td>
+                  <td>Принят</td>
+                </tr>
+                <tr>
+                  <td>125 1234 123456</td>
+                  <td>дд.мм.гггг</td>
+                  <td>Принят</td>
+                </tr>
+                <tr>
+                  <td>125 1234 123456</td>
+                  <td>дд.мм.гггг</td>
+                  <td>Принят</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!--PAGINATION-->
+            <ul class="pagination">
+              <li>
+                <a href="#" class="pagination-btn left" aria-label="left pagination">
+                  <svg width="9" height="16"><use href="#arr-left"></use></svg>
+                </a>
+              </li>
+              <li><a href="#" class="pagination-btn active">1</a></li>
+              <li><a href="#" class="pagination-btn">2</a></li>
+              <li><a href="#" class="pagination-btn">3</a></li>
+              <li><a href="#" class="pagination-btn">4</a></li>
+              <li>
+                <a href="#" class="pagination-btn right" aria-label="right pagination">
+                  <svg width="9" height="16"><use href="#arr-right"></use></svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <button class="button button--lime big" data-popup-open="register-check">
+            <svg class="icon" width="353" height="77"><use href="#button-bg" /></svg>
+            <span>Зарегистрировать чек</span>
+          </button>
+        </div>
+
+        <div class="lk-tables__item">
+          <h2 class="title title--h2">Мои призы</h2>
+          <div class="table-background table-background--pink">
+            <!-- <h3 class="title title--h4 violet">Нет призов</h3> -->
+            <table class="table table--prizes">
+              <thead>
+                <tr>
+                  <th>Чек</th>
+                  <th>Дата</th>
+                  <th colspan="2">Призы</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>125 1234 123456</td>
+                  <td>дд.мм.гггг</td>
+                  <td>Apple iPhone 16 PRO MAX</td>
+                  <td>
+                    <a ркуа="#" class="button button--green">
+                      <svg class="icon" width="78" height="32"><use href="#login-bg" /></svg>
+                      <span>Получить</span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>125 1234 123456</td>
+                  <td>дд.мм.гггг</td>
+                  <td>PlayStation 5</td>
+                  <td>
+                    <a ркуа="#" class="button button--green">
+                      <svg class="icon" width="78" height="32"><use href="#login-bg" /></svg>
+                      <span>Получить</span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>125 1234 123456</td>
+                  <td>дд.мм.гггг</td>
+                  <td>Билет на концерт TOXI$</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>125 1234 123456</td>
+                  <td>дд.мм.гггг</td>
+                  <td>Сертификат Пятёрочка</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>125 1234 123456</td>
+                  <td>дд.мм.гггг</td>
+                  <td>Сертификат Пятёрочка</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>125 1234 123456</td>
+                  <td>дд.мм.гггг</td>
+                  <td>Сертификат Пятёрочка</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>125 1234 123456</td>
+                  <td>дд.мм.гггг</td>
+                  <td>Сертификат Пятёрочка</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>125 1234 123456</td>
+                  <td>дд.мм.гггг</td>
+                  <td>Сертификат Пятёрочка</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>125 1234 123456</td>
+                  <td>дд.мм.гггг</td>
+                  <td>Сертификат Пятёрочка</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>125 1234 123456</td>
+                  <td>дд.мм.гггг</td>
+                  <td>Сертификат Пятёрочка</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!--PAGINATION-->
+            <ul class="pagination">
+              <li>
+                <a href="#" class="pagination-btn left" aria-label="left pagination">
+                  <svg width="9" height="16"><use href="#arr-left"></use></svg>
+                </a>
+              </li>
+              <li><a href="#" class="pagination-btn active">1</a></li>
+              <li><a href="#" class="pagination-btn">2</a></li>
+              <li><a href="#" class="pagination-btn">3</a></li>
+              <li><a href="#" class="pagination-btn">4</a></li>
+              <li>
+                <a href="#" class="pagination-btn right" aria-label="right pagination">
+                  <svg width="9" height="16"><use href="#arr-right"></use></svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!--FOOTER-->
@@ -121,6 +327,147 @@
     <div class="backdrop" data-backdrop>
       <div class="popup" data-popup></div>
     </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+      <symbol id="login-bg" viewBox="0 0 78 32" preserveAspectRatio="none">
+        <path
+          d="M4.16794 2.46154L13.0992 0L22.3282 2.46154L42.2748 0.492308L58.6489 2.46154H67.729H76.8092L76.2137 10.3385L78 16.2462V23.1385L75.0229 31.5077L58.3511 32L40.4885 30.0308L22.0305 32L2.38168 31.5077L4.16794 23.1385L0 17.7231L4.16794 9.35385V2.46154Z"
+          fill="currentColor"
+        />
+      </symbol>
+
+      <symbol id="chance-bg" viewBox="0 0 100 35" preserveAspectRatio="none">
+        <path
+          d="M2.18069 2.021L13.0841 2.52625L25.2336 0L51.0903 2.021L65.109 0L75.5452 1.0105L90.0312 0L100 2.021L100 13.187L97.8193 20.7657L100 32.336L87.9889 33.3465L75.5452 31.3255L59.5573 35L34.2679 32.336L17.757 33.3465L2.18069 31.3255L2.18069 23.9993L1.65421e-07 16.6732L2.18069 2.021Z"
+          fill="currentColor"
+        />
+      </symbol>
+
+      <symbol id="button-bg" viewBox="0 0 353 77" preserveAspectRatio="none">
+        <path
+          d="M7.68293 4.44444L46.0976 5.55556L88.9024 0L180 4.44444L229.39 0L266.159 2.22222L317.195 0L352.317 4.44444V29L344.634 45.6667L352.317 71.1111L310 73.3333L266.159 68.8889L214.5 77L120.732 71.1111L62.561 73.3333L7.68293 68.8889V52.7778L0 36.6667L7.68293 4.44444Z"
+          fill="currentColor"
+        />
+      </symbol>
+
+      <symbol id="register-bg" viewBox="0 0 200 36" preserveAspectRatio="none">
+        <path
+          d="M4.26829 2L25.6098 2.5L49.3902 0L100 2L127.439 0L147.866 1L176.22 0L195.732 2L200 9L195.732 16.5V32L170.122 31H147.866L103.659 36L67.0732 32L34.7561 33L4.26829 31V23.75L0 16.5L4.26829 2Z"
+          fill="currentColor"
+        />
+      </symbol>
+
+      <symbol id="burger" viewBox="0 0 44 40" preserveAspectRatio="none">
+        <path
+          d="M2.6969 3.07692L8.47598 0L14.4477 3.07692L27.3543 0.615385L31.4787 3.07692H37.3541H43.2295L42.8442 12.9231L44 20.3077V28.9231L42.0736 39.3846L31.286 40L26.1985 37.5385L14.2551 40L1.54109 39.3846L2.6969 28.9231L0 22.1538L2.6969 11.6923V3.07692Z"
+          fill="#007567"
+        />
+      </symbol>
+
+      <symbol id="hero-info-sprite" viewBox="0 0 297 204" preserveAspectRatio="none">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M35.9601 23.9341L125.726 23.1791L166.601 0.0559383L294.486 36.0353L294.15 35.4356L296.793 36.1376L284.057 131.96L254.055 197.965L124.253 203.329L60.211 185.394L0.526357 171.692L19.6207 91.405L35.9601 23.9341Z"
+          fill="var(--lime)"
+        />
+      </symbol>
+
+      <symbol id="arrow-down" viewBox="0 0 48 48" preserveAspectRatio="none">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M3.58579 13.5858C2.80474 14.3668 2.80474 15.6332 3.58579 16.4142L22.5663 35.3947C22.9414 35.7698 23.4501 35.9805 23.9805 35.9805C24.511 35.9805 25.0197 35.7698 25.3947 35.3947L44.3753 16.4142C45.1563 15.6332 45.1563 14.3668 44.3753 13.5858C43.5942 12.8047 42.3279 12.8047 41.5468 13.5858L23.9805 31.1521L6.41421 13.5858C5.63317 12.8047 4.36684 12.8047 3.58579 13.5858Z"
+          fill="currentColor"
+        />
+      </symbol>
+
+      <symbol id="telegram" viewBox="0 0 15 12" preserveAspectRatio="none">
+        <path
+          d="M14.1638 1.15207C13.9638 3.21207 13.1138 8.22207 12.6838 10.5321C12.5038 11.5121 12.1438 11.8421 11.7938 11.8721C11.0338 11.9421 10.4638 11.3721 9.72385 10.8921C8.57385 10.1421 7.92385 9.67207 6.81385 8.93207C5.52385 8.08207 6.36384 7.61207 7.09384 6.85207C7.28384 6.65207 10.6238 3.61207 10.6938 3.34207C10.6938 3.31207 10.7138 3.18207 10.6338 3.11207C10.5538 3.04207 10.4438 3.07207 10.3638 3.08207C10.2438 3.11207 8.41385 4.32207 4.86385 6.72207C4.34385 7.08207 3.87385 7.25207 3.44385 7.24207C2.97385 7.23207 2.08384 6.98207 1.41384 6.76207C0.593844 6.49207 -0.0561554 6.35207 0.00384457 5.90207C0.0338446 5.67207 0.353846 5.42207 0.973846 5.18207C4.77385 3.52207 7.31385 2.43207 8.58385 1.90207C12.2038 0.392071 12.9638 0.13207 13.4538 0.12207C13.5638 0.12207 13.8038 0.15207 13.9638 0.27207C14.0938 0.38207 14.1338 0.52207 14.1538 0.62207C14.1738 0.72207 14.1938 0.952071 14.1738 1.13207L14.1638 1.15207Z"
+          fill="#CFDA46"
+        />
+      </symbol>
+
+      <symbol id="info" viewBox="0 0 38 14" preserveAspectRatio="none">
+        <path
+          d="M37.1317 0.67587L33.1031 0.67587L27.6979 1.39935L22.2833 0.675872L15.8473 1.93665e-06L8.61856 0.675872L4.89691 0.675873L0.327408 1.15173L2.83958e-07 3.2481L0.341645 5.76245L0.683289 8.2768L9.58571e-07 10.9648L1.18344e-06 13.537L3.58727 14L8.61856 13.537L13.5155 13.537L17.4444 14L20.8608 13.537L28.2062 13.537L30.5692 14L33.1031 13.537L37.0206 13.537L37.7651 11.1706L38 3.2481L37.1317 0.67587Z"
+          fill="#5C427F"
+        />
+      </symbol>
+
+      <symbol id="accordeon-btn" viewBox="0 0 14 14" preserveAspectRatio="none">
+        <path
+          d="M1.54583 7.5625H6.14125V12.1579C6.14125 12.625 6.52546 13.0167 7.00007 13.0167C7.47468 13.0167 7.85889 12.625 7.85889 12.1579V7.5625H12.4543C12.9214 7.5625 13.3131 7.17829 13.3131 6.70368C13.3131 6.22907 12.9214 5.84487 12.4543 5.84487H7.85889V1.24944C7.85889 0.782366 7.47468 0.390625 7.00007 0.390625C6.52546 0.390625 6.14125 0.782366 6.14125 1.24944V5.84487H1.54583C1.07875 5.84487 0.687012 6.22907 0.687012 6.70368C0.687012 7.17829 1.07875 7.5625 1.54583 7.5625Z"
+          fill="currentColor"
+        />
+      </symbol>
+
+      <symbol id="peterka" viewBox="0 0 238 238" preserveAspectRatio="none">
+        <path
+          d="M96.0619 3.15961C32.0883 15.9253 -9.60596 78.4077 3.15973 142.381C15.9254 206.355 78.3561 248.059 142.381 235.283C206.407 222.507 248.049 160.035 235.284 96.0618C222.518 32.0882 160.087 -9.6164 96.0619 3.15961Z"
+          fill="white"
+        />
+        <path
+          d="M161.21 24.2789C156.859 48.7895 137.644 57.5134 108.448 63.3394C105.296 63.9684 102.195 64.5871 99.1776 65.0819C96.2838 65.6593 93.5244 66.1025 90.8373 66.6387C88.4602 67.113 86.0315 67.5976 83.6854 68.227C85.7673 57.3874 90.9689 49.2568 99.3835 43.2253C111.199 34.8495 128.035 31.4363 142.855 28.4252C149.314 27.1363 155.515 25.8989 161.148 24.2376"
+          fill="#00923A"
+        />
+        <path
+          d="M171.759 29.7512C164.326 60.8949 135.707 69.6147 110.696 74.6055C105.219 75.6985 99.9167 76.5953 95.0593 77.5645L93.6735 103.471C120.722 70.7242 168.613 88.3027 171.985 128.897C174.225 156.283 158.643 177.554 139.49 186.588C118.621 196.448 92.6424 193.088 77.2224 172.899C75.6112 170.749 72.5956 166.407 71.3668 164.02L93.383 153.447C94.0645 154.708 94.9941 155.866 95.9547 156.91C116.448 178.827 145.423 160.042 143.76 133.4C142.108 106.272 102.253 99.6103 91.5108 133.832L69.2015 129.203L68.8088 129.12L70.7905 87.3507C70.8435 84.3848 71.3329 76.0661 71.4368 74.702C74.432 31.2795 110.522 23.3793 139.594 17.4706C126.554 14.8607 112.82 14.6997 98.9711 17.4632C42.8005 28.6718 6.30762 83.2922 17.5266 139.515C28.7455 195.737 83.4073 232.168 139.578 220.959C195.749 209.75 232.242 155.13 221.023 98.9077C214.99 68.6779 196.41 44.2296 171.811 29.7408"
+          fill="#E52322"
+        />
+      </symbol>
+
+      <symbol id="search" viewBox="0 0 17 16" preserveAspectRatio="none">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M7.2998 1.2998C4.26224 1.2998 1.7998 3.76224 1.7998 6.7998C1.7998 9.83737 4.26224 12.2998 7.2998 12.2998C10.3374 12.2998 12.7998 9.83737 12.7998 6.7998C12.7998 3.76224 10.3374 1.2998 7.2998 1.2998ZM0.799805 6.7998C0.799805 3.20995 3.70995 0.299805 7.2998 0.299805C10.8897 0.299805 13.7998 3.20995 13.7998 6.7998C13.7998 10.3897 10.8897 13.2998 7.2998 13.2998C3.70995 13.2998 0.799805 10.3897 0.799805 6.7998Z"
+          fill="currentColor"
+        />
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M15.4463 15.6534L10.9463 11.1534L11.6534 10.4463L16.1534 14.9463L15.4463 15.6534Z"
+          fill="currentColor"
+        />
+      </symbol>
+
+      <symbol id="select-arrow" viewBox="0 0 14 7" fill="none" preserveAspectRatio="none">
+        <path d="M13 1L7 6L1 0.999999" stroke="currentColor" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round" />
+      </symbol>
+
+      <symbol id="arr-left" viewBox="0 0 9 16" fill="none" preserveAspectRatio="none">
+        <path
+          d="M7.77734 1.48145L1.85142 7.9012L7.77734 14.3209"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+
+      <symbol id="arr-right" viewBox="0 0 9 16" fill="none" preserveAspectRatio="none">
+        <path
+          d="M1.22266 14.5186L7.14858 8.0988L1.22266 1.67905"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+
+      <symbol id="friend" viewBox="0 0 133 90" fill="none" preserveAspectRatio="none">
+        <path
+          d="M116.397 35.5367H129.363L133 40.2421L130.191 44.0296L116.915 44.0739L116.11 58.2012L112.59 59.0969L108.672 57.3773V43.8306H95.1537L92.1797 39.6726L95.7055 35.5367H108.672V21.99L110.89 19.7893L116.397 21.437V35.5367Z"
+          fill="#007567"
+        />
+        <path
+          d="M83.8802 53.3851L77.4411 50.1671L85.2431 41.2926L89.6076 16.4828L69.2915 0L44.6771 13.9117L51.5024 47.6789L55.9166 50.709L45.124 54.4689L35.1921 62.807L30 82.5134L34.6514 89.9945H98.7063L103.297 82.5742L93.5803 57.2667L83.8747 53.3796L83.8802 53.3851ZM63.5089 44.0296L55.5414 39.938L78.2136 37.8921L71.8793 44.0351H63.5034L63.5089 44.0296Z"
+          fill="#007567"
+        />
+      </symbol>
+    </svg>
 
     <script src="./assets/js/forms.js" type="module"></script>
     <script src="./assets/js/scripts.js" type="module"></script>

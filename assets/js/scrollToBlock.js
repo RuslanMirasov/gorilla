@@ -1,6 +1,8 @@
-export const scrollToBlock = (selector, duration = 800, offset = 0) => {
+export const scrollToBlock = (selector, duration = 1500, offset = -100) => {
   const element = document.querySelector(selector);
-  if (!element) return;
+  if (!element) {
+    window.location.href = `./${selector}`;
+  }
 
   const targetY = element.getBoundingClientRect().top + window.scrollY + offset;
   const startY = window.scrollY;
@@ -9,7 +11,7 @@ export const scrollToBlock = (selector, duration = 800, offset = 0) => {
   function scroll(currentTime) {
     const elapsed = currentTime - startTime;
     const progress = Math.min(elapsed / duration, 1);
-    const ease = 1 - Math.pow(1 - progress, 3); // easeOutCubic
+    const ease = progress < 0.5 ? 4 * progress * progress * progress : 1 - Math.pow(-2 * progress + 2, 3) / 2;
 
     window.scrollTo(0, startY + (targetY - startY) * ease);
 

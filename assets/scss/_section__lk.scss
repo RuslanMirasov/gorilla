@@ -87,6 +87,64 @@
   }
 }
 
+.winn-chanses {
+  display: block;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 16px 0px 60px;
+  background: url('../img/svg/winn-chance-bg.svg') no-repeat center center;
+  background-size: auto 100%;
+
+  span,
+  strong {
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+  }
+
+  span {
+    font-size: 18px;
+    line-height: 1.2;
+    font-family: var(--light);
+  }
+
+  strong {
+    font-size: 74px;
+    line-height: 0.9;
+    margin-top: 12px;
+  }
+
+  a {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1;
+    font-family: var(--medium);
+    color: var(--green-dark);
+    border-bottom: 1px solid var(--green-dark);
+  }
+}
+
+.lk-tables {
+  display: flex;
+  position: relative;
+  width: 100%;
+  max-width: 1380px;
+  margin: 0 auto;
+  margin-top: -80px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  z-index: 1;
+  .lk-tables__item {
+    text-align: center;
+    width: calc(50% - 8px);
+    overflow: hidden;
+  }
+}
+
 @media (max-width: 1279px) {
   .user-info {
     max-width: 42%;
@@ -98,6 +156,17 @@
         span {
           font-size: 20px;
         }
+      }
+    }
+  }
+  .lk-tables {
+    margin-top: 0px;
+    .lk-tables__item {
+      width: 100%;
+      margin-top: 20px;
+      padding: 0px 12px;
+      &:last-child {
+        margin-top: 50px;
       }
     }
   }

@@ -1,7 +1,8 @@
 import { Popup } from './popup-manager.js';
-import { initConnect, initSprites } from './connect.js';
+window.Popup = Popup;
 import { throttle } from './throttle.js';
 import { accordeonToggle } from './accordeon.js';
+import { scrollToBlock } from './scrollToBlock.js';
 
 const backgroundEl = document.querySelector('[data-background]');
 const faqEl = document.querySelector('[data-questions]');
@@ -15,7 +16,21 @@ const initNavigationMenu = () => {
     menu.classList.toggle('open');
   };
 
+  const closeMenu = () => {
+    burger.classList.remove('open');
+    menu.classList.remove('open');
+  };
+
+  const handleMenuClick = e => {
+    e.preventDefault();
+    if (!e.target.hasAttribute('data-scrollto')) return;
+    const target = e.target.href.split('#')[1];
+    closeMenu();
+    scrollToBlock(`#${target}`);
+  };
+
   burger.addEventListener('click', toggleMenu);
+  menu.addEventListener('click', handleMenuClick);
 };
 
 function updateOpacity() {
@@ -52,12 +67,9 @@ const hidePreloader = () => {
   }, 200);
 };
 
-initConnect().then(() => {
-  initSprites('./assets/img/svg/sprite.svg');
-  Popup.init('./components/popups.html');
-  hidePreloader();
-  initNavigationMenu();
-  updateOpacity();
-  window.addEventListener('scroll', throttle(updateOpacity, 50));
-  faqEl && faqEl.addEventListener('click', accordeonToggle);
-});
+Popup.init('./components/popups.html');
+initNavigationMenu();
+updateOpacity();
+window.addEventListener('scroll', throttle(updateOpacity, 50));
+faqEl && faqEl.addEventListener('click', accordeonToggle);
+hidePreloader();
