@@ -38,9 +38,9 @@
             <li><a href="#winners" data-scrollto class="menu__link">Победители</a></li>
             <li><a href="#buy" data-scrollto class="menu__link">Где купить</a></li>
             <li><a href="#faq" data-scrollto class="menu__link">FAQ</a></li>
-            <li><a href="./" class="menu__link">Правила акции</a></li>
+            <li><a href="#rules" data-scrollto class="menu__link">Правила акции</a></li>
             <li>
-              <a href="#about" class="button button--pink" data-scrollto>
+              <a href="#activity" data-scrollto class="button button--pink">
                 <svg class="icon" width="100" height="35"><use href="#chance-bg" /></svg>
                 <span>шансы <i>x</i>3</span>
               </a>
@@ -106,14 +106,14 @@
             <img src="./assets/img/hero/arm.webp" class="hero-image__arm" alt="" loading="lazy" />
             <img src="./assets/img/hero/animation.webp" class="hero-image__blik" alt="" loading="lazy" />
           </div>
-          <button class="scroll-down">
+          <a href="#rules" data-scrollto class="scroll-down">
             <svg class="icon" width="48" height="48"><use href="#arrow-down" /></svg>
-          </button>
+          </a>
         </div>
       </section>
 
       <!--SECTION REGISTER CHECK-->
-      <section class="section section--tutorial green-gradient">
+      <section class="section section--tutorial green-gradient" id="rules">
         <div class="container">
           <ul class="tutorial">
             <li>
@@ -157,7 +157,7 @@
       </section>
 
       <!--SECTION ACTIVATION-->
-      <section class="section section--activation">
+      <section class="section section--activation" id="activity">
         <h2 class="title title--h2">Дополнительные активации</h2>
         <div class="green-gradient">
           <div class="container">
@@ -576,8 +576,8 @@
         <ul class="footer__menu">
           <li><a href="" data-scrollto>Правила</a></li>
           <li><a href="" target="_blank">Политика конфиденциальности</a></li>
-          <li><a href="" data-scrollto>FAQ</a></li>
-          <li><a href="" data-popup-open="callback">Обратная связь</a></li>
+          <li><a href="#faq" data-scrollto>FAQ</a></li>
+          <li><a href="#faq" data-scrollto>Обратная связь</a></li>
         </ul>
       </div>
     </footer>

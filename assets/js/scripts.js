@@ -22,15 +22,16 @@ const initNavigationMenu = () => {
   };
 
   const handleMenuClick = e => {
-    e.preventDefault();
-    if (!e.target.hasAttribute('data-scrollto')) return;
-    const target = e.target.href.split('#')[1];
-    closeMenu();
-    scrollToBlock(`#${target}`);
+    if (e.target.hasAttribute('data-scrollto')) {
+      e.preventDefault();
+      const target = e.target.href.split('#')[1];
+      closeMenu();
+      scrollToBlock(`#${target}`);
+    }
   };
 
   burger.addEventListener('click', toggleMenu);
-  menu.addEventListener('click', handleMenuClick);
+  document.addEventListener('click', handleMenuClick);
 };
 
 function updateOpacity() {
