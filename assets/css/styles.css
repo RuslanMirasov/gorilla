@@ -642,6 +642,48 @@ a {
   background: linear-gradient(180deg, rgba(0, 117, 103, 0) 0%, var(--violet) 150px, var(--violet) calc(100% - 150px), rgba(0, 117, 103, 0) 100%);
 }
 
+.target {
+  display: block;
+  width: 10px;
+  height: 10px;
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+  pointer-events: none;
+  left: 0px;
+}
+.target.target--prizes {
+  top: -100px;
+}
+.target.target--winners {
+  top: -70px;
+}
+.target.target--buy {
+  top: -70px;
+}
+.target.target--faq {
+  top: -60px;
+}
+.target.target--callback-form {
+  top: -30px;
+}
+.target.target--rules {
+  top: -20px;
+}
+@media (max-width: 767px) {
+  .target.target--rules {
+    top: 60px;
+  }
+}
+.target.target--activity {
+  top: -110px;
+}
+@media (max-width: 767px) {
+  .target.target--activity {
+    top: -80px;
+  }
+}
+
 .main {
   display: block;
   position: relative;
@@ -2077,6 +2119,11 @@ body.locked {
 .section--activation .container {
   padding: 100px 0px 130px 0px;
 }
+@media (max-width: 767px) {
+  .section--activation .container {
+    padding: 60px 0px 100px 0px;
+  }
+}
 
 .scaleUp {
   -webkit-animation: scaleUp 3s linear infinite;
@@ -2348,6 +2395,11 @@ body.locked {
   margin-top: 20px;
   padding-top: clamp(90px, 6.25vw, 120px);
   padding-bottom: clamp(72px, 5.6944vw, 109px);
+}
+@media (max-width: 767px) {
+  .table-wrapper {
+    margin-top: 0px;
+  }
 }
 .table-wrapper:before {
   content: "";
@@ -2720,8 +2772,8 @@ body.locked {
 }
 
 .section--buy {
-  padding-top: clamp(50px, 3.4722vw, 50px);
-  padding-bottom: clamp(0px, 3.4722vw, 50px);
+  padding-top: clamp(40px, 3.4722vw, 50px);
+  padding-bottom: clamp(50px, 3.4722vw, 50px);
 }
 
 .buy {
@@ -2742,7 +2794,7 @@ body.locked {
 }
 @media (max-width: 767px) {
   .buy {
-    margin-top: 30px;
+    margin-top: 50px;
     padding-top: 20px;
     transform: translate(0px, 0px);
   }
@@ -2869,7 +2921,7 @@ body.locked {
   font-size: 16px;
   line-height: 1.4;
   display: block;
-  padding: 0px 0px 6px 44px;
+  padding: 0px 0px 6px 40px;
 }
 .accordeon__answer ul li {
   font-size: 14px;

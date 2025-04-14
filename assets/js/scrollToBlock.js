@@ -1,4 +1,4 @@
-export const scrollToBlock = (selector, offset = -100) => {
+export const scrollToBlock = (selector, offset = 0) => {
   const element = document.querySelector(selector);
   if (!element) {
     window.location.href = `./${selector}`;

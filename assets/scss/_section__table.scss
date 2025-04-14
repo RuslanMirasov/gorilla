@@ -10,6 +10,10 @@
   padding-top: myclamp(90px, 90px, 1440px, 1920px);
   padding-bottom: myclamp(72px, 82px, 1440px, 1920px);
 
+  @media (max-width: 767px) {
+    margin-top: 0px;
+  }
+
   &:before {
     content: '';
     position: absolute;

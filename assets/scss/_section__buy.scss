@@ -1,6 +1,6 @@
 .section--buy {
-  padding-top: myclamp(50px, 50px, 1440px, 1440px);
-  padding-bottom: myclamp(0px, 50px, 1440px, 1440px);
+  padding-top: myclamp(40px, 50px, 1440px, 1440px);
+  padding-bottom: myclamp(50px, 50px, 1440px, 1440px);
 }
 
 .buy {
@@ -19,7 +19,7 @@
   background-position: 50px center;
   padding-right: 20px;
   @media (max-width: 767px) {
-    margin-top: 30px;
+    margin-top: 50px;
     padding-top: 20px;
     transform: translate(0px, 0px);
   }

@@ -124,3 +124,41 @@ a {
 .violet-gradient {
   background: linear-gradient(180deg, rgba(0, 117, 103, 0) 0%, var(--violet) 150px, var(--violet) calc(100% - 150px), rgba(0, 117, 103, 0) 100%);
 }
+
+.target {
+  display: block;
+  width: 10px;
+  height: 10px;
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+  pointer-events: none;
+  left: 0px;
+  &.target--prizes {
+    top: -100px;
+  }
+  &.target--winners {
+    top: -70px;
+  }
+  &.target--buy {
+    top: -70px;
+  }
+  &.target--faq {
+    top: -60px;
+  }
+  &.target--callback-form {
+    top: -30px;
+  }
+  &.target--rules {
+    top: -20px;
+    @media (max-width: 767px) {
+      top: 60px;
+    }
+  }
+  &.target--activity {
+    top: -110px;
+    @media (max-width: 767px) {
+      top: -80px;
+    }
+  }
+}
