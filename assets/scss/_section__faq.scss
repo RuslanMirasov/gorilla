@@ -84,7 +84,24 @@
     font-size: 16px;
     line-height: 1.4;
     display: block;
-    padding: 8px 30px 20px 30px;
+    padding: 8px 0px 20px 30px;
+  }
+  ul {
+    font-size: 16px;
+    line-height: 1.4;
+    display: block;
+    padding: 0px 0px 6px 44px;
+    li {
+      font-size: 14px;
+      padding: 4px 0px;
+      list-style: disc;
+    }
+    &.small {
+      li {
+        font-size: 12px;
+        padding: 1px 0px;
+      }
+    }
   }
 }
 

@@ -1,22 +1,24 @@
 const showErrors = true;
 const labelsForFile = document.querySelectorAll('.label-for-file');
 const inputsFile = document.querySelectorAll('.input-file');
+const showPasswordButtons = document.querySelectorAll('[data-password-btn]');
 
 const validationRegEx = [
   {
     type: 'tel',
     regex: /^\+7\s\d{3}\s\d{3}-\d{2}-\d{2}$/,
-    error: 'Не верный формат телефона!',
+    error: 'Не верный формат!',
   },
   {
     type: 'email',
     regex: /^[\w.-]+@[a-zA-Z\d.-]+\.[a-zA-Z]{2,}$/,
-    error: 'Не верный формат Email',
+    error: 'Не верный формат!',
   },
   {
     type: 'password',
-    regex: /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/,
-    error: 'Пароль должен содержать минимум 6 символов, включая буквы и цифры',
+    name: 'password',
+    regex: /^(?=.*[A-Za-z])(?=.*\d).{6,}$/,
+    error: 'Не верный формат!',
   },
   {
     type: 'url',
@@ -35,6 +37,16 @@ const validationRegEx = [
     type: 'file',
     error: 'Фото не выбрано!',
   },
+  {
+    name: 'name',
+    regex: /^[a-zA-Zа-яА-ЯёЁіІїЇєЄґҐ\s\-]+$/,
+    error: 'Не верный формат!',
+  },
+  {
+    name: 'sername',
+    regex: /^[a-zA-Zа-яА-ЯёЁіІїЇєЄґҐ\s\-]+$/,
+    error: 'Не верный формат!',
+  },
 ];
 
 const validateInput = input => {
@@ -45,7 +57,10 @@ const validateInput = input => {
     return false;
   };
 
-  const { value, checked, type, files } = input;
+  const { name, value, checked, type, files } = input;
+
+  console.log(name);
+  console.log('----------------------');
 
   if (type === 'file') {
     const errorEl = input.closest('.label-for-file').querySelector('.label__text');
@@ -75,13 +90,23 @@ const validateInput = input => {
     return validationError('Это обязательное поле!');
   }
 
-  const validation = validationRegEx.find(v => v.type === type);
+  const typeValidation = validationRegEx.find(v => v.type === type);
 
-  if (validation) {
-    const regex = new RegExp(validation.regex);
+  if (typeValidation) {
+    const regex = new RegExp(typeValidation.regex);
 
     if (!regex.test(value.trim())) {
-      return validationError(validation.error);
+      return validationError(typeValidation.error);
+    }
+  }
+
+  const nameValidation = validationRegEx.find(v => v.name === name);
+
+  if (nameValidation) {
+    const regex = new RegExp(nameValidation.regex);
+
+    if (!regex.test(value.trim())) {
+      return validationError(nameValidation.error);
     }
   }
 
@@ -150,21 +175,6 @@ const onRequiredInputFocus = e => {
     error.remove();
   }
 };
-
-document.addEventListener(
-  'submit',
-  function (event) {
-    const form = event.target;
-    if (form.tagName.toLowerCase() !== 'form') return;
-
-    const isValid = validateForm(form);
-    if (!isValid) {
-      event.preventDefault();
-      event.stopImmediatePropagation();
-    }
-  },
-  true
-);
 
 document.addEventListener('focusin', e => {
   if (e.target.matches('[required]')) {
@@ -356,3 +366,36 @@ Object.entries(telHandlers).forEach(([eventName, handler]) => {
     true
   );
 });
+
+// SHOW PASSWORD BUTTONS
+const handlePasswordButtonClick = e => {
+  const btn = e.target;
+  const passwordInput = btn.closest('label').querySelector('.input');
+  if (passwordInput.type === 'password') {
+    passwordInput.type = 'text';
+    btn.innerHTML = `<svg width="36" height="36"><use href="#password" /></svg>`;
+    return;
+  }
+  passwordInput.type = 'password';
+  btn.innerHTML = `<svg width="36" height="36"><use href="#password-lock" /></svg>`;
+};
+
+if (showPasswordButtons.length > 0) {
+  showPasswordButtons.forEach(btn => btn.addEventListener('click', handlePasswordButtonClick));
+}
+
+// SUBMIT MIDDLEWARE
+document.addEventListener(
+  'submit',
+  function (event) {
+    const form = event.target;
+    if (form.tagName.toLowerCase() !== 'form') return;
+
+    const isValid = validateForm(form);
+    if (!isValid) {
+      event.preventDefault();
+      event.stopImmediatePropagation();
+    }
+  },
+  true
+);

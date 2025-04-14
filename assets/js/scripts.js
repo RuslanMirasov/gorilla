@@ -1,5 +1,5 @@
-import { Popup } from './popup-manager.js';
-window.Popup = Popup;
+// import { Popup } from './popup-manager.js';
+import { popup } from './popup.js';
 import { throttle } from './throttle.js';
 import { accordeonToggle } from './accordeon.js';
 import { scrollToBlock } from './scrollToBlock.js';
@@ -68,7 +68,8 @@ const hidePreloader = () => {
   }, 200);
 };
 
-Popup.init('./components/popups.html');
+popup.init();
+window.popup = popup;
 initNavigationMenu();
 updateOpacity();
 window.addEventListener('scroll', throttle(updateOpacity, 50));

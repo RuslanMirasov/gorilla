@@ -22,7 +22,7 @@
   width: 40px;
   height: 40px;
   right: 0px;
-  top: 0px;
+  bottom: 0px;
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -33,6 +33,15 @@
   svg {
     width: 35%;
     height: auto;
+    pointer-events: none;
+  }
+
+  &.full {
+    right: 4px;
+    svg {
+      width: 100%;
+      height: auto;
+    }
   }
 }
 
@@ -69,6 +78,9 @@ span.input-icon {
     border: 1px solid var(--invalid);
     color: var(--invalid);
     + .input-icon {
+      color: var(--invalid);
+    }
+    &::placeholder {
       color: var(--invalid);
     }
   }

@@ -34,7 +34,6 @@
         <nav class="navigation">
           <ul class="menu">
             <li><a href="#prizes" data-scrollto class="menu__link">Призы</a></li>
-            <li><a href="./" class="menu__link">Продукция</a></li>
             <li><a href="#winners" data-scrollto class="menu__link">Победители</a></li>
             <li><a href="#buy" data-scrollto class="menu__link">Где купить</a></li>
             <li><a href="#faq" data-scrollto class="menu__link">FAQ</a></li>
@@ -315,7 +314,7 @@
       <div class="container">
         <h2 class="title title--h6">Copyright &copy; 2025 Gorilla Energy</h2>
         <ul class="footer__menu">
-          <li><a href="" data-scrollto>Правила</a></li>
+          <li><a href="" target="_blank">Правила</a></li>
           <li><a href="" target="_blank">Политика конфиденциальности</a></li>
           <li><a href="#faq" data-scrollto>FAQ</a></li>
           <li><a href="#faq" data-scrollto>Обратная связь</a></li>
@@ -325,7 +324,231 @@
 
     <!--POPUP-->
     <div class="backdrop" data-backdrop>
-      <div class="popup" data-popup></div>
+      <div class="popup" data-popup>
+        <!--LOGIN POPUP-->
+        <div class="popup-content" id="login">
+          <button class="popup-close" data-popup-close></button>
+          <h2 class="popup-title">Авторизация</h2>
+          <form action="#" method="POST" class="form" novalidate>
+            <label class="label">
+              <span data-label>Email*</span>
+              <input type="email" name="email" class="input" required />
+            </label>
+            <label class="label">
+              <span data-label>Пароль*</span>
+              <input type="password" name="password" class="input" required />
+              <button type="button" class="input-icon full" data-password-btn>
+                <svg width="36" height="36"><use href="#password-lock" /></svg>
+              </button>
+            </label>
+            <button type="submit" class="button button--violet submit">
+              <span>Войти</span>
+            </button>
+          </form>
+          <div class="popup-links">
+            <a href="#" data-popup-open="password-recovery">Забыли пароль?</a>
+            <a href="#" data-popup-open="registration">Регистрация</a>
+          </div>
+        </div>
+
+        <script>
+          function recoveryPassword(e) {
+            e.preventDefault();
+            popup.open('password-recovery-success');
+          }
+        </script>
+
+        <!--PASSWORD RECOVERY POPUP-->
+        <div class="popup-content" id="password-recovery">
+          <button class="popup-close" data-popup-close></button>
+          <h2 class="popup-title">Восстановите <br />пароль</h2>
+          <form action="#" method="POST" class="form" novalidate onsubmit="recoveryPassword(event)">
+            <label class="label">
+              <span data-label>Email указанный при регистрации*</span>
+              <input type="email" name="email" class="input" required />
+            </label>
+            <button type="submit" class="button button--violet submit">
+              <span>Восстановить</span>
+            </button>
+          </form>
+          <div class="popup-links">
+            <a href="#" data-popup-open="login">Авторизация</a>
+          </div>
+        </div>
+
+        <!--PASSWORD RECOVERY SUCCESS POPUP-->
+        <div class="popup-content" id="password-recovery-success">
+          <button class="popup-close" data-popup-close></button>
+          <h2 class="popup-title">Восстановите <br />пароль</h2>
+          <p class="popup-subtitle no-margin">Отправили письмо с инструкцией <br />по восстановлению пароля</p>
+          <button type="button" class="button button--violet submit" data-popup-close>
+            <span>Продолжить</span>
+          </button>
+        </div>
+
+        <!--REGISTRATION POPUP-->
+        <div class="popup-content" id="registration">
+          <button class="popup-close" data-popup-close></button>
+          <h2 class="popup-title">Регистрация</h2>
+          <form action="#" method="POST" class="form" novalidate>
+            <label class="label">
+              <span data-label>Фамилия*</span>
+              <input type="text" name="sername" class="input" required />
+            </label>
+            <label class="label">
+              <span data-label>Имя*</span>
+              <input type="text" name="name" class="input" required />
+            </label>
+            <label class="label">
+              <span data-label>Дата рождения</span>
+              <input type="date" name="birthday" class="input" />
+            </label>
+            <label class="label">
+              <span data-label>E-mail*</span>
+              <input type="email" name="email" class="input" required />
+            </label>
+            <label class="label">
+              <span data-label>Телефон*</span>
+              <input type="tel" name="phone" class="input" required />
+            </label>
+            <label>
+              <input type="checkbox" name="rules" class="checkbox" required />
+              <span class="agree__text">
+                Я ознакомился с&nbsp;<a href="#" target="_blank">Правилами акции</a>, <a href="#" target="_blank">Пользовательским соглашением</a> и
+                даю своё согласие на обработку персональных данных
+              </span>
+            </label>
+            <label>
+              <input type="checkbox" name="agree" class="checkbox" required />
+              <span class="agree__text">
+                Я даю согласие на получение <br />рекламной рассылки (в т.ч. в виде <br />смс, электронных писем и/или <br />через мессенджеры)</span
+              >
+            </label>
+            <button type="submit" class="button button--violet submit">
+              <span>Зарегистрироваться</span>
+            </button>
+          </form>
+          <div class="popup-links">
+            <a href="#" data-popup-open="login">Авторизация</a>
+          </div>
+        </div>
+
+        <!--REGISTRATION CHECK POPUP-->
+        <div class="popup-content" id="register-check">
+          <button class="popup-close" data-popup-close></button>
+          <h2 class="popup-title">Загрузка чека</h2>
+          <ul class="register-check-list">
+            <li>
+              <img src="./assets/img/svg/register-check-list-1.svg" alt="Gorilla energy drink" />
+              <span>Нажми «Загрузить»</span>
+            </li>
+            <li>
+              <img src="./assets/img/svg/register-check-list-2.svg" alt="Gorilla energy drink" />
+              <span>Выбери фото чека</span>
+            </li>
+            <li>
+              <img src="./assets/img/svg/register-check-list-3.svg" alt="Gorilla energy drink" />
+              <span>Фото чека должно быть:</span>
+              <ul>
+                <li>чётким</li>
+                <li>с полным списком продуктов</li>
+                <li>на фото должен быть QR код</li>
+              </ul>
+            </li>
+            <li>
+              <img src="./assets/img/svg/register-check-list-4.svg" alt="Gorilla energy drink" />
+              <span>Если фото окажется плохого качества, чек принят не будет</span>
+            </li>
+          </ul>
+          <div class="example">
+            <img src="./assets/img/check.webp" alt="Gorilla energy drink" />
+            <span>Пример чека</span>
+          </div>
+
+          <button type="button" class="button button--violet submit" data-popup-open="load-cheque">
+            <span>Загрузить</span>
+          </button>
+          <div class="popup-links">
+            <a href="#" data-popup-open="self-cheque-in">Ввести данные чека вручную</a>
+          </div>
+        </div>
+
+        <!--LOAD CHECK POPUP-->
+        <script>
+          function loadCheque(e) {
+            e.preventDefault();
+            popup.open('load-cheque-success');
+          }
+        </script>
+
+        <div class="popup-content" id="load-cheque">
+          <button class="popup-close" data-popup-close></button>
+          <h2 class="popup-title">Загрузка чека</h2>
+          <form class="form" enctype="multipart/form-data" novalidate onsubmit="loadCheque(event)">
+            <div class="download-file">
+              <label class="label-for-file">
+                <input type="file" name="cheque" class="input input-file" required />
+                <img src="./assets/img/svg/plus.svg" alt="Алёнка" />
+                <p class="label__text" data-text="Перетащите фото чека или нажмите для выбора">Перетащите фото чека или нажмите для выбора</p>
+              </label>
+            </div>
+            <button type="submit" class="button button--violet submit">
+              <span>Загрузить</span>
+            </button>
+          </form>
+          <div class="popup-links">
+            <a href="#" data-popup-open="self-cheque-in">Ввести данные чека вручную</a>
+          </div>
+        </div>
+
+        <div class="popup-content" id="load-cheque-success">
+          <button class="popup-close" data-popup-close></button>
+          <h2 class="popup-title">Чек загружен</h2>
+          <p class="popup-subtitle no-margin">Твой чек загружен успешно. <br />Следи за его статусом в своём <br />личном кабинете.</p>
+          <button type="button" class="button button--violet submit" data-popup-close>
+            <span>Закрыть</span>
+          </button>
+        </div>
+
+        <!--REGISTRATION CHECK YOURSELF POPUP-->
+        <div class="popup-content" id="self-cheque-in">
+          <button class="popup-close" data-popup-close></button>
+          <h2 class="popup-title">Ввод данных чека</h2>
+          <p class="popup-subtitle">Внимательно введи <br />данные чека в поля ниже</p>
+          <form action="#" method="POST" class="form" novalidate onsubmit="loadCheque(event)">
+            <label class="label">
+              <span data-label>ФН*</span>
+              <input type="text" name="fn" class="input" required />
+            </label>
+            <label class="label">
+              <span data-label>ФД*</span>
+              <input type="text" name="fd" class="input" required />
+            </label>
+            <label class="label">
+              <span data-label>ФП*</span>
+              <input type="text" name="fp" class="input" required />
+            </label>
+            <label class="label">
+              <span data-label>Дата покупки*</span>
+              <input type="date" name="buydate" class="input" required />
+            </label>
+            <label class="label">
+              <span data-label>Время покупки*</span>
+              <input type="time" name="time" class="input" required />
+            </label>
+            <label class="label">
+              <span data-label>Сумма покупки*</span>
+              <input type="number" name="sum" class="input" required />
+            </label>
+            <button type="submit" class="button button--violet submit">
+              <span>Отправить чек</span>
+            </button>
+          </form>
+          <div class="popup-links">
+            <a href="#" data-popup-open="load-cheque">Попробовать снова загрузить фото</a>
+          </div>
+        </div>
+      </div>
     </div>
 
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
@@ -466,6 +689,37 @@
           d="M83.8802 53.3851L77.4411 50.1671L85.2431 41.2926L89.6076 16.4828L69.2915 0L44.6771 13.9117L51.5024 47.6789L55.9166 50.709L45.124 54.4689L35.1921 62.807L30 82.5134L34.6514 89.9945H98.7063L103.297 82.5742L93.5803 57.2667L83.8747 53.3796L83.8802 53.3851ZM63.5089 44.0296L55.5414 39.938L78.2136 37.8921L71.8793 44.0351H63.5034L63.5089 44.0296Z"
           fill="#007567"
         />
+      </symbol>
+
+      <symbol id="password" viewBox="0 0 36 36" fill="none" preserveAspectRatio="none">
+        <path
+          d="M23.7143 14.1575C22.881 13.5622 20.2143 12.3004 17.6429 12.0146C15.0714 11.7289 10.1429 15.7051 8 17.7289C9.42857 20.8718 15.1429 22.8479 17.6429 23.4432L24.0714 21.3003L27.6429 17.7289L23.7143 14.1575Z"
+          fill="#000000"
+        />
+        <path d="M8 17.7289C11.046 13.4168 19.3103 7.37981 28 17.7289" stroke="#000000" stroke-width="1.71394" stroke-linecap="round" />
+        <path d="M8 17.7291C11.046 22.0412 19.3103 28.0782 28 17.7291" stroke="#000000" stroke-width="1.71394" stroke-linecap="round" />
+        <path
+          d="M21.3353 18.0863C21.3353 19.6552 19.9213 21.0649 17.9996 21.0649C16.0778 21.0649 14.6639 19.6552 14.6639 18.0863C14.6639 16.5174 16.0778 15.1077 17.9996 15.1077C19.9213 15.1077 21.3353 16.5174 21.3353 18.0863Z"
+          fill="#000000"
+          stroke="white"
+          stroke-width="1.9"
+        />
+      </symbol>
+
+      <symbol id="password-lock" viewBox="0 0 36 36" fill="none" preserveAspectRatio="none">
+        <path
+          d="M23.7143 14.1575C22.881 13.5622 20.2143 12.3004 17.6429 12.0146C15.0714 11.7289 10.1429 15.7051 8 17.7289C9.42857 20.8718 15.1429 22.8479 17.6429 23.4432L24.0714 21.3003L27.6429 17.7289L23.7143 14.1575Z"
+          fill="#000000"
+        />
+        <path d="M8 17.7289C11.046 13.4168 19.3103 7.37981 28 17.7289" stroke="#000000" stroke-width="1.71394" stroke-linecap="round" />
+        <path d="M8 17.7291C11.046 22.0412 19.3103 28.0782 28 17.7291" stroke="#000000" stroke-width="1.71394" stroke-linecap="round" />
+        <path
+          d="M21.3353 18.0863C21.3353 19.6552 19.9213 21.0649 17.9996 21.0649C16.0778 21.0649 14.6639 19.6552 14.6639 18.0863C14.6639 16.5174 16.0778 15.1077 17.9996 15.1077C19.9213 15.1077 21.3353 16.5174 21.3353 18.0863Z"
+          fill="#000000"
+          stroke="white"
+          stroke-width="1.9"
+        />
+        <path d="M11 11L25 24" stroke="#000000" stroke-width="2" stroke-linecap="round" />
       </symbol>
     </svg>
 
