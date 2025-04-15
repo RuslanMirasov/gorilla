@@ -17,8 +17,7 @@
   &:before {
     content: '';
     position: absolute;
-    width: calc(100% + 150px);
-    min-width: 1690px;
+    width: 1690px;
     height: 100%;
     left: 50%;
     transform: translate(-50%, 0%);
@@ -58,7 +57,7 @@
       top: 0px;
       left: 50%;
       transform: translate(-50%, 0%);
-      width: 50000px;
+      width: 1440px;
       height: 100%;
       z-index: -1;
     }
