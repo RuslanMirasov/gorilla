@@ -4,8 +4,14 @@ import { throttle } from './throttle.js';
 import { accordeonToggle } from './accordeon.js';
 import { scrollToBlock } from './scrollToBlock.js';
 
+const animatedElements = document.querySelectorAll('[data-animate]');
 const backgroundEl = document.querySelector('[data-background]');
 const faqEl = document.querySelector('[data-questions]');
+
+const initAnimations = () => {
+  if (animatedElements.length === 0) return;
+  animatedElements.forEach(anim => anim.classList.add('animate'));
+};
 
 const initNavigationMenu = () => {
   const burger = document.querySelector('.burger');
@@ -74,4 +80,8 @@ initNavigationMenu();
 updateOpacity();
 window.addEventListener('scroll', throttle(updateOpacity, 50));
 faqEl && faqEl.addEventListener('click', accordeonToggle);
-hidePreloader();
+
+window.addEventListener('load', () => {
+  hidePreloader();
+  initAnimations();
+});

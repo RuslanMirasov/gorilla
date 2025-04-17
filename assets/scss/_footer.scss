@@ -27,21 +27,23 @@
   }
 
   &:after {
-    background: url('../img/svg/footer-bg.svg') no-repeat right top;
-    mask-size: contain;
+    background: url('../img/svg/footer-bg.svg') no-repeat center center;
+    background-size: 1650px 100%;
   }
   &:before {
     backdrop-filter: blur(10px);
-    mask: url('../img/svg/footer-mask.svg') no-repeat right top;
-    mask-size: contain;
+    mask: url('../img/svg/footer-mask.svg') no-repeat center center;
+    mask-size: 1650px 100%;
   }
 
   @media (max-width: 1279px) {
     &:after {
-      background: url('../img/svg/footer-bg-mobil.svg') no-repeat right top;
+      background: url('../img/svg/footer-bg-mobil.svg') no-repeat center center;
+      background-size: 1650px 100%;
     }
     &:before {
-      mask: url('../img/svg/footer-mask-mobil.svg') no-repeat right top;
+      mask: url('../img/svg/footer-mask-mobil.svg') no-repeat center center;
+      mask-size: 1650px 100%;
     }
   }
 }

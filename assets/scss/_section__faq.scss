@@ -40,12 +40,12 @@
 
   &:after {
     background: url('../img/svg/faq-bg.svg') no-repeat right top;
-    mask-size: contain;
+    background-size: 100% 100%;
   }
   &:before {
     backdrop-filter: blur(10px);
     mask: url('../img/svg/faq-mask.svg') no-repeat right top;
-    mask-size: contain;
+    mask-size: 100% 100%;
   }
 }
 
@@ -166,12 +166,12 @@
 
   &:after {
     background: url('../img/svg/callback-bg.svg') no-repeat left top;
-    background-size: contain;
+    background-size: 100% 100%;
   }
   &:before {
     backdrop-filter: blur(10px);
     mask: url('../img/svg/callback-mask.svg') no-repeat left top;
-    mask-size: contain;
+    mask-size: 100% 100%;
   }
 }
 
@@ -202,9 +202,11 @@
     }
     &:after {
       background: url('../img/svg/faq-bg-mobil.svg') no-repeat right top;
+      background-size: 100% 100%;
     }
     &:before {
       mask: url('../img/svg/faq-mask-mobil.svg') no-repeat right top;
+      mask-size: 100% 100%;
     }
   }
 
@@ -227,9 +229,11 @@
     }
     &:after {
       background: url('../img/svg/callback-bg-mobil.svg') no-repeat left top;
+      background-size: 100% 100%;
     }
     &:before {
       mask: url('../img/svg/callback-mask-mobil.svg') no-repeat left top;
+      mask-size: 100% 100%;
     }
   }
 }

@@ -182,7 +182,15 @@ input[type='search']::-webkit-search-results-decoration {
 
 /* Firefox */
 input[type='search'] {
-  appearance: textfield; /* сброс типа "search" до обычного input */
+  appearance: textfield;
+}
+
+input[type='search'] {
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 select.open + .input-icon {

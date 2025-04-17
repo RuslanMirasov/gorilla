@@ -78,6 +78,12 @@
         line-height: 1.1;
         padding-bottom: 12px;
       }
+      &:first-child {
+        svg {
+          position: relative;
+          transform: rotate(8deg);
+        }
+      }
       &:last-child {
         span {
           text-align: right;
@@ -164,7 +170,6 @@
     .lk-tables__item {
       width: 100%;
       margin-top: 20px;
-      padding: 0px 12px;
       &:last-child {
         margin-top: 50px;
       }

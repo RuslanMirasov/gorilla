@@ -77,11 +77,16 @@
 
     &.shoes {
       &:first-child {
-        animation: rotateRightLeft 2.5s linear infinite;
+        &.animate {
+          animation: rotateRightLeft 2.5s linear infinite;
+        }
       }
       &:last-child {
         top: 10px;
-        animation: rotateLeftRight 2.5s linear infinite;
+
+        &.animate {
+          animation: rotateLeftRight 2.5s linear infinite;
+        }
       }
     }
   }
@@ -145,9 +150,13 @@
   .prize__sub {
     width: 100%;
     .title.title--h3 {
-      font-size: 18px;
+      font-size: 24px;
+      line-height: 1.2;
       br {
         display: none;
+        &.keep {
+          display: block;
+        }
       }
     }
   }

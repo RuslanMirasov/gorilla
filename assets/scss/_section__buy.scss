@@ -17,6 +17,7 @@
   transform: translate(25px, 0px);
   background: url('../img/svg/buy-bg.svg') no-repeat center center;
   background-position: 50px center;
+  background-size: calc(100% - 50px) 100%;
   padding-right: 20px;
   @media (max-width: 767px) {
     margin-top: 50px;

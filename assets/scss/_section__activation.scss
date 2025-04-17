@@ -10,7 +10,9 @@
 }
 
 .scaleUp {
-  animation: scaleUp 3s linear infinite;
+  &.animate {
+    animation: scaleUp 3s linear infinite;
+  }
 }
 
 .info {
@@ -94,5 +96,8 @@
         transform: translate(-100%, 0px);
       }
     }
+  }
+  @media (max-width: 415px) {
+    right: -4px;
   }
 }

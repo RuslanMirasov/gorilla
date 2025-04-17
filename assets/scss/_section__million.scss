@@ -6,7 +6,6 @@
   background-size: 100% 100%;
   padding: 80px 0px 60px 0px;
 
-  // &:before,
   &:after {
     content: '';
     position: absolute;
@@ -23,20 +22,29 @@
     background: url('../img/svg/million-bg.svg') no-repeat left top;
     background-size: contain;
   }
-  // &:before {
-  //   backdrop-filter: blur(10px);
-  //   mask: url('../img/svg/million-mask.svg') no-repeat left top;
-  //   mask-size: contain;
-  // }
 
   img {
     position: relative;
     max-width: myclamp(320px, 800px, 1440px, 1440px);
     margin: 26px auto;
-    animation: spring-bounce 2s ease-out infinite;
+
+    &.animate {
+      animation: spring-bounce 2s ease-out infinite;
+    }
+  }
+
+  .title.title--h4 {
+    font-size: 32px;
   }
 
   @media (max-width: 767px) {
     padding: 60px 0px 40px 0px;
+  }
+
+  @media (max-width: 500px) {
+    img {
+      position: relative;
+      max-width: 100%;
+    }
   }
 }

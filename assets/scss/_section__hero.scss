@@ -66,12 +66,21 @@
       justify-content: center;
       align-items: center;
       align-content: center;
+      text-align: left;
       padding: 58px 36px 36px 46px;
       @media (max-width: 1023px) {
         padding: 30px 26px 24px 30px;
         position: absolute;
         bottom: 140px;
         right: 10px;
+      }
+      @media (max-width: 500px) {
+        right: -30px;
+        font-size: 18px;
+        padding-right: 40px;
+        padding-left: 32px;
+        line-height: 1.2;
+        bottom: 130px;
       }
       margin-top: -50px;
       margin-left: auto;
@@ -98,6 +107,21 @@
   left: 50%;
   margin-left: myclamp(-190px, -400px, 1440px, 1440px);
   width: 800px; //450 800
+  .lightnings {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+    @media (max-width: 767px) {
+      transform: rotate(10deg);
+      bottom: 5%;
+      right: 2%;
+    }
+  }
   @media (max-width: 1439px) {
     margin-left: myclamp(-190px, -450px, 1440px, 1440px);
   }
@@ -123,27 +147,42 @@
   z-index: 0;
   img {
     position: absolute;
+    will-change: transform;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
     &.hero-image__arm,
     &.hero-image__arm_shadow {
       transform-origin: center center;
-      animation: rotateLeftRight 2.8s linear infinite;
+      &.animate {
+        animation: rotateLeftRight 2.8s linear infinite;
+      }
     }
     &.hero-image__lightning1 {
-      animation: diagonalBounce 2s ease-in-out infinite;
+      &.animate {
+        animation: diagonalBounce 2s cubic-bezier(1, -0.25, 0.6, 1.93) infinite;
+      }
     }
     &.hero-image__lightning2 {
-      animation: diagonalBounce2 2s ease-in-out infinite;
+      &.animate {
+        animation: diagonalBounce2 2s cubic-bezier(1, -0.25, 0.6, 1.93) infinite;
+      }
     }
     &.hero-image__lightning3 {
-      animation: diagonalBounce3 2s ease-in-out infinite;
+      &.animate {
+        animation: diagonalBounce3 2s cubic-bezier(1, -0.25, 0.6, 1.93) infinite;
+      }
     }
     &.hero-image__lightning4 {
-      animation: diagonalBounce4 2s ease-in-out infinite;
+      &.animate {
+        animation: diagonalBounce4 2s cubic-bezier(1, -0.25, 0.6, 1.93) infinite;
+      }
     }
     &.hero-image__blik {
       width: 40%;
       top: 10%;
-      animation: blick 2.8s linear infinite;
+      &.animate {
+        animation: blick 2.8s linear infinite;
+      }
     }
   }
   &:before {
@@ -165,7 +204,9 @@
   top: 85vh;
   transition: color 0.3s;
   color: var(--violet);
-  animation: scrollDown 1.5s linear infinite;
+  &.animate {
+    animation: scrollDown 1.5s linear infinite;
+  }
   &:hover {
     color: var(--pink);
   }

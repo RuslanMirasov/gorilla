@@ -150,9 +150,9 @@ a {
     top: -30px;
   }
   &.target--rules {
-    top: -20px;
+    top: 30px;
     @media (max-width: 767px) {
-      top: 60px;
+      top: 30px;
     }
   }
   &.target--activity {
