@@ -1068,9 +1068,9 @@ a {
 }
 @media (max-width: 767px) {
   .title.title--h2 {
-    padding: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    padding: 14px 20px 10px 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (max-width: 374px) {
@@ -2264,6 +2264,15 @@ body.locked {
   justify-content: space-around;
   align-items: flex-start;
 }
+.section--prizes .container .title.title--h3 {
+  line-height: 1.2;
+}
+@media (max-width: 1279px) {
+  .section--prizes .container .title.title--h6 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+}
 
 .prize {
   display: flex;
@@ -2300,6 +2309,11 @@ body.locked {
   font-family: var(--bold);
   text-transform: uppercase;
   background: var(--pink);
+}
+@media (max-width: 767px) {
+  .prize__description span {
+    margin-top: 0px;
+  }
 }
 
 .prize__image {
@@ -2362,7 +2376,7 @@ body.locked {
 }
 @media (max-width: 767px) {
   .section--prizes {
-    padding: 50px 0px 50px 0px;
+    padding: 50px 0px 150px 0px;
   }
   .prize.prize--main {
     width: 100%;
@@ -2401,6 +2415,11 @@ body.locked {
 .section--table {
   padding: 40px 0px;
   overflow: hidden;
+}
+@media (max-width: 767px) {
+  .section--table {
+    margin-top: -30px;
+  }
 }
 
 .table-wrapper {
@@ -2915,7 +2934,14 @@ body.locked {
 }
 @media (max-width: 450px) {
   .section--faq .title.title--h2 {
-    max-width: 290px;
+    max-width: 320px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+    margin-bottom: -30px;
+    background: url("../img/svg/faq-title-mobil.svg") no-repeat center center;
+    background-size: 100% 100%;
   }
 }
 
