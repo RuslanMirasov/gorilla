@@ -15,6 +15,13 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  overscroll-behavior: none;
+  touch-action: manipulation;
+  -webkit-overflow-scrolling: auto;
+}
+
 html {
   height: 100%;
 }
@@ -33,25 +40,31 @@ body {
 
 .background {
   position: fixed;
-  left: 0px;
+  right: 0px;
   top: 0px;
-  width: 100%;
+  left: 0px;
+  bottom: 0px;
+  background: url('../img/svg/bg.svg') no-repeat center top;
+  background-size: 100% auto;
+
+  @media (max-width: 1110px) {
+    background: url('../img/svg/bg-mobil.svg') no-repeat center top;
+    background-size: 1110px auto;
+  }
+
   height: 100vh;
+  @supports (height: 100dvh) {
+    height: 100dvh;
+  }
+
+  transform: translateZ(0); /* 👉 включает GPU-рендер */
+  will-change: transform; /* 👉 заставляет браузер пересчитывать каждый кадр */
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+
   z-index: 0;
   overflow: hidden;
-
-  img {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: auto;
-    opacity: 1;
-    @media (max-width: 1199px) {
-      height: 100%;
-      object-fit: cover;
-    }
-  }
 }
 
 img {

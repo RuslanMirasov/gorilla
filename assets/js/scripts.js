@@ -43,23 +43,19 @@ const initNavigationMenu = () => {
 function updateOpacity() {
   const scrollY = window.scrollY;
   const windowHeight = window.innerHeight;
-  const docHeight = document.documentElement.scrollHeight;
 
-  const fadeOutStart = windowHeight;
-  const fadeOutEnd = fadeOutStart + windowHeight;
-  const fadeInStart = docHeight - windowHeight * 3;
-  const fadeInEnd = docHeight - windowHeight;
+  const fadeStart = 200;
+  const fadeEnd = fadeStart + windowHeight; // на протяжении одного экрана
 
-  let opacity = 0.3;
+  let opacity = 1;
 
-  if (scrollY < fadeOutStart || scrollY >= fadeInEnd) {
+  if (scrollY <= fadeStart) {
     opacity = 1;
-  } else if (scrollY < fadeOutEnd) {
-    const progress = (scrollY - fadeOutStart) / windowHeight;
-    opacity = 1 - progress * 0.9;
-  } else if (scrollY >= fadeInStart && scrollY < fadeInEnd) {
-    const progress = (scrollY - fadeInStart) / (windowHeight * 2);
-    opacity = 0.1 + progress * 0.9;
+  } else if (scrollY > fadeStart && scrollY < fadeEnd) {
+    const progress = (scrollY - fadeStart) / (fadeEnd - fadeStart);
+    opacity = 1 - progress * 0.7; // до 0.3
+  } else {
+    opacity = 0.3;
   }
 
   backgroundEl.style.opacity = opacity.toFixed(2);

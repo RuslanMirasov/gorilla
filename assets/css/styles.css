@@ -450,6 +450,14 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  -ms-scroll-chaining: none;
+      overscroll-behavior: none;
+  touch-action: manipulation;
+  -webkit-overflow-scrolling: auto;
+}
+
 html {
   height: 100%;
 }
@@ -468,26 +476,30 @@ body {
 
 .background {
   position: fixed;
-  left: 0px;
+  right: 0px;
   top: 0px;
-  width: 100%;
+  left: 0px;
+  bottom: 0px;
+  background: url("../img/svg/bg.svg") no-repeat center top;
+  background-size: 100% auto;
   height: 100vh;
+  transform: translateZ(0); /* 👉 включает GPU-рендер */
+  will-change: transform; /* 👉 заставляет браузер пересчитывать каждый кадр */
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
   z-index: 0;
   overflow: hidden;
 }
-.background img {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: auto;
-  opacity: 1;
+@media (max-width: 1110px) {
+  .background {
+    background: url("../img/svg/bg-mobil.svg") no-repeat center top;
+    background-size: 1110px auto;
+  }
 }
-@media (max-width: 1199px) {
-  .background img {
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+@supports (height: 100dvh) {
+  .background {
+    height: 100dvh;
   }
 }
 
@@ -677,7 +689,7 @@ a {
   position: fixed;
   top: 0px;
   right: 0px;
-  width: 100%;
+  left: 0px;
   z-index: 20;
 }
 
@@ -861,7 +873,8 @@ a {
   .menu {
     padding: 100px 20px 120px 20px;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
+    max-height: 700px;
     background: url("../img/svg/menu_mobil.svg") no-repeat center bottom;
     background-size: 100% 100%;
     flex-wrap: nowrap;
@@ -1951,10 +1964,10 @@ body.locked {
     top: 660px;
   }
 }
-@media (min-height: 668px) {
+@media (min-height: 740px) {
   .scroll-down {
     top: auto;
-    bottom: 10vh;
+    bottom: 2vh;
   }
 }
 
@@ -2826,7 +2839,7 @@ body.locked {
   .table-background .table.table--prizes tr th:nth-child(4) .button,
 .table-background .table.table--prizes tr td:nth-child(4) .button {
     font-size: 12px;
-    padding: 4px 10px;
+    padding: 8px 12px;
   }
   .table-background .table.table--prizes th {
     color: var(--white);

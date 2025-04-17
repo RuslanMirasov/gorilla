@@ -42,7 +42,7 @@
   position: fixed;
   top: 0px;
   right: 0px;
-  width: 100%;
+  left: 0px;
   z-index: 20;
 }
 
@@ -243,7 +243,8 @@
   .menu {
     padding: 100px 20px 120px 20px;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
+    max-height: 700px;
     background: url('../img/svg/menu_mobil.svg') no-repeat center bottom;
     background-size: 100% 100%;
     flex-wrap: nowrap;
