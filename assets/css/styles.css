@@ -1764,6 +1764,11 @@ body.locked {
   text-align: right;
   margin-top: 20px;
 }
+@media (max-width: 1439px) {
+  .section--hero .container .title--h1.title--prize {
+    font-size: clamp(30px, 3.5139vw, 48px);
+  }
+}
 @media (max-width: 1023px) {
   .section--hero .container .title--h1.title--prize {
     padding-left: calc(100% - clamp(220px, 29.2969vw, 300px));
@@ -1848,7 +1853,7 @@ body.locked {
 }
 @media (max-width: 1439px) {
   .hero-image {
-    margin-left: calc(-1 * clamp(-190px, 31.25vw, 450px));
+    margin-left: calc(-1 * clamp(-190px, 27.0833vw, 390px));
   }
 }
 @media (max-width: 1279px) {
@@ -1861,7 +1866,7 @@ body.locked {
   .hero-image {
     width: 600px;
     left: 0%;
-    margin-left: 0px;
+    margin-left: -20px;
   }
 }
 @media (max-width: 767px) {

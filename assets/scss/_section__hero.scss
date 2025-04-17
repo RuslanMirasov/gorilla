@@ -50,6 +50,10 @@
       &.title--prize {
         text-align: right;
         margin-top: 20px;
+
+        @media (max-width: 1439px) {
+          font-size: myclamp(30px, 48px, 1366px, 1366px);
+        }
         @media (max-width: 1023px) {
           padding-left: calc(100% - myclamp(220px, 300px, 1024px, 1024px));
           margin-top: -26px;
@@ -123,7 +127,7 @@
     }
   }
   @media (max-width: 1439px) {
-    margin-left: myclamp(-190px, -450px, 1440px, 1440px);
+    margin-left: myclamp(-190px, -390px, 1440px, 1440px);
   }
   @media (max-width: 1279px) {
     width: 700px;
@@ -132,7 +136,7 @@
   @media (max-width: 1023px) {
     width: 600px;
     left: 0%;
-    margin-left: 0px;
+    margin-left: -20px;
   }
   @media (max-width: 767px) {
     width: myclamp(450px, 800px, 1440px, 1440px);
