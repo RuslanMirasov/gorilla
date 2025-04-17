@@ -1067,7 +1067,7 @@ a {
   align-content: center;
   margin: 0 auto;
   font-size: clamp(48px, 5.1389vw, 74px);
-  padding: 10px 20px;
+  padding: 16px 24px 10px 24px;
   margin-left: 20px;
   margin-right: 20px;
   line-height: 1.1;
@@ -2146,7 +2146,6 @@ body.locked {
   z-index: 3;
   font-size: 14px;
   color: var(--lime);
-  cursor: pointer;
 }
 .info i {
   display: flex;
@@ -2162,11 +2161,11 @@ body.locked {
 }
 .info p {
   display: block;
-  width: 260px;
+  width: 310px;
   text-align: left;
   position: absolute;
-  left: 50px;
-  top: -20px;
+  left: 40px;
+  top: -10px;
   font-size: 14px !important;
   line-height: 1.1;
   flex-shrink: 0;
@@ -2175,10 +2174,22 @@ body.locked {
   transition: 0.5s;
   transform: translate(-10px, -10px);
 }
+.info p .info-link {
+  display: inline;
+  background: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: underline;
+}
+.info p sub {
+  font-size: 12px;
+  position: relative;
+  top: -8px;
+}
 .info svg {
   display: block;
-  width: 360px;
-  height: 164px;
+  width: 390px;
+  height: 250px;
   left: -10px;
   top: -20px;
   position: absolute;
@@ -2198,11 +2209,11 @@ body.locked {
 }
 @media (max-width: 1539px) {
   .info {
-    right: 10px;
+    right: 0px;
   }
   .info p {
     left: auto;
-    right: 10px;
+    right: 0px;
     transform: translate(-100%, 0px);
   }
   .info svg {
@@ -2217,6 +2228,13 @@ body.locked {
 @media (max-width: 415px) {
   .info {
     right: -4px;
+  }
+  .info p {
+    width: 260px;
+  }
+  .info svg {
+    width: 346px;
+    height: 275px;
   }
 }
 

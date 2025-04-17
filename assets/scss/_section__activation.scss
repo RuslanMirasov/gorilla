@@ -30,7 +30,6 @@
   font-size: 14px;
   color: var(--lime);
 
-  cursor: pointer;
   i {
     display: flex;
     position: relative;
@@ -45,11 +44,11 @@
   }
   p {
     display: block;
-    width: 260px;
+    width: 310px;
     text-align: left;
     position: absolute;
-    left: 50px;
-    top: -20px;
+    left: 40px;
+    top: -10px;
     font-size: 14px !important;
     line-height: 1.1;
     flex-shrink: 0;
@@ -57,11 +56,23 @@
     opacity: 0;
     transition: 0.5s;
     transform: translate(-10px, -10px);
+    .info-link {
+      display: inline;
+      background: none;
+      padding: 0;
+      margin: 0;
+      text-decoration: underline;
+    }
+    sub {
+      font-size: 12px;
+      position: relative;
+      top: -8px;
+    }
   }
   svg {
     display: block;
-    width: 360px;
-    height: 164px;
+    width: 390px;
+    height: 250px;
     left: -10px;
     top: -20px;
     position: absolute;
@@ -83,10 +94,10 @@
   }
 
   @media (max-width: 1539px) {
-    right: 10px;
+    right: 0px;
     p {
       left: auto;
-      right: 10px;
+      right: 0px;
       transform: translate(-100%, 0px);
     }
     svg {
@@ -102,5 +113,12 @@
   }
   @media (max-width: 415px) {
     right: -4px;
+    p {
+      width: 260px;
+    }
+    svg {
+      width: 346px;
+      height: 275px;
+    }
   }
 }
