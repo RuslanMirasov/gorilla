@@ -383,6 +383,15 @@
     transform: scale(1); /* стабилизация */
   }
 }
+[data-animate] {
+  transform: translateZ(0);
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  contain: layout style;
+}
+
 .preloader {
   display: flex;
   justify-content: center;
