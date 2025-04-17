@@ -1973,12 +1973,6 @@ body.locked {
     top: 660px;
   }
 }
-@media (min-height: 740px) {
-  .scroll-down {
-    top: auto;
-    bottom: 2vh;
-  }
-}
 
 .section--tutorial {
   padding: 130px 0px;
