@@ -2086,7 +2086,7 @@ body.locked {
   width: 40%;
   height: 45%;
   top: 0px;
-  transform: translate(30%, 0%);
+  transform: translate(40%, 0%);
 }
 .tutorial__image .showUp.animate {
   -webkit-animation: showHide 3s linear infinite 0s;
@@ -2156,7 +2156,7 @@ body.locked {
   left: 40px;
   top: -10px;
   font-size: 14px !important;
-  line-height: 1.1;
+  line-height: 1.2;
   flex-shrink: 0;
   pointer-events: none;
   opacity: 0;
@@ -2164,16 +2164,17 @@ body.locked {
   transform: translate(-10px, -10px);
 }
 .info p .info-link {
-  display: inline;
+  display: inline-flex;
   background: none;
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   text-decoration: underline;
 }
 .info p sub {
   font-size: 12px;
+  vertical-align: top;
   position: relative;
-  top: -8px;
+  top: -2px;
 }
 .info svg {
   display: block;
@@ -2223,7 +2224,7 @@ body.locked {
   }
   .info svg {
     width: 346px;
-    height: 275px;
+    height: 280px;
   }
 }
 
@@ -2256,8 +2257,8 @@ body.locked {
   margin: 26px auto;
 }
 .million img.animate {
-  -webkit-animation: spring-bounce 3.5s ease-out infinite;
-          animation: spring-bounce 3.5s ease-out infinite;
+  -webkit-animation: spring-bounce 2.3s ease-out infinite;
+          animation: spring-bounce 2.3s ease-out infinite;
 }
 .million .title.title--h4 {
   font-size: 32px;
@@ -2890,7 +2891,7 @@ body.locked {
   display: flex;
   align-items: center;
   align-content: center;
-  gap: clamp(14px, 3.4722vw, 50px);
+  gap: clamp(8px, 3.4722vw, 50px);
   width: 100%;
   max-width: clamp(330px, 59.0278vw, 850px);
   margin: 0 auto;
@@ -2905,9 +2906,13 @@ body.locked {
 }
 @media (max-width: 767px) {
   .buy {
+    max-width: 340px;
     margin-top: 50px;
-    padding-top: 20px;
     transform: translate(0px, 0px);
+    gap: 8px;
+    background: url("../img/svg/buy-bg-mobil.svg") no-repeat center center;
+    background-position: 50px bottom;
+    background-size: calc(100% - 50px) 100%;
   }
 }
 .buy svg {
@@ -2918,7 +2923,7 @@ body.locked {
 }
 @media (max-width: 767px) {
   .buy svg {
-    left: 0px;
+    left: -6px;
   }
 }
 .buy p {
@@ -2930,8 +2935,10 @@ body.locked {
 @media (max-width: 767px) {
   .buy p {
     position: relative;
+    font-size: 24px;
     top: -5px;
     left: 0px;
+    padding-top: 10px;
   }
 }
 

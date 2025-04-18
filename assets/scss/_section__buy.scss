@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   align-content: center;
-  gap: myclamp(14px, 50px, 1440px, 1440px);
+  gap: myclamp(8px, 50px, 1440px, 1440px);
   width: 100%;
   max-width: myclamp(330px, 850px, 1440px, 1440px);
   margin: 0 auto;
@@ -20,9 +20,13 @@
   background-size: calc(100% - 50px) 100%;
   padding-right: 20px;
   @media (max-width: 767px) {
+    max-width: 340px;
     margin-top: 50px;
-    padding-top: 20px;
     transform: translate(0px, 0px);
+    gap: 8px;
+    background: url('../img/svg/buy-bg-mobil.svg') no-repeat center center;
+    background-position: 50px bottom;
+    background-size: calc(100% - 50px) 100%;
   }
   svg {
     width: myclamp(124px, 238px, 1440px, 1440px);
@@ -30,7 +34,7 @@
     position: relative;
     flex-shrink: 0;
     @media (max-width: 767px) {
-      left: -0px;
+      left: -6px;
     }
   }
   p {
@@ -40,8 +44,10 @@
     line-height: 1.2;
     @media (max-width: 767px) {
       position: relative;
+      font-size: 24px;
       top: -5px;
       left: 0px;
+      padding-top: 10px;
     }
   }
 }

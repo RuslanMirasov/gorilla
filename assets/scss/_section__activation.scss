@@ -50,23 +50,24 @@
     left: 40px;
     top: -10px;
     font-size: 14px !important;
-    line-height: 1.1;
+    line-height: 1.2;
     flex-shrink: 0;
     pointer-events: none;
     opacity: 0;
     transition: 0.5s;
     transform: translate(-10px, -10px);
     .info-link {
-      display: inline;
+      display: inline-flex;
       background: none;
-      padding: 0;
-      margin: 0;
+      padding: 0px;
+      margin: 0px;
       text-decoration: underline;
     }
     sub {
       font-size: 12px;
+      vertical-align: top;
       position: relative;
-      top: -8px;
+      top: -2px;
     }
   }
   svg {
@@ -118,7 +119,7 @@
     }
     svg {
       width: 346px;
-      height: 275px;
+      height: 280px;
     }
   }
 }
