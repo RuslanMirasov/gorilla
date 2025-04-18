@@ -33,8 +33,9 @@
   @media (max-width: 1439px) {
     padding: 70px 120px 70px 0px;
   }
-  &:after,
-  &:before {
+
+  // &:before,
+  &:after {
     content: '';
     position: absolute;
     width: 960px;
@@ -49,11 +50,11 @@
     background: url('../img/svg/faq-bg.svg') no-repeat right top;
     background-size: 100% 100%;
   }
-  &:before {
-    backdrop-filter: blur(10px);
-    mask: url('../img/svg/faq-mask.svg') no-repeat right top;
-    mask-size: 100% 100%;
-  }
+  // &:before {
+  //   backdrop-filter: blur(10px);
+  //   mask: url('../img/svg/faq-mask.svg') no-repeat right top;
+  //   mask-size: 100% 100%;
+  // }
 }
 
 .accordeon {
@@ -159,8 +160,8 @@
     gap: 12px;
   }
 
-  &:after,
-  &:before {
+  // &:before,
+  &:after {
     content: '';
     position: absolute;
     width: 530px;
@@ -175,11 +176,11 @@
     background: url('../img/svg/callback-bg.svg') no-repeat left top;
     background-size: 100% 100%;
   }
-  &:before {
-    backdrop-filter: blur(10px);
-    mask: url('../img/svg/callback-mask.svg') no-repeat left top;
-    mask-size: 100% 100%;
-  }
+  // &:before {
+  //   backdrop-filter: blur(10px);
+  //   mask: url('../img/svg/callback-mask.svg') no-repeat left top;
+  //   mask-size: 100% 100%;
+  // }
 }
 
 // TABLET
@@ -200,8 +201,9 @@
     padding: 40px 90px;
     max-width: 1024px;
     margin: 0 auto;
-    &:after,
-    &:before {
+
+    // &:before,
+    &:after {
       width: 1010px;
       right: auto;
       left: 50%;
@@ -211,10 +213,10 @@
       background: url('../img/svg/faq-bg-mobil.svg') no-repeat right top;
       background-size: 100% 100%;
     }
-    &:before {
-      mask: url('../img/svg/faq-mask-mobil.svg') no-repeat right top;
-      mask-size: 100% 100%;
-    }
+    // &:before {
+    //   mask: url('../img/svg/faq-mask-mobil.svg') no-repeat right top;
+    //   mask-size: 100% 100%;
+    // }
   }
 
   .callback {
@@ -228,8 +230,9 @@
       max-width: 375px;
       margin: 0 auto;
     }
-    &:after,
-    &:before {
+
+    // &:before,
+    &:after {
       width: 570px;
       left: 50%;
       transform: translate(-50%, 0%);
@@ -238,10 +241,10 @@
       background: url('../img/svg/callback-bg-mobil.svg') no-repeat left top;
       background-size: 100% 100%;
     }
-    &:before {
-      mask: url('../img/svg/callback-mask-mobil.svg') no-repeat left top;
-      mask-size: 100% 100%;
-    }
+    // &:before {
+    //   mask: url('../img/svg/callback-mask-mobil.svg') no-repeat left top;
+    //   mask-size: 100% 100%;
+    // }
   }
 }
 

@@ -1446,7 +1446,7 @@ select.open + .input-icon {
     padding-bottom: 26px;
   }
 }
-.footer:after, .footer:before {
+.footer:after {
   content: "";
   position: absolute;
   width: 1650px;
@@ -1458,7 +1458,7 @@ select.open + .input-icon {
   pointer-events: none;
 }
 @media (max-width: 1279px) {
-  .footer:after, .footer:before {
+  .footer:after {
     transform: translate(-52%, 0%);
   }
 }
@@ -1466,24 +1466,10 @@ select.open + .input-icon {
   background: url("../img/svg/footer-bg.svg") no-repeat center center;
   background-size: 1650px 100%;
 }
-.footer:before {
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  -webkit-mask: url("../img/svg/footer-mask.svg") no-repeat center center;
-          mask: url("../img/svg/footer-mask.svg") no-repeat center center;
-  -webkit-mask-size: 1650px 100%;
-          mask-size: 1650px 100%;
-}
 @media (max-width: 1279px) {
   .footer:after {
     background: url("../img/svg/footer-bg-mobil.svg") no-repeat center center;
     background-size: 1650px 100%;
-  }
-  .footer:before {
-    -webkit-mask: url("../img/svg/footer-mask-mobil.svg") no-repeat center center;
-            mask: url("../img/svg/footer-mask-mobil.svg") no-repeat center center;
-    -webkit-mask-size: 1650px 100%;
-            mask-size: 1650px 100%;
   }
 }
 
@@ -2749,7 +2735,7 @@ body.locked {
   color: var(--violet);
 }
 .table-background .table tbody tr:nth-child(odd) {
-  background-color: #ccd84d;
+  background-color: #d9e654;
 }
 .table-background .table tbody tr:hover {
   background: rgba(213, 255, 115, 0.6392156863);
@@ -2817,7 +2803,7 @@ body.locked {
   color: var(--white);
 }
 .table-background .table.table--prizes tbody tr:nth-child(odd) {
-  background-color: #e96cc2;
+  background-color: #f070c7;
 }
 .table-background .table.table--prizes tbody tr:hover {
   background: #f381cf;
@@ -2864,12 +2850,6 @@ body.locked {
   }
   .table-background .table.table--prizes th {
     color: var(--white);
-  }
-  .table-background .table.table--prizes tbody tr:nth-child(2n+1):before {
-    background: #e96cc2;
-  }
-  .table-background .table.table--prizes tbody tr:hover:before {
-    background: #f381cf;
   }
   .table-background:before {
     content: "";
@@ -2993,7 +2973,7 @@ body.locked {
     padding: 70px 120px 70px 0px;
   }
 }
-.questions:after, .questions:before {
+.questions:after {
   content: "";
   position: absolute;
   width: 960px;
@@ -3006,14 +2986,6 @@ body.locked {
 .questions:after {
   background: url("../img/svg/faq-bg.svg") no-repeat right top;
   background-size: 100% 100%;
-}
-.questions:before {
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  -webkit-mask: url("../img/svg/faq-mask.svg") no-repeat right top;
-          mask: url("../img/svg/faq-mask.svg") no-repeat right top;
-  -webkit-mask-size: 100% 100%;
-          mask-size: 100% 100%;
 }
 
 .accordeon {
@@ -3114,7 +3086,7 @@ body.locked {
   flex-direction: column;
   gap: 12px;
 }
-.callback:after, .callback:before {
+.callback:after {
   content: "";
   position: absolute;
   width: 530px;
@@ -3127,14 +3099,6 @@ body.locked {
 .callback:after {
   background: url("../img/svg/callback-bg.svg") no-repeat left top;
   background-size: 100% 100%;
-}
-.callback:before {
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  -webkit-mask: url("../img/svg/callback-mask.svg") no-repeat left top;
-          mask: url("../img/svg/callback-mask.svg") no-repeat left top;
-  -webkit-mask-size: 100% 100%;
-          mask-size: 100% 100%;
 }
 
 @media (max-width: 1279px) {
@@ -3154,7 +3118,7 @@ body.locked {
     max-width: 1024px;
     margin: 0 auto;
   }
-  .questions:after, .questions:before {
+  .questions:after {
     width: 1010px;
     right: auto;
     left: 50%;
@@ -3163,12 +3127,6 @@ body.locked {
   .questions:after {
     background: url("../img/svg/faq-bg-mobil.svg") no-repeat right top;
     background-size: 100% 100%;
-  }
-  .questions:before {
-    -webkit-mask: url("../img/svg/faq-mask-mobil.svg") no-repeat right top;
-            mask: url("../img/svg/faq-mask-mobil.svg") no-repeat right top;
-    -webkit-mask-size: 100% 100%;
-            mask-size: 100% 100%;
   }
   .callback {
     max-width: 570px;
@@ -3182,7 +3140,7 @@ body.locked {
     max-width: 375px;
     margin: 0 auto;
   }
-  .callback:after, .callback:before {
+  .callback:after {
     width: 570px;
     left: 50%;
     transform: translate(-50%, 0%);
@@ -3190,12 +3148,6 @@ body.locked {
   .callback:after {
     background: url("../img/svg/callback-bg-mobil.svg") no-repeat left top;
     background-size: 100% 100%;
-  }
-  .callback:before {
-    -webkit-mask: url("../img/svg/callback-mask-mobil.svg") no-repeat left top;
-            mask: url("../img/svg/callback-mask-mobil.svg") no-repeat left top;
-    -webkit-mask-size: 100% 100%;
-            mask-size: 100% 100%;
   }
 }
 @media (max-width: 767px) {

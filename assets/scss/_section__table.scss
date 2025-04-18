@@ -256,7 +256,7 @@
     }
     tbody {
       tr:nth-child(odd) {
-        background-color: #ccd84d;
+        background-color: #d9e654;
       }
       tr:hover {
         background: #d5ff73a3;
@@ -338,7 +338,7 @@
       }
       tbody {
         tr:nth-child(odd) {
-          background-color: #e96cc2;
+          background-color: #f070c7;
         }
         tr:hover {
           background: #f381cf;
@@ -403,20 +403,20 @@
         th {
           color: var(--white);
         }
-        tbody {
-          tr {
-            &:nth-child(2n + 1) {
-              &:before {
-                background: #e96cc2;
-              }
-            }
-            &:hover {
-              &:before {
-                background: #f381cf;
-              }
-            }
-          }
-        }
+        // tbody {
+        //   tr {
+        //     &:nth-child(2n + 1) {
+        //       &:before {
+        //         background: #ff89da;
+        //       }
+        //     }
+        //     &:hover {
+        //       &:before {
+        //         background: #f381cf;
+        //       }
+        //     }
+        //   }
+        // }
       }
     }
 
