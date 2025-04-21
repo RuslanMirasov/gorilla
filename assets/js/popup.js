@@ -146,7 +146,6 @@ export const popup = {
     document.querySelectorAll('[data-fixed]').forEach(el => {
       const style = getComputedStyle(el);
 
-      // Очистка, если скролл не нужен
       if (scrollbarWidth === 0) {
         el.style.paddingRight = '';
 
@@ -158,34 +157,17 @@ export const popup = {
         return;
       }
 
-      // Если явно указан right: 0px — заменяем на ширину скроллбара
       if (style.right === '0px') {
         if (el.dataset.popupRestoreRight === undefined) {
           el.dataset.popupRestoreRight = el.style.right || '0px';
         }
         el.style.right = `${scrollbarWidth}px`;
-        return; // 💥 не трогаем paddingRight!
+        return;
       }
 
-      // Если ширина элемента совпадает с шириной вьюпорта — добавляем paddingRight
       if (el.offsetWidth === document.documentElement.clientWidth) {
         el.style.paddingRight = `${scrollbarWidth}px`;
       }
     });
-    // document.querySelectorAll('[data-fixed]').forEach(el => {
-    //   const style = getComputedStyle(el);
-    //   if (scrollbarWidth === 0) {
-    //     el.style.paddingRight = '';
-    //     if (el.dataset.popupRestoreRight !== undefined) {
-    //       el.style.right = el.dataset.popupRestoreRight;
-    //       delete el.dataset.popupRestoreRight;
-    //     }
-    //     return;
-    //   }
-    //   if (el.offsetWidth === document.documentElement.clientWidth) {
-    //     el.style.paddingRight = `${scrollbarWidth}px`;
-    //     return;
-    //   }
-    // });
   },
 };

@@ -2893,7 +2893,7 @@ body.locked {
   align-content: center;
   gap: clamp(8px, 3.4722vw, 50px);
   width: 100%;
-  max-width: clamp(330px, 59.0278vw, 850px);
+  max-width: clamp(330px, 61.1111vw, 880px);
   margin: 0 auto;
   margin-top: 50px;
   text-align: left;
