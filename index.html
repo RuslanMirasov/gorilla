@@ -804,6 +804,7 @@
         <div class="popup-content" id="load-cheque">
           <button class="popup-close" data-popup-close></button>
           <h2 class="popup-title">Загрузка чека</h2>
+
           <form class="form" enctype="multipart/form-data" novalidate onsubmit="loadCheque(event)">
             <div class="download-file">
               <label class="label-for-file">
@@ -812,10 +813,11 @@
                 <p class="label__text" data-text="Перетащите фото чека или нажмите для выбора">Перетащите фото чека или нажмите для выбора</p>
               </label>
             </div>
-            <button type="submit" class="button button--violet submit">
-              <span>Загрузить</span>
-            </button>
           </form>
+          <button type="submit" class="button button--violet submit">
+            <span>Загрузить</span>
+          </button>
+          <!-- <div class="upload-error-message">Чек не выбран.</div> -->
           <div class="popup-links">
             <a href="#" data-popup-open="self-cheque-in">Ввести данные чека вручную</a>
           </div>
@@ -1042,7 +1044,6 @@
         <path d="M11 11L25 24" stroke="#000000" stroke-width="2" stroke-linecap="round" />
       </symbol>
     </svg>
-
     <script src="./assets/js/forms.js?v=3" type="module"></script>
     <script src="./assets/js/scripts.js?v=3" type="module"></script>
   </body>
