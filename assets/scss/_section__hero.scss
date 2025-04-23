@@ -131,11 +131,16 @@
   }
   @media (max-width: 1279px) {
     width: 700px;
-    margin-left: myclamp(-190px, -500px, 1440px, 1440px);
+    margin-left: myclamp(-190px, -390px, 1440px, 1440px);
+    .boble {
+      left: 22%;
+      top: -50px;
+    }
   }
   @media (max-width: 1023px) {
     width: 600px;
-    left: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
     margin-left: -20px;
   }
   @media (max-width: 767px) {
@@ -143,6 +148,11 @@
     left: 50%;
     transform: translate(-50%, 0%);
     bottom: 0px;
+    margin-left: -20px;
+    .boble {
+      left: 17%;
+      top: -60px;
+    }
   }
   flex-wrap: wrap;
   justify-content: center;
@@ -222,4 +232,27 @@
   @media (max-width: 767px) {
     top: 660px;
   }
+}
+
+.boble {
+  position: absolute;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  left: 15%;
+  top: 0%;
+  z-index: 3;
+  font-size: myclamp(18px, 24px, 1440px, 1440px);
+  line-height: 1;
+  text-align: center;
+  font-family: var(--bold);
+  color: var(--violet);
+  padding-left: 22.5px;
+  padding-top: 12.5px;
+  padding-right: 30.5px;
+  padding-bottom: 17.5px;
+  background: url('../img/svg/boble.svg') no-repeat center center;
+  background-size: 100% 100%;
 }

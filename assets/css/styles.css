@@ -1867,13 +1867,18 @@ body.locked {
 @media (max-width: 1279px) {
   .hero-image {
     width: 700px;
-    margin-left: calc(-1 * clamp(-190px, 34.7222vw, 500px));
+    margin-left: calc(-1 * clamp(-190px, 27.0833vw, 390px));
+  }
+  .hero-image .boble {
+    left: 22%;
+    top: -50px;
   }
 }
 @media (max-width: 1023px) {
   .hero-image {
     width: 600px;
-    left: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
     margin-left: -20px;
   }
 }
@@ -1883,6 +1888,11 @@ body.locked {
     left: 50%;
     transform: translate(-50%, 0%);
     bottom: 0px;
+    margin-left: -20px;
+  }
+  .hero-image .boble {
+    left: 17%;
+    top: -60px;
   }
 }
 .hero-image img {
@@ -1958,6 +1968,29 @@ body.locked {
   .scroll-down {
     top: 660px;
   }
+}
+
+.boble {
+  position: absolute;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  left: 15%;
+  top: 0%;
+  z-index: 3;
+  font-size: clamp(18px, 1.6667vw, 24px);
+  line-height: 1;
+  text-align: center;
+  font-family: var(--bold);
+  color: var(--violet);
+  padding-left: 22.5px;
+  padding-top: 12.5px;
+  padding-right: 30.5px;
+  padding-bottom: 17.5px;
+  background: url("../img/svg/boble.svg") no-repeat center center;
+  background-size: 100% 100%;
 }
 
 .section--tutorial {
