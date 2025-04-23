@@ -1,5 +1,7 @@
 .burger {
   display: none;
+  outline: none;
+  user-select: none;
 }
 
 .header__background {
@@ -65,13 +67,16 @@
   position: relative;
   width: 80px;
   height: 20px;
-
   z-index: 3;
+  outline: none;
+  user-select: none;
   img {
     position: relative;
     width: 80px;
     height: 66px;
     margin-top: -12px;
+    outline: none;
+    user-select: none;
   }
 }
 
@@ -117,8 +122,10 @@
       font-family: var(--semibold);
       text-transform: uppercase;
       color: var(--white);
-      &:hover {
-        color: var(--lime);
+      @media (hover: hover) and (pointer: fine) {
+        &:hover {
+          color: var(--lime);
+        }
       }
     }
   }
@@ -263,6 +270,9 @@
         }
         &.button--pink {
           color: var(--violet);
+          span {
+            color: var(--white);
+          }
         }
       }
       &:last-child {

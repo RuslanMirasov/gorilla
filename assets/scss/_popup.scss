@@ -79,8 +79,10 @@ body.locked {
   &:after {
     transform: rotate(-45deg);
   }
-  &:hover {
-    transform: rotate(90deg);
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      transform: rotate(90deg);
+    }
   }
   @media (max-width: 1365px) {
     right: 20px;

@@ -44,10 +44,12 @@
 
   &.button--green {
     color: var(--green-light);
-    &:hover {
-      color: var(--lime);
-      span {
-        color: var(--green);
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        color: var(--lime);
+        span {
+          color: var(--green);
+        }
       }
     }
   }
@@ -55,10 +57,12 @@
   &.button--pink {
     padding: 8px 12px;
     color: var(--pink);
-    &:hover {
-      color: var(--lime);
-      span {
-        color: var(--green);
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        color: var(--lime);
+        span {
+          color: var(--green);
+        }
       }
     }
   }
@@ -68,10 +72,12 @@
     span {
       color: var(--green);
     }
-    &:hover {
-      color: var(--pink);
-      span {
-        color: var(--white);
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        color: var(--pink);
+        span {
+          color: var(--white);
+        }
       }
     }
     &.big {
@@ -114,12 +120,14 @@
       font-family: var(--bold);
       letter-spacing: 1px;
     }
-    &:hover {
-      span {
-        color: var(--white);
-      }
-      &:before {
-        opacity: 1;
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        span {
+          color: var(--white);
+        }
+        &:before {
+          opacity: 1;
+        }
       }
     }
     &.submit {

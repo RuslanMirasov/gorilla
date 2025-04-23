@@ -44,9 +44,11 @@
     color: var(--green);
     border-bottom: 1px solid var(--green);
     transition: 0.3s;
-    &:hover {
-      color: var(--pink);
-      border-bottom: 1px solid var(--pink);
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        color: var(--pink);
+        border-bottom: 1px solid var(--pink);
+      }
     }
   }
 }

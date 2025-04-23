@@ -129,7 +129,7 @@ export const popup = {
     });
 
     if (this._backdrop) {
-      this._backdrop.addEventListener('click', e => {
+      this._backdrop.addEventListener('mousedown', e => {
         if (this._isAnimating) return;
         if (e.target === this._backdrop || e.target.hasAttribute('data-popup-close')) {
           this.close();

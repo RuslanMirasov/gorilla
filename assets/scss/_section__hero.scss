@@ -221,8 +221,10 @@
   &.animate {
     animation: scrollDown 1.5s linear infinite;
   }
-  &:hover {
-    color: var(--pink);
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      color: var(--pink);
+    }
   }
   svg {
     width: 100%;
