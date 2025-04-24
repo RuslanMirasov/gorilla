@@ -1784,14 +1784,20 @@ body.locked {
   content: "";
   display: block;
   position: absolute;
-  top: calc(-1 * clamp(-5px, 1.0417vw, 15px));
+  top: -15%;
   left: 0px;
-  bottom: calc(-1 * clamp(-2px, 0.3472vw, 5px));
+  bottom: -10%;
   width: calc(100% + clamp(15px, 1.3889vw, 20px));
   background: var(--black);
   -webkit-clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 100%, 0% 100%);
           clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 100%, 0% 100%);
   z-index: -1;
+}
+.section--hero .container .title--h1 span:first-child:before {
+  top: -25%;
+}
+.section--hero .container .title--h1 span:last-child:before {
+  bottom: -20%;
 }
 .section--hero .container .title--h1 span.pink:before {
   width: calc(100% + clamp(20px, 2.0833vw, 30px));
@@ -1978,7 +1984,7 @@ body.locked {
   z-index: 4;
   left: 50%;
   margin-left: -24px;
-  top: 85vh;
+  bottom: 8%;
   transition: color 0.3s;
   color: var(--violet);
 }
@@ -1998,6 +2004,7 @@ body.locked {
 }
 @media (max-width: 767px) {
   .scroll-down {
+    bottom: auto;
     top: 660px;
   }
 }
@@ -2056,7 +2063,7 @@ body.locked {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 20px;
   max-width: 500px;
   width: calc((100% - 40px) / 3);
 }
@@ -2098,7 +2105,7 @@ body.locked {
   text-transform: uppercase;
   position: absolute;
   left: 55%;
-  bottom: 85%;
+  bottom: 90%;
 }
 .tutorial li p a {
   background: var(--violet);
@@ -3097,6 +3104,9 @@ body.locked {
   line-height: 1.4;
   display: block;
   padding: 8px 0px 20px 30px;
+}
+.accordeon__answer p a {
+  text-decoration: underline !important;
 }
 .accordeon__answer ul {
   font-size: 16px;

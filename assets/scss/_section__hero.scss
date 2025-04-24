@@ -28,17 +28,28 @@
         padding-left: myclamp(5px, 14px, 1440px, 1440px);
         line-height: 1;
         z-index: 0;
+
         &:before {
           content: '';
           display: block;
           position: absolute;
-          top: myclamp(-5px, -15px, 1440px, 1440px);
+          top: -15%;
           left: 0px;
-          bottom: myclamp(-2px, -5px, 1440px, 1440px);
+          bottom: -10%;
           width: calc(100% + myclamp(15px, 20px, 1440px, 1440px));
           background: var(--black);
           clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 100%, 0% 100%);
           z-index: -1;
+        }
+        &:first-child {
+          &:before {
+            top: -25%;
+          }
+        }
+        &:last-child {
+          &:before {
+            bottom: -20%;
+          }
         }
         &.pink {
           &:before {
@@ -215,7 +226,7 @@
   z-index: 4;
   left: 50%;
   margin-left: -24px;
-  top: 85vh;
+  bottom: 8%;
   transition: color 0.3s;
   color: var(--violet);
   &.animate {
@@ -232,6 +243,7 @@
     pointer-events: none;
   }
   @media (max-width: 767px) {
+    bottom: auto;
     top: 660px;
   }
 }
