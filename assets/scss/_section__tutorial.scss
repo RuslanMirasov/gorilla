@@ -102,6 +102,8 @@
         padding: 0px 20px;
         .tutorial__image {
           width: 100%;
+          max-width: 320px;
+          min-height: 320px;
         }
         .title {
           max-width: 300px;
@@ -121,6 +123,7 @@
   justify-content: center;
   align-items: center;
   align-content: center;
+
   .blik {
     width: 40%;
     height: 45%;

@@ -1005,6 +1005,10 @@ a {
 .button.button--lime {
   color: var(--lime);
 }
+.button.button--lime.ff--light {
+  font-family: var(--light);
+  margin-top: 10px;
+}
 .button.button--lime span {
   color: var(--green);
 }
@@ -2137,6 +2141,8 @@ body.locked {
   }
   .tutorial.tutorial--col2 li .tutorial__image {
     width: 100%;
+    max-width: 320px;
+    min-height: 320px;
   }
   .tutorial.tutorial--col2 li .title {
     max-width: 300px;
@@ -2201,12 +2207,18 @@ body.locked {
   position: absolute;
   right: 0px;
   top: 40px;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   background: var(--violet);
   z-index: 3;
   font-size: 14px;
   color: var(--lime);
+  box-shadow: 4px 4px 0px var(--pink);
+}
+@media (max-width: 767px) {
+  .info {
+    box-shadow: 2px 2px 0px var(--pink);
+  }
 }
 .info i {
   display: flex;
@@ -2216,9 +2228,10 @@ body.locked {
   justify-content: center;
   align-items: center;
   align-content: center;
-  font-size: 28px;
-  line-height: 36px;
+  font-size: 48px;
+  line-height: 60px;
   z-index: 3;
+  pointer-events: none;
 }
 .info p {
   display: block;
@@ -2251,7 +2264,7 @@ body.locked {
 .info svg {
   display: block;
   width: 390px;
-  height: 340px;
+  height: 380px;
   left: -10px;
   top: -25px;
   position: absolute;
@@ -2275,10 +2288,11 @@ body.locked {
   }
   .info p {
     left: auto;
-    right: 0px;
+    right: -20px;
     transform: translate(-100%, 0px);
   }
   .info svg {
+    width: 410px;
     left: auto;
     right: -10px;
     transform-origin: right top;
@@ -2287,15 +2301,21 @@ body.locked {
     transform: translate(-100%, 0px);
   }
 }
-@media (max-width: 415px) {
+@media (max-width: 767px) {
   .info {
+    width: 40px;
+    height: 40px;
     right: -4px;
+  }
+  .info i {
+    font-size: 32px;
+    line-height: 40px;
   }
   .info p {
     width: 260px;
   }
   .info svg {
-    width: 346px;
+    width: 330px;
     height: 400px;
   }
 }
@@ -2958,48 +2978,46 @@ body.locked {
   padding-top: clamp(40px, 3.4722vw, 50px);
   padding-bottom: clamp(50px, 3.4722vw, 50px);
 }
+@media (max-width: 767px) {
+  .section--buy {
+    padding-bottom: 0px;
+  }
+}
 
 .buy {
   display: flex;
+  justify-content: center;
   align-items: center;
   align-content: center;
-  gap: clamp(8px, 3.4722vw, 50px);
   width: 100%;
-  max-width: clamp(330px, 61.1111vw, 880px);
+  width: 815px;
+  height: 235px;
   margin: 0 auto;
-  margin-top: 50px;
-  text-align: left;
+  margin-top: 80px;
+  text-align: center;
   position: relative;
-  transform: translate(25px, 0px);
   background: url("../img/svg/buy-bg.svg") no-repeat center center;
-  background-position: 50px center;
-  background-size: calc(100% - 50px) 100%;
-  padding-right: 20px;
+  background-size: 100% 100%;
+}
+@media (max-width: 1023px) {
+  .buy {
+    width: 715px;
+    height: 235px;
+    margin-top: 50px;
+  }
 }
 @media (max-width: 767px) {
   .buy {
-    max-width: 340px;
-    margin-top: 50px;
-    transform: translate(0px, 0px);
-    gap: 8px;
+    width: 330px;
+    max-width: 100%;
+    height: 230px;
+    margin-top: 30px;
     background: url("../img/svg/buy-bg-mobil.svg") no-repeat center center;
-    background-position: 50px bottom;
-    background-size: calc(100% - 50px) 100%;
-  }
-}
-.buy svg {
-  width: clamp(124px, 16.5278vw, 238px);
-  height: clamp(124px, 16.5278vw, 238px);
-  position: relative;
-  flex-shrink: 0;
-}
-@media (max-width: 767px) {
-  .buy svg {
-    left: -6px;
+    background-size: 100% 100%;
   }
 }
 .buy p {
-  font-size: clamp(24px, 3.3333vw, 48px);
+  font-size: 48px;
   font-family: var(--light);
   text-transform: uppercase;
   line-height: 1.2;
@@ -3007,9 +3025,7 @@ body.locked {
 @media (max-width: 767px) {
   .buy p {
     position: relative;
-    font-size: 24px;
-    top: -5px;
-    left: 0px;
+    font-size: 32px;
     padding-top: 10px;
   }
 }
@@ -3332,7 +3348,6 @@ body.locked {
 }
 .user-motivation ul li:first-child svg {
   position: relative;
-  transform: rotate(8deg);
 }
 .user-motivation ul li:last-child span {
   text-align: right;
@@ -3546,4 +3561,8 @@ a.dz-remove {
   text-align: center;
   font-family: var(--medium);
   margin-top: 10px;
+}
+
+.underline {
+  text-decoration: underline;
 }

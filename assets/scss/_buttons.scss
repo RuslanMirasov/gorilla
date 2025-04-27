@@ -68,6 +68,10 @@
   }
 
   &.button--lime {
+    &.ff--light {
+      font-family: var(--light);
+      margin-top: 10px;
+    }
     color: var(--lime);
     span {
       color: var(--green);
