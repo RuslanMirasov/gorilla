@@ -30,6 +30,14 @@
   font-size: 14px;
   color: var(--lime);
   box-shadow: 4px 4px 0px var(--pink);
+  strong {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    margin-top: -20px;
+    margin-bottom: 10px;
+  }
   @media (max-width: 767px) {
     box-shadow: 2px 2px 0px var(--pink);
   }

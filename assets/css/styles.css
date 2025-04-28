@@ -853,8 +853,8 @@ a {
     padding: 8px 12px;
   }
   .logo {
-    width: 88px;
-    height: 70px;
+    width: 75px;
+    height: 60px;
     position: absolute;
     left: 50%;
     top: 10px;
@@ -862,8 +862,8 @@ a {
     margin: auto;
   }
   .logo img {
-    width: 88px;
-    height: 70px;
+    width: 75px;
+    height: 60px;
     margin-top: 0px;
   }
   .header-buttons {
@@ -1095,7 +1095,7 @@ a {
   text-transform: uppercase;
 }
 .title.title--h1 {
-  font-size: clamp(30px, 4.0996vw, 56px);
+  font-size: clamp(26px, 4.0996vw, 56px);
   line-height: 1.07;
   text-align: left;
 }
@@ -1814,12 +1814,12 @@ body.locked {
 }
 @media (max-width: 1439px) {
   .section--hero .container .title--h1.title--prize {
-    font-size: clamp(30px, 3.5139vw, 48px);
+    font-size: clamp(26px, 3.5139vw, 48px);
   }
 }
 @media (max-width: 1023px) {
   .section--hero .container .title--h1.title--prize {
-    padding-left: calc(100% - clamp(220px, 29.2969vw, 300px));
+    padding-left: calc(100% - clamp(192px, 29.2969vw, 300px));
     margin-top: -26px;
   }
   .section--hero .container .title--h1.title--prize br {
@@ -2214,6 +2214,14 @@ body.locked {
   font-size: 14px;
   color: var(--lime);
   box-shadow: 4px 4px 0px var(--pink);
+}
+.info strong {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  margin-top: -20px;
+  margin-bottom: 10px;
 }
 @media (max-width: 767px) {
   .info {

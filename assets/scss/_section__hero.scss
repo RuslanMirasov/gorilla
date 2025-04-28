@@ -63,10 +63,10 @@
         margin-top: 20px;
 
         @media (max-width: 1439px) {
-          font-size: myclamp(30px, 48px, 1366px, 1366px);
+          font-size: myclamp(26px, 48px, 1366px, 1366px);
         }
         @media (max-width: 1023px) {
-          padding-left: calc(100% - myclamp(220px, 300px, 1024px, 1024px));
+          padding-left: calc(100% - myclamp(192px, 300px, 1024px, 1024px));
           margin-top: -26px;
           br {
             display: none;
