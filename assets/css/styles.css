@@ -2349,6 +2349,14 @@ body.locked {
   left: 50%;
   transform: translate(-50%, -12px);
 }
+@media (max-width: 767px) {
+  .may16:before {
+    content: "";
+    width: 156px;
+    height: 35px;
+    background: url("../img/svg/may16-mobil.svg") no-repeat center center/cover;
+  }
+}
 
 .million {
   display: block;
