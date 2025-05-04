@@ -143,3 +143,25 @@
     }
   }
 }
+
+.pink-bg {
+  display: inline-block;
+  line-height: 1;
+  color: var(--white);
+  background: var(--pink);
+  padding: 0px 5px 5px 5px;
+}
+
+.may16 {
+  position: relative;
+  &:before {
+    content: '';
+    width: 200px;
+    height: 46px;
+    position: absolute;
+    bottom: 100%;
+    background: url('../img/svg/may16.svg') no-repeat center center/cover;
+    left: 50%;
+    transform: translate(-50%, -12px);
+  }
+}
