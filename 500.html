@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+
+        m[i].l = 1 * new Date();
+
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+
+        (k = e.createElement(t)), (a = e.getElementsByTagName(t)[0]), (k.async = 1), (k.src = r), a.parentNode.insertBefore(k, a);
+      })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
+
+      ym(100320770, 'init', {
+        clickmap: true,
+
+        trackLinks: true,
+
+        accurateTrackBounce: true,
+
+        webvisor: true,
+      });
+    </script>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="Gorilla" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.min.css?v=3" />
+    <title>Gorilla | Внутренняя ошибка сервера</title>
+  </head>
+  <body class="body night">
+    <noscript>
+      <div><img src="https://mc.yandex.ru/watch/100320770" style="position: absolute; left: -9999px" alt="" /></div>
+    </noscript>
+
+    <!--PRELOADER-->
+    <div class="preloader" data-preloader>
+      <span>
+        <img src="./assets/img/svg/logo.svg" alt="" />
+      </span>
+    </div>
+
+    <!--HEADER-->
+    <header class="header" data-fixed>
+      <div class="header__background"></div>
+      <div class="header__content">
+        <button class="burger">
+          <svg class="icon" width="44" height="40"><use href="#burger" /></svg>
+          <span>Меню бургер</span>
+        </button>
+
+        <a href="./" class="logo" aria-label="Логотип Gorilla">
+          <img src="./assets/img/svg/logo.svg" alt="" width="80" height="66" loading="eager" />
+        </a>
+
+        <nav class="navigation">
+          <ul class="menu">
+            <li><a href="#prizes" data-scrollto class="menu__link">Призы</a></li>
+            <li><a href="#winners" data-scrollto class="menu__link">Победители</a></li>
+            <li><a href="#buy" data-scrollto class="menu__link">Где купить</a></li>
+            <li><a href="#faq" data-scrollto class="menu__link">FAQ</a></li>
+            <li><a href="#rules" data-scrollto class="menu__link">Правила акции</a></li>
+            <li>
+              <a href="#activity" data-scrollto class="button button--pink">
+                <svg class="icon" width="100" height="35"><use href="#chance-bg" /></svg>
+                <span>шансы <i>x</i>3</span>
+              </a>
+            </li>
+            <li>
+              <button class="button button--green" data-popup-open="login">
+                <svg class="icon" width="78" height="32"><use href="#login-bg" /></svg>
+                <span>Войти</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-buttons">
+          <button class="button button--lime" data-popup-open="register-check">
+            <svg class="icon" width="78" height="32"><use href="#register-bg" /></svg>
+            <span>Зарегистрировать чек</span>
+          </button>
+
+          <button class="button button--green" data-popup-open="login">
+            <svg class="icon" width="78" height="32"><use href="#login-bg" /></svg>
+            <span>Войти</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="background" data-background data-fixed></div>
+
+    <main class="main">
+      <!--SECTION HERO-->
+      <section class="section section--error">
+        <div class="error-info">
+          <div class="error-info__status">
+            <svg viewBox="0 0 658 385" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M559.189 384.104C531.683 384.104 508.408 375.07 489.365 357.004C470.16 339.1 460.475 317.209 460.312 291.33V93.5762C460.312 67.86 469.915 45.8874 489.121 27.6582C508.327 9.5918 531.602 0.558594 558.945 0.558594C586.452 0.558594 609.889 9.5918 629.258 27.6582C648.301 45.8874 657.822 67.86 657.822 93.5762V291.33C657.822 317.046 648.301 338.938 629.258 357.004C609.727 375.07 586.37 384.104 559.189 384.104ZM536.484 313.059C542.995 319.243 550.482 322.336 558.945 322.336C567.572 322.336 575.14 319.243 581.65 313.059C587.835 307.362 591.009 300.119 591.172 291.33V93.5762C591.172 84.6244 587.998 77.3001 581.65 71.6035C574.977 65.5814 567.409 62.5703 558.945 62.5703C550.482 62.4076 542.995 65.4186 536.484 71.6035C530.299 77.3001 527.126 84.6244 526.963 93.5762V291.33C526.963 300.119 530.137 307.362 536.484 313.059Z"
+                fill="#EB5DBF"
+              />
+              <path
+                d="M327.744 384.104C300.238 384.104 276.963 375.07 257.92 357.004C238.714 339.1 229.03 317.209 228.867 291.33V93.5762C228.867 67.86 238.47 45.8874 257.676 27.6582C276.882 9.5918 300.156 0.558594 327.5 0.558594C355.007 0.558594 378.444 9.5918 397.812 27.6582C416.855 45.8874 426.377 67.86 426.377 93.5762V291.33C426.377 317.046 416.855 338.938 397.812 357.004C378.281 375.07 354.925 384.104 327.744 384.104ZM305.039 313.059C311.549 319.243 319.036 322.336 327.5 322.336C336.126 322.336 343.695 319.243 350.205 313.059C356.39 307.362 359.564 300.119 359.727 291.33V93.5762C359.727 84.6244 356.553 77.3001 350.205 71.6035C343.532 65.5814 335.964 62.5703 327.5 62.5703C319.036 62.4076 311.549 65.4186 305.039 71.6035C298.854 77.3001 295.68 84.6244 295.518 93.5762V291.33C295.518 300.119 298.691 307.362 305.039 313.059Z"
+                fill="white"
+              />
+              <path
+                d="M98.7402 384.104C71.2337 384.104 48.0404 375.07 29.1602 357.004C9.95443 339.1 0.270182 317.29 0.107422 291.574C0.107422 289.296 0.758464 287.18 2.06055 285.227C3.52539 283.111 5.47852 282.053 7.91992 282.053L59.1895 281.564C62.1191 281.564 64.0723 282.297 65.0488 283.762C66.1881 285.064 66.7578 287.587 66.7578 291.33C66.7578 300.119 69.9316 307.362 76.2793 313.059C82.9525 319.081 90.4395 322.173 98.7402 322.336C107.367 322.336 114.935 319.243 121.445 313.059C127.63 307.199 130.804 299.956 130.967 291.33V222.971C130.967 214.019 128.281 206.288 122.91 199.777C117.214 193.104 109.808 189.849 100.693 190.012C93.2064 190.012 87.0215 191.395 82.1387 194.162C77.4186 196.929 73.2682 201.73 69.6875 208.566L67.2461 213.205C65.6185 216.623 63.9095 219.309 62.1191 221.262C61.3053 222.238 60.3288 222.727 59.1895 222.727H10.8496C7.10612 222.727 4.33919 221.913 2.54883 220.285C0.758464 218.658 0.0260417 215.646 0.351562 211.252L10.1172 17.6484C10.6055 10.487 13.5352 6.90625 18.9062 6.90625H174.912C178.981 6.90625 181.829 7.80143 183.457 9.5918C185.085 11.3822 185.898 14.3118 185.898 18.3809V55.9785C185.898 60.6986 185.247 63.9538 183.945 65.7441C182.643 67.3717 180.039 68.1855 176.133 68.1855H69.6875L63.8281 150.217C66.9206 144.357 71.5592 139.556 77.7441 135.812C86.5332 130.767 97.7637 128.244 111.436 128.244C137.314 128.244 158.311 137.684 174.424 156.564C189.886 174.956 197.617 197.092 197.617 222.971V291.33C197.617 317.046 187.933 338.938 168.564 357.004C149.033 375.07 125.758 384.104 98.7402 384.104Z"
+                fill="#CFDA46"
+              />
+            </svg>
+            <div class="error-info__image">
+              <img src="./assets/img/tutorial/1.webp" alt="Gorilla energy" loading="lazy" />
+              <img src="./assets/img/tutorial/animation.gif" alt="Gorilla energy" class="blink" loading="lazy" />
+            </div>
+          </div>
+
+          <h1 class="error-info__title">ВНУТРЕННЯЯ ОШИБКА&nbsp;СЕРВЕРА</h1>
+          <p class="error-info__subtitle">Что-то пошло не так. Попробуйте зайти позже</p>
+        </div>
+      </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer">
+      <div class="container">
+        <h2 class="title title--h6" onclick="Popup">Copyright &copy; 2025 Gorilla Energy</h2>
+        <ul class="footer__menu">
+          <li><a href="" target="_blank">Правила</a></li>
+          <li><a href="./assets/pdf/privacy_consent_form.pdf" target="_blank">Политика конфиденциальности</a></li>
+          <li><a href="#faq" data-scrollto>FAQ</a></li>
+          <li><a href="#callback-form" data-scrollto>Обратная связь</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <!--POPUPS-->
+    <div class="backdrop" data-backdrop>
+      <div class="popup" data-popup>
+        <!--LOGIN POPUP-->
+        <div class="popup-content" id="login">
+          <button class="popup-close" data-popup-close></button>
+          <h2 class="popup-title">Авторизация</h2>
+          <form action="#" method="POST" class="form" novalidate>
+            <label class="label">
+              <span data-label>Email*</span>
+              <input type="email" name="email" class="input" required />
+            </label>
+            <label class="label">
+              <span data-label>Пароль*</span>
+              <input type="password" name="password" class="input" required />
+              <button type="button" class="input-icon full" data-password-btn>
+                <svg width="36" height="36"><use href="#password-lock" /></svg>
+              </button>
+            </label>
+            <button type="submit" class="button button--violet submit">
+              <span>Войти</span>
+            </button>
+          </form>
+          <div class="popup-links">
+            <a href="#" data-popup-open="password-recovery">Забыли пароль?</a>
+            <a href="#" data-popup-open="registration">Регистрация</a>
+          </div>
+        </div>
+
+        <script>
+          function recoveryPassword(e) {
+            e.preventDefault();
+            popup.open('password-recovery-success');
+          }
+        </script>
+
+        <!--PASSWORD RECOVERY POPUP-->
+        <div class="popup-content" id="password-recovery">
+          <button class="popup-close" data-popup-close></button>
+          <h2 class="popup-title">Восстановите <br />пароль</h2>
+          <form action="#" method="POST" class="form" novalidate onsubmit="recoveryPassword(event)">
+            <label class="label">
+              <span data-label>Email указанный при регистрации*</span>
+              <input type="email" name="email" class="input" required />
+            </label>
+            <button type="submit" class="button button--violet submit">
+              <span>Восстановить</span>
+            </button>
+          </form>
+          <div class="popup-links">
+            <a href="#" data-popup-open="login">Авторизация</a>
+          </div>
+        </div>
+
+        <!--PASSWORD RECOVERY SUCCESS POPUP-->
+        <div class="popup-content" id="password-recovery-success">
+          <button class="popup-close" data-popup-close></button>
+          <h2 class="popup-title">Восстановите <br />пароль</h2>
+          <p class="popup-subtitle no-margin">Отправили письмо с инструкцией <br />по восстановлению пароля</p>
+          <button type="button" class="button button--violet submit" data-popup-close>
+            <span>Продолжить</span>
+          </button>
+        </div>
+
+        <!--REGISTRATION POPUP-->
+        <div class="popup-content" id="registration">
+          <button class="popup-close" data-popup-close></button>
+          <h2 class="popup-title">Регистрация</h2>
+          <form action="#" method="POST" class="form" novalidate>
+            <label class="label">
+              <span data-label>Фамилия*</span>
+              <input type="text" name="sername" class="input" required />
+            </label>
+            <label class="label">
+              <span data-label>Имя*</span>
+              <input type="text" name="name" class="input" required />
+            </label>
+            <label class="label">
+              <span data-label>Дата рождения</span>
+              <input type="date" name="birthday" class="input" />
+            </label>
+            <label class="label">
+              <span data-label>E-mail*</span>
+              <input type="email" name="email" class="input" required />
+            </label>
+            <label class="label">
+              <span data-label>Телефон*</span>
+              <input type="tel" name="phone" class="input" required />
+            </label>
+            <label>
+              <input type="checkbox" name="rules" class="checkbox" required />
+              <span class="agree__text">
+                Я ознакомился с&nbsp;<a href="#" target="_blank">Правилами акции</a>,
+                <a href="./assets/pdf/privacy_consent_form.pdf" target="_blank">Пользовательским соглашением</a> и даю своё согласие на обработку
+                персональных данных
+              </span>
+            </label>
+            <label>
+              <input type="checkbox" name="agree" class="checkbox" required />
+              <span class="agree__text">
+                Я даю согласие на получение <br />рекламной рассылки (в т.ч. в виде <br />смс, электронных писем и/или <br />через мессенджеры)</span
+              >
+            </label>
+            <button type="submit" class="button button--violet submit">
+              <span>Зарегистрироваться</span>
+            </button>
+          </form>
+          <div class="popup-links">
+            <a href="#" data-popup-open="login">Авторизация</a>
+          </div>
+        </div>
+
+        <!--REGISTRATION CHEQUE POPUP-->
+        <div class="popup-content" id="register-check">
+          <button class="popup-close" data-popup-close></button>
+          <h2 class="popup-title">Загрузка чека</h2>
+          <ul class="register-check-list">
+            <li>
+              <img src="./assets/img/svg/register-check-list-1.svg" alt="Gorilla energy drink" />
+              <span>Нажми «Загрузить»</span>
+            </li>
+            <li>
+              <img src="./assets/img/svg/register-check-list-2.svg" alt="Gorilla energy drink" />
+              <span>Выбери фото чека</span>
+            </li>
+            <li>
+              <img src="./assets/img/svg/register-check-list-3.svg" alt="Gorilla energy drink" />
+              <span>Фото чека должно быть:</span>
+              <ul>
+                <li>чётким</li>
+                <li>с полным списком продуктов</li>
+                <li>на фото должен быть QR код</li>
+              </ul>
+            </li>
+            <li>
+              <img src="./assets/img/svg/register-check-list-4.svg" alt="Gorilla energy drink" />
+              <span>Если фото окажется плохого качества, чек принят не будет</span>
+            </li>
+          </ul>
+          <div class="example">
+            <img src="./assets/img/check.webp" alt="Gorilla energy drink" />
+            <span>Пример чека</span>
+          </div>
+
+          <button type="button" class="button button--violet submit" data-popup-open="load-cheque">
+            <span>Загрузить</span>
+          </button>
+          <div class="popup-links">
+            <a href="#" data-popup-open="self-cheque-in">Ввести данные чека вручную</a>
+          </div>
+        </div>
+
+        <!--LOAD CHEQUE POPUP-->
+        <script>
+          function loadCheque(e) {
+            e.preventDefault();
+            popup.open('load-cheque-success');
+          }
+        </script>
+
+        <div class="popup-content" id="load-cheque">
+          <button class="popup-close" data-popup-close></button>
+          <h2 class="popup-title">Загрузка чека</h2>
+
+          <form class="form" enctype="multipart/form-data" novalidate onsubmit="loadCheque(event)">
+            <div class="download-file">
+              <label class="label-for-file">
+                <input type="file" name="cheque" class="input input-file" required />
+                <img src="./assets/img/svg/plus.svg" alt="Алёнка" />
+                <p class="label__text" data-text="Перетащите фото чека или нажмите для выбора">Перетащите фото чека или нажмите для выбора</p>
+              </label>
+            </div>
+          </form>
+          <button type="submit" class="button button--violet submit">
+            <span>Загрузить</span>
+          </button>
+          <!-- <div class="upload-error-message">Чек не выбран.</div> -->
+          <div class="popup-links">
+            <a href="#" data-popup-open="self-cheque-in">Ввести данные чека вручную</a>
+          </div>
+        </div>
+
+        <div class="popup-content" id="load-cheque-success">
+          <button class="popup-close" data-popup-close></button>
+          <h2 class="popup-title">Чек загружен</h2>
+          <p class="popup-subtitle no-margin">Твой чек загружен успешно. <br />Следи за его статусом в своём <br />личном кабинете.</p>
+          <button type="button" class="button button--violet submit" data-popup-close>
+            <span>Закрыть</span>
+          </button>
+        </div>
+
+        <!--REGISTRATION CHECK YOURSELF POPUP-->
+        <div class="popup-content" id="self-cheque-in">
+          <button class="popup-close" data-popup-close></button>
+          <h2 class="popup-title">Ввод данных чека</h2>
+          <p class="popup-subtitle">Внимательно введи <br />данные чека в поля ниже</p>
+          <form action="#" method="POST" class="form" novalidate onsubmit="loadCheque(event)">
+            <label class="label">
+              <span data-label>ФН*</span>
+              <input type="text" name="fn" class="input" required />
+            </label>
+            <label class="label">
+              <span data-label>ФД*</span>
+              <input type="text" name="fd" class="input" required />
+            </label>
+            <label class="label">
+              <span data-label>ФП*</span>
+              <input type="text" name="fp" class="input" required />
+            </label>
+            <label class="label">
+              <span data-label>Дата покупки*</span>
+              <input type="date" name="buydate" class="input" required />
+            </label>
+            <label class="label">
+              <span data-label>Время покупки*</span>
+              <input type="time" name="time" class="input" required />
+            </label>
+            <label class="label">
+              <span data-label>Сумма покупки*</span>
+              <input type="number" name="sum" class="input" required />
+            </label>
+            <button type="submit" class="button button--violet submit">
+              <span>Отправить чек</span>
+            </button>
+          </form>
+          <div class="popup-links">
+            <a href="#" data-popup-open="load-cheque">Попробовать снова загрузить фото</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+      <symbol id="login-bg" viewBox="0 0 78 32" preserveAspectRatio="none">
+        <path
+          d="M4.16794 2.46154L13.0992 0L22.3282 2.46154L42.2748 0.492308L58.6489 2.46154H67.729H76.8092L76.2137 10.3385L78 16.2462V23.1385L75.0229 31.5077L58.3511 32L40.4885 30.0308L22.0305 32L2.38168 31.5077L4.16794 23.1385L0 17.7231L4.16794 9.35385V2.46154Z"
+          fill="currentColor"
+        />
+      </symbol>
+
+      <symbol id="chance-bg" viewBox="0 0 100 35" preserveAspectRatio="none">
+        <path
+          d="M2.18069 2.021L13.0841 2.52625L25.2336 0L51.0903 2.021L65.109 0L75.5452 1.0105L90.0312 0L100 2.021L100 13.187L97.8193 20.7657L100 32.336L87.9889 33.3465L75.5452 31.3255L59.5573 35L34.2679 32.336L17.757 33.3465L2.18069 31.3255L2.18069 23.9993L1.65421e-07 16.6732L2.18069 2.021Z"
+          fill="currentColor"
+        />
+      </symbol>
+
+      <symbol id="button-bg" viewBox="0 0 353 77" preserveAspectRatio="none">
+        <path
+          d="M7.68293 4.44444L46.0976 5.55556L88.9024 0L180 4.44444L229.39 0L266.159 2.22222L317.195 0L352.317 4.44444V29L344.634 45.6667L352.317 71.1111L310 73.3333L266.159 68.8889L214.5 77L120.732 71.1111L62.561 73.3333L7.68293 68.8889V52.7778L0 36.6667L7.68293 4.44444Z"
+          fill="currentColor"
+        />
+      </symbol>
+
+      <symbol id="register-bg" viewBox="0 0 200 36" preserveAspectRatio="none">
+        <path
+          d="M4.26829 2L25.6098 2.5L49.3902 0L100 2L127.439 0L147.866 1L176.22 0L195.732 2L200 9L195.732 16.5V32L170.122 31H147.866L103.659 36L67.0732 32L34.7561 33L4.26829 31V23.75L0 16.5L4.26829 2Z"
+          fill="currentColor"
+        />
+      </symbol>
+
+      <symbol id="burger" viewBox="0 0 44 40" preserveAspectRatio="none">
+        <path
+          d="M2.6969 3.07692L8.47598 0L14.4477 3.07692L27.3543 0.615385L31.4787 3.07692H37.3541H43.2295L42.8442 12.9231L44 20.3077V28.9231L42.0736 39.3846L31.286 40L26.1985 37.5385L14.2551 40L1.54109 39.3846L2.6969 28.9231L0 22.1538L2.6969 11.6923V3.07692Z"
+          fill="#007567"
+        />
+      </symbol>
+
+      <symbol id="hero-info-sprite" viewBox="0 0 297 204" preserveAspectRatio="none">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M35.9601 23.9341L125.726 23.1791L166.601 0.0559383L294.486 36.0353L294.15 35.4356L296.793 36.1376L284.057 131.96L254.055 197.965L124.253 203.329L60.211 185.394L0.526357 171.692L19.6207 91.405L35.9601 23.9341Z"
+          fill="var(--lime)"
+        />
+      </symbol>
+
+      <symbol id="arrow-down" viewBox="0 0 48 48" preserveAspectRatio="none">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M3.58579 13.5858C2.80474 14.3668 2.80474 15.6332 3.58579 16.4142L22.5663 35.3947C22.9414 35.7698 23.4501 35.9805 23.9805 35.9805C24.511 35.9805 25.0197 35.7698 25.3947 35.3947L44.3753 16.4142C45.1563 15.6332 45.1563 14.3668 44.3753 13.5858C43.5942 12.8047 42.3279 12.8047 41.5468 13.5858L23.9805 31.1521L6.41421 13.5858C5.63317 12.8047 4.36684 12.8047 3.58579 13.5858Z"
+          fill="currentColor"
+        />
+      </symbol>
+
+      <symbol id="telegram" viewBox="0 0 15 12" preserveAspectRatio="none">
+        <path
+          d="M14.1638 1.15207C13.9638 3.21207 13.1138 8.22207 12.6838 10.5321C12.5038 11.5121 12.1438 11.8421 11.7938 11.8721C11.0338 11.9421 10.4638 11.3721 9.72385 10.8921C8.57385 10.1421 7.92385 9.67207 6.81385 8.93207C5.52385 8.08207 6.36384 7.61207 7.09384 6.85207C7.28384 6.65207 10.6238 3.61207 10.6938 3.34207C10.6938 3.31207 10.7138 3.18207 10.6338 3.11207C10.5538 3.04207 10.4438 3.07207 10.3638 3.08207C10.2438 3.11207 8.41385 4.32207 4.86385 6.72207C4.34385 7.08207 3.87385 7.25207 3.44385 7.24207C2.97385 7.23207 2.08384 6.98207 1.41384 6.76207C0.593844 6.49207 -0.0561554 6.35207 0.00384457 5.90207C0.0338446 5.67207 0.353846 5.42207 0.973846 5.18207C4.77385 3.52207 7.31385 2.43207 8.58385 1.90207C12.2038 0.392071 12.9638 0.13207 13.4538 0.12207C13.5638 0.12207 13.8038 0.15207 13.9638 0.27207C14.0938 0.38207 14.1338 0.52207 14.1538 0.62207C14.1738 0.72207 14.1938 0.952071 14.1738 1.13207L14.1638 1.15207Z"
+          fill="#CFDA46"
+        />
+      </symbol>
+
+      <symbol id="info" viewBox="0 0 394 368" preserveAspectRatio="none">
+        <path
+          d="M50.5 7L3.5 12L0 33L6.5 86L0 113.5L3.5 180L0 257L7 307.5L0 336.5V363.5L38.5 368L86.5 363.5H141L181 368L215.5 363.5L292.5 362L316.5 368L343.5 363H383.5L391.5 340L394 256L386 230L392.5 153L394 33.5L384.5 7H342L287.5 14.5L164 0L90 7H50.5Z"
+          fill="#5C427F"
+        />
+      </symbol>
+
+      <symbol id="accordeon-btn" viewBox="0 0 14 14" preserveAspectRatio="none">
+        <path
+          d="M1.54583 7.5625H6.14125V12.1579C6.14125 12.625 6.52546 13.0167 7.00007 13.0167C7.47468 13.0167 7.85889 12.625 7.85889 12.1579V7.5625H12.4543C12.9214 7.5625 13.3131 7.17829 13.3131 6.70368C13.3131 6.22907 12.9214 5.84487 12.4543 5.84487H7.85889V1.24944C7.85889 0.782366 7.47468 0.390625 7.00007 0.390625C6.52546 0.390625 6.14125 0.782366 6.14125 1.24944V5.84487H1.54583C1.07875 5.84487 0.687012 6.22907 0.687012 6.70368C0.687012 7.17829 1.07875 7.5625 1.54583 7.5625Z"
+          fill="currentColor"
+        />
+      </symbol>
+
+      <symbol id="peterka" viewBox="0 0 86 87" preserveAspectRatio="none">
+        <path
+          d="M43 0C19.2983 0 0 19.3214 0 43.0515C0 66.7816 19.2791 86.1031 43 86.1031C66.7208 86.1031 86 66.7816 86 43.0515C86 19.3214 66.7208 0 43 0Z"
+          fill="white"
+        />
+        <path
+          d="M42.618 7.9483C23.2897 7.9483 7.55225 23.7046 7.55225 43.0561C7.55225 62.4076 23.2741 78.1638 42.618 78.1638C61.9619 78.1638 77.6838 62.4076 77.6838 43.0561C77.6838 23.7046 61.9619 7.9483 42.618 7.9483Z"
+          fill="#EB5DBF"
+        />
+        <path
+          d="M21.0428 45.318C20.762 45.318 20.5949 45.1989 20.5416 44.9605C20.506 44.7988 20.558 44.5519 20.6975 44.2199L23.7449 36.7887L20.6439 29.3575C20.4495 28.8723 20.541 28.6297 20.9184 28.6297H24.5653C24.7496 28.6297 24.8857 28.6765 24.9738 28.7701C25.0705 28.8553 25.1499 28.9829 25.2118 29.1532L26.4075 33.1242L26.5825 34.5415L26.7234 33.1114L27.937 29.1532C27.9892 28.9829 28.0591 28.8553 28.1466 28.7701C28.2429 28.6765 28.3876 28.6297 28.5807 28.6297H32.2144C32.3987 28.6297 32.513 28.6978 32.5572 28.834C32.6102 28.9702 32.5888 29.1447 32.4928 29.3575L29.4454 36.7759L32.5201 44.2199C32.6526 44.5349 32.7015 44.7818 32.6669 44.9605C32.6237 45.1989 32.466 45.318 32.1939 45.318H28.8762C28.5515 45.318 28.3316 45.1435 28.2165 44.7945L26.81 40.7597L26.5957 39.419L26.3888 40.7725L25.0042 44.7945C24.891 45.1435 24.6721 45.318 24.3473 45.318H21.0428ZM44.4142 60.3339C41.6056 60.3339 39.2994 59.5323 37.4958 57.9292C35.6922 56.3544 34.7871 54.3398 34.7804 51.8855C34.7796 51.5733 34.7715 51.2967 34.7562 51.0555C34.6956 50.2752 34.7818 49.7006 35.0149 49.3318C35.1459 49.119 35.3651 49.0126 35.6723 49.0126H41.1798C41.6479 49.0126 41.9558 49.2537 42.1034 49.7361C42.1478 49.9489 42.1704 50.1688 42.171 50.3958C42.1568 50.566 42.1501 50.7789 42.1508 51.0342C42.1559 52.9211 42.8972 53.8646 44.3746 53.8646C45.0183 53.8646 45.5298 53.6943 45.9092 53.3538C46.4053 52.8998 46.6519 52.1195 46.6489 51.0129L46.6444 49.3743C46.6416 48.3387 46.4202 47.6009 45.9801 47.1611C45.5401 46.7071 44.7641 46.4801 43.6524 46.4801C42.8186 46.4801 42.4082 46.2035 42.4214 45.6502L42.4093 41.2025C42.4085 40.9046 42.4955 40.6492 42.6705 40.4364C42.8455 40.2236 43.1085 40.1172 43.4596 40.1172C45.2735 40.1172 46.1693 38.7198 46.1471 35.9249C46.1448 35.0879 45.9822 34.4778 45.6594 34.0948C45.3511 33.6975 44.919 33.4989 44.3631 33.4989C43.7195 33.4989 43.2519 33.7046 42.9605 34.1161C42.6836 34.5133 42.5464 35.1517 42.5488 36.0313C42.5501 36.5137 42.5437 36.8258 42.5294 36.9677C42.5008 37.2089 42.472 37.3649 42.4429 37.4358C42.3847 37.5352 42.1873 37.5919 41.8509 37.6061H36.0362C35.7144 37.6061 35.4947 37.4997 35.3771 37.2869C35.2594 37.0599 35.2 36.7123 35.1987 36.2441C35.1902 33.1088 36.0176 30.7537 37.6809 29.1789C39.2421 27.7177 41.4636 26.9799 44.3454 26.9657C45.7789 26.9657 47.1621 27.2778 48.495 27.9021C49.9304 28.5689 51.1033 29.5336 52.0137 30.7963C52.9975 32.1866 53.4921 33.8465 53.4973 35.7759C53.5024 37.6345 53.2361 39.2163 52.6984 40.5215C52.0587 41.9686 51.1396 42.905 49.9413 43.3306C51.171 43.6853 52.1679 44.4585 52.9318 45.6502C53.6224 46.7852 53.9695 48.0265 53.9732 49.3743L53.9799 51.8429C53.986 54.0986 53.194 56.0281 51.6039 57.6312C49.8242 59.433 47.4276 60.3339 44.4142 60.3339Z"
+          fill="white"
+        />
+      </symbol>
+
+      <symbol id="search" viewBox="0 0 17 16" preserveAspectRatio="none">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M7.2998 1.2998C4.26224 1.2998 1.7998 3.76224 1.7998 6.7998C1.7998 9.83737 4.26224 12.2998 7.2998 12.2998C10.3374 12.2998 12.7998 9.83737 12.7998 6.7998C12.7998 3.76224 10.3374 1.2998 7.2998 1.2998ZM0.799805 6.7998C0.799805 3.20995 3.70995 0.299805 7.2998 0.299805C10.8897 0.299805 13.7998 3.20995 13.7998 6.7998C13.7998 10.3897 10.8897 13.2998 7.2998 13.2998C3.70995 13.2998 0.799805 10.3897 0.799805 6.7998Z"
+          fill="currentColor"
+        />
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M15.4463 15.6534L10.9463 11.1534L11.6534 10.4463L16.1534 14.9463L15.4463 15.6534Z"
+          fill="currentColor"
+        />
+      </symbol>
+
+      <symbol id="select-arrow" viewBox="0 0 14 7" fill="none" preserveAspectRatio="none">
+        <path d="M13 1L7 6L1 0.999999" stroke="currentColor" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="round" />
+      </symbol>
+
+      <symbol id="arr-left" viewBox="0 0 9 16" fill="none" preserveAspectRatio="none">
+        <path
+          d="M7.77734 1.48145L1.85142 7.9012L7.77734 14.3209"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+
+      <symbol id="arr-right" viewBox="0 0 9 16" fill="none" preserveAspectRatio="none">
+        <path
+          d="M1.22266 14.5186L7.14858 8.0988L1.22266 1.67905"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+
+      <symbol id="friend" viewBox="0 0 133 90" fill="none" preserveAspectRatio="none">
+        <path
+          d="M116.397 35.5367H129.363L133 40.2421L130.191 44.0296L116.915 44.0739L116.11 58.2012L112.59 59.0969L108.672 57.3773V43.8306H95.1537L92.1797 39.6726L95.7055 35.5367H108.672V21.99L110.89 19.7893L116.397 21.437V35.5367Z"
+          fill="#007567"
+        />
+        <path
+          d="M83.8802 53.3851L77.4411 50.1671L85.2431 41.2926L89.6076 16.4828L69.2915 0L44.6771 13.9117L51.5024 47.6789L55.9166 50.709L45.124 54.4689L35.1921 62.807L30 82.5134L34.6514 89.9945H98.7063L103.297 82.5742L93.5803 57.2667L83.8747 53.3796L83.8802 53.3851ZM63.5089 44.0296L55.5414 39.938L78.2136 37.8921L71.8793 44.0351H63.5034L63.5089 44.0296Z"
+          fill="#007567"
+        />
+      </symbol>
+
+      <symbol id="password" viewBox="0 0 36 36" fill="none" preserveAspectRatio="none">
+        <path
+          d="M23.7143 14.1575C22.881 13.5622 20.2143 12.3004 17.6429 12.0146C15.0714 11.7289 10.1429 15.7051 8 17.7289C9.42857 20.8718 15.1429 22.8479 17.6429 23.4432L24.0714 21.3003L27.6429 17.7289L23.7143 14.1575Z"
+          fill="#000000"
+        />
+        <path d="M8 17.7289C11.046 13.4168 19.3103 7.37981 28 17.7289" stroke="#000000" stroke-width="1.71394" stroke-linecap="round" />
+        <path d="M8 17.7291C11.046 22.0412 19.3103 28.0782 28 17.7291" stroke="#000000" stroke-width="1.71394" stroke-linecap="round" />
+        <path
+          d="M21.3353 18.0863C21.3353 19.6552 19.9213 21.0649 17.9996 21.0649C16.0778 21.0649 14.6639 19.6552 14.6639 18.0863C14.6639 16.5174 16.0778 15.1077 17.9996 15.1077C19.9213 15.1077 21.3353 16.5174 21.3353 18.0863Z"
+          fill="#000000"
+          stroke="white"
+          stroke-width="1.9"
+        />
+      </symbol>
+
+      <symbol id="password-lock" viewBox="0 0 36 36" fill="none" preserveAspectRatio="none">
+        <path
+          d="M23.7143 14.1575C22.881 13.5622 20.2143 12.3004 17.6429 12.0146C15.0714 11.7289 10.1429 15.7051 8 17.7289C9.42857 20.8718 15.1429 22.8479 17.6429 23.4432L24.0714 21.3003L27.6429 17.7289L23.7143 14.1575Z"
+          fill="#000000"
+        />
+        <path d="M8 17.7289C11.046 13.4168 19.3103 7.37981 28 17.7289" stroke="#000000" stroke-width="1.71394" stroke-linecap="round" />
+        <path d="M8 17.7291C11.046 22.0412 19.3103 28.0782 28 17.7291" stroke="#000000" stroke-width="1.71394" stroke-linecap="round" />
+        <path
+          d="M21.3353 18.0863C21.3353 19.6552 19.9213 21.0649 17.9996 21.0649C16.0778 21.0649 14.6639 19.6552 14.6639 18.0863C14.6639 16.5174 16.0778 15.1077 17.9996 15.1077C19.9213 15.1077 21.3353 16.5174 21.3353 18.0863Z"
+          fill="#000000"
+          stroke="white"
+          stroke-width="1.9"
+        />
+        <path d="M11 11L25 24" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+      </symbol>
+    </svg>
+    <script src="./assets/js/forms.js?v=3" type="module"></script>
+    <script src="./assets/js/scripts.js?v=3" type="module"></script>
+  </body>
+</html>
