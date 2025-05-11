@@ -37,8 +37,9 @@
     <meta name="description" content="Gorilla" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/styles.min.css?v=0.0.2" />
-    <title>Gorilla</title>
+    <link rel="stylesheet" href="./assets/css/styles.min.css?v=3" />
+
+    <title>Gorilla | Выиграй 1 000 000 рублей</title>
   </head>
   <body class="body night">
     <noscript>
@@ -73,7 +74,7 @@
             <li><a href="#faq" data-scrollto class="menu__link">FAQ</a></li>
             <li><a href="#rules" data-scrollto class="menu__link">Правила акции</a></li>
             <li>
-              <a href="#activity" class="button button--pink" data-scrollto>
+              <a href="#activity" data-scrollto class="button button--pink">
                 <svg class="icon" width="100" height="35"><use href="#chance-bg" /></svg>
                 <span>шансы <i>x</i>3</span>
               </a>
@@ -93,10 +94,10 @@
             <span>Зарегистрировать чек</span>
           </button>
 
-          <a href="./lk.html" class="button button--green">
+          <button class="button button--green" data-popup-open="login">
             <svg class="icon" width="78" height="32"><use href="#login-bg" /></svg>
-            <span>Профиль</span>
-          </a>
+            <span>Войти</span>
+          </button>
         </div>
       </div>
     </header>
@@ -105,253 +106,100 @@
 
     <main class="main">
       <!--SECTION PROFILE-->
-      <section class="section section--profile">
-        <h1 class="title title--h2">Личный кабинет</h1>
+      <section class="section section--mainprize">
+        <h1 class="title title--h2">Выиграй</h1>
         <div class="green-gradient">
-          <div class="container">
-            <div class="user-info">
-              <h2 class="title title--h1 lime">Пантелеймон Константинопольский</h2>
-              <p>
-                <span>Email: <a href="mailto:konstan111@gorilla.ru">konstan111@gorilla.ru</a></span>
-                <span>Телефон: <a href="tel:+79265555555">+79265555555</a></span>
-              </p>
-              <a href="../" class="logout">Выйти</a>
-            </div>
-            <div class="user-motivation">
-              <h3 class="title violet">ЗАРЯЖАЙ АККАУНТ!</h3>
-              <ul>
-                <li>
-                  <span>Покупка в бонусной <br />локации умножает <br />все шансы на х3</span>
-                  <svg width="84" height="84"><use href="#peterka" /></svg>
-                </li>
-                <li>
-                  <svg width="133" height="90"><use href="#friend" /></svg>
-                  <span>Пригласи друга <br />и снова умножай <br />все шансы на х3</span>
-                </li>
-              </ul>
+          <div class="million no-bg">
+            <div class="container">
+              <h3 class="title title--h4">СПЕЦИАЛЬНЫЙ ПРИЗ</h3>
+              <img src="./assets/img/million.webp" alt="Gorilla energy" data-animate="" class="animate" />
+              <h3 class="title title--h3 lime">рублей</h3>
             </div>
           </div>
         </div>
-      </section>
 
-      <div class="winn-chanses">
-        <span>Мои шансы <br />на победу</span>
-        <strong class="lime">365</strong>
-        <a href="">как это работает</a>
-      </div>
-
-      <section class="lk-tables">
-        <div class="lk-tables__item">
-          <h2 class="title title--h2 invers">Мои чеки</h2>
-
-          <div class="table-background table-background--lime">
-            <!-- <h3 class="title title--h4 violet">Ты ещё не загружал чеки</h3> -->
-            <table class="table table--cheks">
-              <thead>
-                <tr>
-                  <th>Чек</th>
-                  <th>Дата</th>
-                  <th>Статус</th>
-                  <th>Караоке будки</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>125 1234 123456</td>
-                  <td>29.02.2025</td>
-                  <td>На модерации</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>125 1234 123456</td>
-                  <td>29.02.2025</td>
-                  <td>Ожидает</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>125 1234 123456</td>
-                  <td>29.02.2025</td>
-                  <td>Принят</td>
-                  <td><a href="./" class="promokod">Промо-код</a></td>
-                </tr>
-                <tr>
-                  <td>125 1234 123456</td>
-                  <td>29.02.2025</td>
-                  <td>Принят</td>
-                  <td><a href="./" class="promokod">Промо-код</a></td>
-                </tr>
-                <tr>
-                  <td>125 1234 123456</td>
-                  <td>29.02.2025</td>
-                  <td>Принят</td>
-                  <td><a href="./" class="promokod">Промо-код</a></td>
-                </tr>
-                <tr>
-                  <td>125 1234 123456</td>
-                  <td>29.02.2025</td>
-                  <td>Принят</td>
-                  <td><a href="./" class="promokod">Промо-код</a></td>
-                </tr>
-                <tr>
-                  <td>125 1234 123456</td>
-                  <td>29.02.2025</td>
-                  <td>Принят</td>
-                  <td><a href="./" class="promokod">Промо-код</a></td>
-                </tr>
-                <tr>
-                  <td>125 1234 123456</td>
-                  <td>29.02.2025</td>
-                  <td>Принят</td>
-                  <td><button class="promokod">Промо-код</button></td>
-                </tr>
-                <tr>
-                  <td>125 1234 123456</td>
-                  <td>29.02.2025</td>
-                  <td>Принят</td>
-                  <td><a href="./" class="promokod">Промо-код</a></td>
-                </tr>
-                <tr>
-                  <td>125 1234 123456</td>
-                  <td>29.02.2025</td>
-                  <td>Принят</td>
-                  <td><a href="./" class="promokod">Промо-код</a></td>
-                </tr>
-              </tbody>
-            </table>
-
-            <!--PAGINATION-->
-            <ul class="pagination">
-              <li>
-                <a href="#" class="pagination-btn left" aria-label="left pagination">
-                  <svg width="9" height="16"><use href="#arr-left"></use></svg>
-                </a>
-              </li>
-              <li><a href="#" class="pagination-btn active">1</a></li>
-              <li><a href="#" class="pagination-btn">2</a></li>
-              <li><a href="#" class="pagination-btn">3</a></li>
-              <li><a href="#" class="pagination-btn">4</a></li>
-              <li>
-                <a href="#" class="pagination-btn right" aria-label="right pagination">
-                  <svg width="9" height="16"><use href="#arr-right"></use></svg>
-                </a>
-              </li>
-            </ul>
+        <div class="main-prize-description">
+          <div class="left">
+            <picture>
+              <source media="(max-width: 767px)" srcset="./assets/img/svg/prize-desc1-mobil.svg" />
+              <source media="(min-width: 768px)" srcset="./assets/img/svg/prize-desc1.svg" />
+              <img src="./assets/img/svg/prize-desc1.svg" alt="Gorilla energy" />
+            </picture>
+            <p>Теперь ты&nbsp;принимаешь участие в&nbsp;розыгрыше Специального приза</p>
           </div>
-
-          <button class="button button--lime big" data-popup-open="register-check">
-            <svg class="icon" width="353" height="77"><use href="#button-bg" /></svg>
-            <span>Зарегистрировать чек</span>
-          </button>
+          <div class="right">
+            <picture>
+              <source media="(max-width: 767px)" srcset="./assets/img/svg/prize-desc2-mobil.svg" />
+              <source media="(min-width: 768px)" srcset="./assets/img/svg/prize-desc2.svg" />
+              <img src="./assets/img/svg/prize-desc2.svg" alt="Gorilla energy" />
+            </picture>
+            <p>
+              ТОП 5 самых креативных видео недели будут выложены 1&nbsp;раз&nbsp;в&nbsp;неделю в&nbsp;<a
+                href="https://t.me/gorillaenergyofficial"
+                target="_blank"
+                >TG&#8209;канал&nbsp;Gorilla&nbsp;Energy</a
+              >
+            </p>
+            <p>В&nbsp;конце акции будет выбран участник самого креативного ролика, он&nbsp;и&nbsp;станет победителем Специального приза!</p>
+          </div>
         </div>
+        <div class="videos">
+          <picture>
+            <source media="(max-width: 767px)" srcset="./assets/img/svg/video-bg-mobil.svg" />
+            <source media="(min-width: 768px)" srcset="./assets/img/svg/video-bg.svg" />
+            <img src="./assets/img/svg/video-bg.svg" alt="Gorilla energy" />
+          </picture>
 
-        <div class="lk-tables__item">
-          <h2 class="title title--h2">Мои призы</h2>
-          <div class="table-background table-background--pink">
-            <!-- <h3 class="title title--h4 violet">Нет призов</h3> -->
-            <table class="table table--prizes">
-              <thead>
-                <tr>
-                  <th>Чек</th>
-                  <th>Дата</th>
-                  <th colspan="2">Призы</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>125 1234 123456</td>
-                  <td>29.02.2025</td>
-                  <td>Apple iPhone 16 PRO MAX</td>
-                  <td>
-                    <a ркуа="#" class="button button--green">
-                      <svg class="icon" width="78" height="32"><use href="#login-bg" /></svg>
-                      <span>Получить</span>
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>125 1234 123456</td>
-                  <td>29.02.2025</td>
-                  <td>PlayStation 5</td>
-                  <td>
-                    <a ркуа="#" class="button button--green">
-                      <svg class="icon" width="78" height="32"><use href="#login-bg" /></svg>
-                      <span>Получить</span>
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>125 1234 123456</td>
-                  <td>29.02.2025</td>
-                  <td>Билет на концерт TOXI$</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>125 1234 123456</td>
-                  <td>29.02.2025</td>
-                  <td>Подарочный сертификат «Пятёрочка»</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>125 1234 123456</td>
-                  <td>29.02.2025</td>
-                  <td>Подарочный сертификат «Пятёрочка»</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>125 1234 123456</td>
-                  <td>29.02.2025</td>
-                  <td>Подарочный сертификат «Пятёрочка»</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>125 1234 123456</td>
-                  <td>29.02.2025</td>
-                  <td>Подарочный сертификат «Пятёрочка»</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>125 1234 123456</td>
-                  <td>29.02.2025</td>
-                  <td>Сертификат Пятёрочка</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>125 1234 123456</td>
-                  <td>29.02.2025</td>
-                  <td>Сертификат Пятёрочка</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>125 1234 123456</td>
-                  <td>29.02.2025</td>
-                  <td>Сертификат Пятёрочка</td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
+          <!-- <div class="videos__empty">
+            <p>ЗДЕСЬ ПОЯВЯТСЯ ТВОИ&nbsp;ВИДЕО</p>
+          </div> -->
 
-            <!--PAGINATION-->
-            <ul class="pagination">
-              <li>
-                <a href="#" class="pagination-btn left" aria-label="left pagination">
-                  <svg width="9" height="16"><use href="#arr-left"></use></svg>
-                </a>
-              </li>
-              <li><a href="#" class="pagination-btn active">1</a></li>
-              <li><a href="#" class="pagination-btn">2</a></li>
-              <li><a href="#" class="pagination-btn">3</a></li>
-              <li><a href="#" class="pagination-btn">4</a></li>
-              <li>
-                <a href="#" class="pagination-btn right" aria-label="right pagination">
-                  <svg width="9" height="16"><use href="#arr-right"></use></svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <a href="./million.html" class="button button--million">
-            <svg class="icon" width="353" height="77"><use href="#button-bg-million" /></svg>
-            <span>Принять участие в&nbsp;розыгрыше <span class="lime">1&nbsp;000&nbsp;000</span> рублей</span>
-          </a>
+          <ul class="videos__list">
+            <li>
+              <a href="https://example.com" target="_blank" class="videos__link">
+                <img src="./assets/img/karaoke.avif" alt="Gorilla energy" />
+              </a>
+              <div class="shere">
+                <p class="shere__item">ПОДЕЛИТЬСЯ</p>
+                <div class="ya-share2" data-curtain data-size="m" data-shape="round" data-services="vkontakte,odnoklassniki,telegram,whatsapp"></div>
+                <a href="https://example.com" target="_blank" class="shere__item"><span>СКАЧАТЬ</span></a>
+              </div>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="videos__link">
+                <img src="./assets/img/karaoke.avif" alt="Gorilla energy" />
+              </a>
+              <div class="shere">
+                <p class="shere__item">ПОДЕЛИТЬСЯ</p>
+                <div class="ya-share2" data-curtain data-size="m" data-shape="round" data-services="vkontakte,odnoklassniki,telegram,whatsapp"></div>
+                <a href="https://example.com" target="_blank" class="shere__item"><span>СКАЧАТЬ</span></a>
+              </div>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="videos__link">
+                <img src="./assets/img/karaoke.avif" alt="Gorilla energy" />
+              </a>
+              <div class="shere">
+                <p class="shere__item">ПОДЕЛИТЬСЯ</p>
+                <div class="ya-share2" data-curtain data-size="m" data-shape="round" data-services="vkontakte,odnoklassniki,telegram,whatsapp"></div>
+                <a href="https://example.com" target="_blank" class="shere__item"><span>СКАЧАТЬ</span></a>
+              </div>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="videos__link">
+                <img src="./assets/img/karaoke.avif" alt="Gorilla energy" />
+              </a>
+              <div class="shere">
+                <p class="shere__item">ПОДЕЛИТЬСЯ</p>
+                <div class="ya-share2" data-curtain data-size="m" data-shape="round" data-services="vkontakte,odnoklassniki,telegram,whatsapp"></div>
+                <a href="https://example.com" target="_blank" class="shere__item"><span>СКАЧАТЬ</span></a>
+              </div>
+            </li>
+          </ul>
+          <p class="videos__text">
+            <span class="lime">Хочешь умножить свои шансы <span class="x">х</span>3?</span><br />
+            Поделись видео с тремя друзьями. Как только твой друг примет участие в акции (зарегистрирует чек), твои шансы на выигрыш умножатся х3.
+          </p>
         </div>
       </section>
     </main>
@@ -359,7 +207,7 @@
     <!--FOOTER-->
     <footer class="footer">
       <div class="container">
-        <h2 class="title title--h6">Copyright &copy; 2025 Gorilla Energy</h2>
+        <h2 class="title title--h6" onclick="Popup">Copyright &copy; 2025 Gorilla Energy</h2>
         <ul class="footer__menu">
           <li><a href="" target="_blank">Правила</a></li>
           <li><a href="./assets/pdf/privacy_consent_form.pdf" target="_blank">Политика конфиденциальности</a></li>
@@ -481,7 +329,7 @@
           </div>
         </div>
 
-        <!--REGISTRATION CHECK POPUP-->
+        <!--REGISTRATION CHEQUE POPUP-->
         <div class="popup-content" id="register-check">
           <button class="popup-close" data-popup-close></button>
           <h2 class="popup-title">Загрузка чека</h2>
@@ -521,7 +369,7 @@
           </div>
         </div>
 
-        <!--LOAD CHECK POPUP-->
+        <!--LOAD CHEQUE POPUP-->
         <script>
           function loadCheque(e) {
             e.preventDefault();
@@ -532,6 +380,7 @@
         <div class="popup-content" id="load-cheque">
           <button class="popup-close" data-popup-close></button>
           <h2 class="popup-title">Загрузка чека</h2>
+
           <form class="form" enctype="multipart/form-data" novalidate onsubmit="loadCheque(event)">
             <div class="download-file">
               <label class="label-for-file">
@@ -540,10 +389,11 @@
                 <p class="label__text" data-text="Перетащите фото чека или нажмите для выбора">Перетащите фото чека или нажмите для выбора</p>
               </label>
             </div>
-            <button type="submit" class="button button--violet submit">
-              <span>Загрузить</span>
-            </button>
           </form>
+          <button type="submit" class="button button--violet submit">
+            <span>Загрузить</span>
+          </button>
+          <!-- <div class="upload-error-message">Чек не выбран.</div> -->
           <div class="popup-links">
             <a href="#" data-popup-open="self-cheque-in">Ввести данные чека вручную</a>
           </div>
@@ -614,13 +464,6 @@
         />
       </symbol>
 
-      <symbol id="button-bg-million" viewBox="0 0 667 77" preserveAspectRatio="none">
-        <path
-          d="M11.6106 4.44444L87 11.5L166.065 0L339.305 4.44444L433.231 0L509 4.44444L600.209 0L667 4.44444V29L658.389 45.6667L667 71.1111L586.526 73.3333L503.153 68.8889L404.914 77L233.5 68.8889L117 77L11.6106 68.8889V52.7778L0.5 29L11.6106 4.44444Z"
-          fill="currentColor"
-        />
-      </symbol>
-
       <symbol id="button-bg" viewBox="0 0 353 77" preserveAspectRatio="none">
         <path
           d="M7.68293 4.44444L46.0976 5.55556L88.9024 0L180 4.44444L229.39 0L266.159 2.22222L317.195 0L352.317 4.44444V29L344.634 45.6667L352.317 71.1111L310 73.3333L266.159 68.8889L214.5 77L120.732 71.1111L62.561 73.3333L7.68293 68.8889V52.7778L0 36.6667L7.68293 4.44444Z"
@@ -667,9 +510,9 @@
         />
       </symbol>
 
-      <symbol id="info" viewBox="0 0 38 14" preserveAspectRatio="none">
+      <symbol id="info" viewBox="0 0 394 368" preserveAspectRatio="none">
         <path
-          d="M37.1317 0.67587L33.1031 0.67587L27.6979 1.39935L22.2833 0.675872L15.8473 1.93665e-06L8.61856 0.675872L4.89691 0.675873L0.327408 1.15173L2.83958e-07 3.2481L0.341645 5.76245L0.683289 8.2768L9.58571e-07 10.9648L1.18344e-06 13.537L3.58727 14L8.61856 13.537L13.5155 13.537L17.4444 14L20.8608 13.537L28.2062 13.537L30.5692 14L33.1031 13.537L37.0206 13.537L37.7651 11.1706L38 3.2481L37.1317 0.67587Z"
+          d="M50.5 7L3.5 12L0 33L6.5 86L0 113.5L3.5 180L0 257L7 307.5L0 336.5V363.5L38.5 368L86.5 363.5H141L181 368L215.5 363.5L292.5 362L316.5 368L343.5 363H383.5L391.5 340L394 256L386 230L392.5 153L394 33.5L384.5 7H342L287.5 14.5L164 0L90 7H50.5Z"
           fill="#5C427F"
         />
       </symbol>
@@ -778,7 +621,8 @@
       </symbol>
     </svg>
 
-    <script src="./assets/js/forms.js?v=0.0.2" type="module"></script>
-    <script src="./assets/js/scripts.js?v=0.0.2" type="module"></script>
+    <script src="https://yastatic.net/share2/share.js"></script>
+    <script src="./assets/js/forms.js?v=3" type="module"></script>
+    <script src="./assets/js/scripts.js?v=3" type="module"></script>
   </body>
 </html>

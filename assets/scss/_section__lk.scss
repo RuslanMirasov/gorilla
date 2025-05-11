@@ -149,6 +149,29 @@
     text-align: center;
     width: calc(50% - 8px);
     overflow: hidden;
+    .table th {
+      font-size: 20px;
+      @media (max-width: 767px) {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.promokod {
+  background: var(--pink);
+  color: var(--white);
+  font-family: var(--regular);
+  border: none;
+  padding: 4px 14px;
+  font-size: 16px;
+  transition: 0.3s;
+  &:hover {
+    background: var(--green-light);
+  }
+  @media (max-width: 767px) {
+    font-size: 10px;
+    padding: 4px 10px;
   }
 }
 
