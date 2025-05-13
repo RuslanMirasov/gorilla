@@ -315,17 +315,22 @@ a.shere__item {
 
     .left {
       font-size: 32px;
+      p {
+        position: relative;
+        top: 10px;
+      }
       picture {
         left: -30px;
         top: -60px;
         right: -30px;
-        bottom: -60px;
+        bottom: -78px;
       }
     }
 
     .right {
       max-width: 100%;
       text-align: center;
+      padding-top: 30px;
       padding-bottom: 0px;
       p {
         display: block;
@@ -333,16 +338,16 @@ a.shere__item {
         max-width: 312px;
       }
       picture {
-        left: -100px;
+        left: -140px;
         top: -100px;
-        right: -100px;
-        bottom: -100px;
+        right: -20px;
+        bottom: -120px;
       }
     }
   }
 
   .videos {
-    padding-top: 150px;
+    padding-top: 120px;
     padding-bottom: 80px;
     margin-bottom: 10px;
     picture {
