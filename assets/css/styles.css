@@ -1028,6 +1028,18 @@ a {
     color: var(--green);
   }
 }
+.button.button--red {
+  padding: 8px 12px;
+  color: #ed312e;
+}
+@media (hover: hover) and (pointer: fine) {
+  .button.button--red:hover {
+    color: var(--lime);
+  }
+  .button.button--red:hover span {
+    color: var(--green);
+  }
+}
 .button.button--lime {
   color: var(--lime);
 }
