@@ -42,11 +42,53 @@
     pointer-events: none;
   }
 
+  &.button--promo {
+    color: var(--pink);
+    > b {
+      transition: 0.3s;
+      color: var(--white);
+      z-index: 2;
+      padding: 4px 14px;
+      @media (max-width: 1279px) {
+        padding: 4px 6px;
+      }
+    }
+    &:hover {
+      color: var(--lime);
+      > b {
+        color: var(--green);
+      }
+    }
+  }
+
+  &.button--white {
+    color: var(--white);
+    > b {
+      transition: 0.3s;
+      color: var(--violet);
+      z-index: 2;
+      padding: 10px 14px;
+      @media (max-width: 1279px) {
+        padding: 4px 6px;
+      }
+    }
+    &:hover {
+      color: var(--lime);
+      > b {
+        color: var(--green);
+      }
+    }
+  }
+
   &.button--million {
     color: var(--pink);
     font-family: var(--light);
     padding: 20px 42px;
     font-size: myclamp(24px, 32px, 1440px, 1440px);
+    > b {
+      color: var(--white);
+      z-index: 2;
+    }
     .lime {
       display: inline;
       color: var(--lime) !important;

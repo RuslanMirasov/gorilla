@@ -1,16 +1,30 @@
+.section--million {
+  padding-bottom: 50px;
+  .button--white {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    min-width: 400px;
+    @media (max-width: 767px) {
+      min-width: 320px;
+    }
+  }
+}
+
 .million {
   display: block;
   position: relative;
   overflow: hidden;
   text-align: center;
   background-size: 100% 100%;
-  padding: 80px 0px 60px 0px;
+  padding: 80px 0px 100px 0px;
 
   &:after {
     content: '';
     position: absolute;
     width: myclamp(1200px, 1690px, 1440px, 1440px);
-    height: 100%;
+    height: calc(100% - 20px);
     left: 50%;
     transform: translate(-50%, 0%);
     top: 0px;
@@ -46,7 +60,7 @@
   }
 
   @media (max-width: 767px) {
-    padding: 60px 0px 40px 0px;
+    padding: 60px 0px 90px 0px;
     &.no-bg {
       padding: 140px 0px 140px 0px;
       margin: -100px 0px -60px 0px;

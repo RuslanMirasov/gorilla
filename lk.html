@@ -132,6 +132,11 @@
             </div>
           </div>
         </div>
+
+        <a href="./million.html" class="button button--million">
+          <svg class="icon" width="353" height="77"><use href="#button-bg-million" /></svg>
+          <b class="title title--h4">Принять участие в&nbsp;розыгрыше <span class="lime">1&nbsp;000&nbsp;000</span> рублей</b>
+        </a>
       </section>
 
       <div class="winn-chanses">
@@ -348,10 +353,87 @@
               </li>
             </ul>
           </div>
-          <a href="./million.html" class="button button--million">
-            <svg class="icon" width="353" height="77"><use href="#button-bg-million" /></svg>
-            <span>Принять участие в&nbsp;розыгрыше <span class="lime">1&nbsp;000&nbsp;000</span> рублей</span>
-          </a>
+        </div>
+      </section>
+
+      <section class="section section--lkvideo">
+        <h2 class="title title--h2">Мои видео</h2>
+        <div class="videos">
+          <picture>
+            <source media="(max-width: 767px)" srcset="./assets/img/svg/video-bg-mobil.svg" />
+            <source media="(min-width: 768px)" srcset="./assets/img/svg/video-bg.svg" />
+            <img src="./assets/img/svg/video-bg.svg" alt="Gorilla energy" />
+          </picture>
+
+          <!-- <div class="videos__empty">
+            <p>ЗДЕСЬ ПОЯВЯТСЯ ТВОИ&nbsp;ВИДЕО</p>
+          </div> -->
+
+          <ul class="videos__list">
+            <li>
+              <a href="https://example.com" target="_blank" class="videos__link">
+                <img src="./assets/img/karaoke.avif" alt="Gorilla energy" />
+              </a>
+              <div class="shere">
+                <p class="shere__item">ПОДЕЛИТЬСЯ</p>
+                <div class="ya-share2" data-curtain data-size="m" data-shape="round" data-services="vkontakte,odnoklassniki,telegram,whatsapp"></div>
+                <a href="https://example.com" target="_blank" class="shere__item"><span>СКАЧАТЬ</span></a>
+              </div>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="videos__link">
+                <img src="./assets/img/karaoke.avif" alt="Gorilla energy" />
+              </a>
+              <div class="shere">
+                <p class="shere__item">ПОДЕЛИТЬСЯ</p>
+                <div class="ya-share2" data-curtain data-size="m" data-shape="round" data-services="vkontakte,odnoklassniki,telegram,whatsapp"></div>
+                <a href="https://example.com" target="_blank" class="shere__item"><span>СКАЧАТЬ</span></a>
+              </div>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="videos__link">
+                <img src="./assets/img/karaoke.avif" alt="Gorilla energy" />
+              </a>
+              <div class="shere">
+                <p class="shere__item">ПОДЕЛИТЬСЯ</p>
+                <div class="ya-share2" data-curtain data-size="m" data-shape="round" data-services="vkontakte,odnoklassniki,telegram,whatsapp"></div>
+                <a href="https://example.com" target="_blank" class="shere__item"><span>СКАЧАТЬ</span></a>
+              </div>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="videos__link">
+                <img src="./assets/img/karaoke.avif" alt="Gorilla energy" />
+              </a>
+              <div class="shere">
+                <p class="shere__item">ПОДЕЛИТЬСЯ</p>
+                <div class="ya-share2" data-curtain data-size="m" data-shape="round" data-services="vkontakte,odnoklassniki,telegram,whatsapp"></div>
+                <a href="https://example.com" target="_blank" class="shere__item"><span>СКАЧАТЬ</span></a>
+              </div>
+            </li>
+          </ul>
+
+          <!--PAGINATION-->
+          <ul class="pagination">
+            <li>
+              <a href="#" class="pagination-btn left" aria-label="left pagination">
+                <svg width="9" height="16"><use href="#arr-left"></use></svg>
+              </a>
+            </li>
+            <li><a href="#" class="pagination-btn active">1</a></li>
+            <li><a href="#" class="pagination-btn">2</a></li>
+            <li><a href="#" class="pagination-btn">3</a></li>
+            <li><a href="#" class="pagination-btn">4</a></li>
+            <li>
+              <a href="#" class="pagination-btn right" aria-label="right pagination">
+                <svg width="9" height="16"><use href="#arr-right"></use></svg>
+              </a>
+            </li>
+          </ul>
+
+          <p class="videos__text">
+            <span class="lime">Хочешь умножить свои шансы <span class="x">х</span>3?</span><br />
+            Поделись видео с тремя друзьями. Как только твой друг примет участие в акции (зарегистрирует чек), твои шансы на выигрыш умножатся х3.
+          </p>
         </div>
       </section>
     </main>
@@ -778,6 +860,7 @@
       </symbol>
     </svg>
 
+    <script src="https://yastatic.net/share2/share.js"></script>
     <script src="./assets/js/forms.js?v=0.0.2" type="module"></script>
     <script src="./assets/js/scripts.js?v=0.0.2" type="module"></script>
   </body>

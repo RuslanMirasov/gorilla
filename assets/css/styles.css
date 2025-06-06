@@ -981,11 +981,55 @@ a {
   height: 100%;
   pointer-events: none;
 }
+.button.button--promo {
+  color: var(--pink);
+}
+.button.button--promo > b {
+  transition: 0.3s;
+  color: var(--white);
+  z-index: 2;
+  padding: 4px 14px;
+}
+@media (max-width: 1279px) {
+  .button.button--promo > b {
+    padding: 4px 6px;
+  }
+}
+.button.button--promo:hover {
+  color: var(--lime);
+}
+.button.button--promo:hover > b {
+  color: var(--green);
+}
+.button.button--white {
+  color: var(--white);
+}
+.button.button--white > b {
+  transition: 0.3s;
+  color: var(--violet);
+  z-index: 2;
+  padding: 10px 14px;
+}
+@media (max-width: 1279px) {
+  .button.button--white > b {
+    padding: 4px 6px;
+  }
+}
+.button.button--white:hover {
+  color: var(--lime);
+}
+.button.button--white:hover > b {
+  color: var(--green);
+}
 .button.button--million {
   color: var(--pink);
   font-family: var(--light);
   padding: 20px 42px;
   font-size: clamp(24px, 2.2222vw, 32px);
+}
+.button.button--million > b {
+  color: var(--white);
+  z-index: 2;
 }
 .button.button--million .lime {
   display: inline;
@@ -2235,6 +2279,27 @@ body.locked {
     font-size: 26px;
   }
 }
+.section--activation h2 {
+  position: relative;
+}
+.section--activation .button.button--promo {
+  position: absolute;
+  left: 50%;
+  white-space: nowrap;
+  bottom: 110%;
+}
+@media (max-width: 1279px) {
+  .section--activation .button.button--promo {
+    transform: translate(-50%, 0%);
+    padding: 4px 6px;
+    bottom: 120%;
+  }
+}
+@media (max-width: 767px) {
+  .section--activation .button.button--promo {
+    bottom: 110%;
+  }
+}
 
 .scaleUp.animate {
   -webkit-animation: scaleUp 3s linear infinite;
@@ -2375,25 +2440,19 @@ body.locked {
   padding: 0px 5px 5px 5px;
 }
 
-.may16 {
-  position: relative;
+.section--million {
+  padding-bottom: 50px;
 }
-.may16:before {
-  content: "";
-  width: 200px;
-  height: 46px;
+.section--million .button--white {
   position: absolute;
-  bottom: 100%;
-  background: url("../img/svg/may16.svg") no-repeat center center/cover;
+  bottom: 0px;
   left: 50%;
-  transform: translate(-50%, -12px);
+  transform: translate(-50%, 0%);
+  min-width: 400px;
 }
 @media (max-width: 767px) {
-  .may16:before {
-    content: "";
-    width: 156px;
-    height: 35px;
-    background: url("../img/svg/may16-mobil.svg") no-repeat center center/cover;
+  .section--million .button--white {
+    min-width: 320px;
   }
 }
 
@@ -2403,13 +2462,13 @@ body.locked {
   overflow: hidden;
   text-align: center;
   background-size: 100% 100%;
-  padding: 80px 0px 60px 0px;
+  padding: 80px 0px 100px 0px;
 }
 .million:after {
   content: "";
   position: absolute;
   width: clamp(1200px, 117.3611vw, 1690px);
-  height: 100%;
+  height: calc(100% - 20px);
   left: 50%;
   transform: translate(-50%, 0%);
   top: 0px;
@@ -2441,7 +2500,7 @@ body.locked {
 }
 @media (max-width: 767px) {
   .million {
-    padding: 60px 0px 40px 0px;
+    padding: 60px 0px 90px 0px;
   }
   .million.no-bg {
     padding: 140px 0px 140px 0px;
@@ -3364,6 +3423,15 @@ body.locked {
   gap: 30px;
   margin-top: -100px;
 }
+.section--profile .button--million {
+  margin: 0 auto;
+  top: -100px;
+}
+@media (max-width: 767px) {
+  .section--profile .button--million {
+    top: -40px;
+  }
+}
 
 .user-info {
   display: flex;
@@ -3522,6 +3590,24 @@ body.locked {
   .promokod {
     font-size: 12px;
     padding: 4px 10px;
+  }
+}
+
+.section--lkvideo {
+  padding: 50px 0px;
+}
+@media (max-width: 767px) {
+  .section--lkvideo {
+    padding: 0px 0px 20px 0px;
+  }
+}
+.section--lkvideo .pagination {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .section--lkvideo .videos {
+    padding-top: 80px;
   }
 }
 

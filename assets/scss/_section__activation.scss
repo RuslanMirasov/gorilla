@@ -10,6 +10,25 @@
       }
     }
   }
+
+  h2 {
+    position: relative;
+  }
+
+  .button.button--promo {
+    position: absolute;
+    left: 50%;
+    white-space: nowrap;
+    bottom: 110%;
+    @media (max-width: 1279px) {
+      transform: translate(-50%, 0%);
+      padding: 4px 6px;
+      bottom: 120%;
+    }
+    @media (max-width: 767px) {
+      bottom: 110%;
+    }
+  }
 }
 
 .scaleUp {
@@ -150,27 +169,4 @@
   color: var(--white);
   background: var(--pink);
   padding: 0px 5px 5px 5px;
-}
-
-.may16 {
-  position: relative;
-  &:before {
-    content: '';
-    width: 200px;
-    height: 46px;
-    position: absolute;
-    bottom: 100%;
-    background: url('../img/svg/may16.svg') no-repeat center center/cover;
-    left: 50%;
-    transform: translate(-50%, -12px);
-  }
-
-  @media (max-width: 767px) {
-    &:before {
-      content: '';
-      width: 156px;
-      height: 35px;
-      background: url('../img/svg/may16-mobil.svg') no-repeat center center/cover;
-    }
-  }
 }
