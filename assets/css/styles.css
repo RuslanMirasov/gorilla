@@ -1163,6 +1163,19 @@ a {
     top: 0px;
   }
 }
+.button .button.button--white {
+  position: absolute;
+  top: 100%;
+  margin-top: -14px;
+}
+
+div.button.button--million {
+  cursor: auto;
+}
+div.button.button--million:hover {
+  color: var(--pink);
+}
+
 .text-content {
   display: flex;
   position: relative;
@@ -3412,6 +3425,7 @@ body.locked {
 }
 .section--profile {
   padding-top: 100px;
+  padding-bottom: 40px;
   overflow: hidden;
 }
 .section--profile .container {
@@ -3595,6 +3609,7 @@ body.locked {
 
 .section--lkvideo {
   padding: 50px 0px;
+  overflow: hidden;
 }
 @media (max-width: 767px) {
   .section--lkvideo {

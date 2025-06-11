@@ -93,6 +93,7 @@
       display: inline;
       color: var(--lime) !important;
     }
+
     @media (max-width: 767px) {
       max-width: 340px;
       padding: 30px 20px;
@@ -228,5 +229,18 @@
       left: 0px;
       top: 0px;
     }
+  }
+}
+
+.button .button.button--white {
+  position: absolute;
+  top: 100%;
+  margin-top: -14px;
+}
+
+div.button.button--million {
+  cursor: auto;
+  &:hover {
+    color: var(--pink);
   }
 }
